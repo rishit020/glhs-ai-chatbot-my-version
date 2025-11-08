@@ -139,4 +139,3 @@ Customize colors and styling in `static/style.css`. Green Level brand colors:
 ## License
 
 This project is for Green Level High School use.
-
