@@ -1,0 +1,18 @@
+QUICK FIX FOR DEPENDENCY CONFLICTS
+===================================
+
+The issue: langchain-core got upgraded to 1.0.2, but langchain-ollama needs < 1.0.0
+
+SOLUTION - Run these commands in your terminal:
+
+1. pip install "langchain-core==0.3.76" --force-reinstall
+2. pip install "langchain==0.3.25" "langchain-community==0.3.25" --force-reinstall
+3. pip install -r requirements.txt
+
+OR just double-click fix_dependencies.bat (I've updated it)
+
+After running, test with:
+python -c "import langchain; import langchain_community; import chromadb; print('Success!')"
+
+If that works, your app should run fine!
+

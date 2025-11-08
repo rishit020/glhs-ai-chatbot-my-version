@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Level AI Counselor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💚 Green Level AI Counselor</h1>
+            <p class="subtitle">Your virtual academic advisor</p>
+        </header>
+
+        <div class="quick-actions">
+            <button class="quick-btn" data-action="graduation_requirements">Graduation Requirements</button>
+            <button class="quick-btn" data-action="course_planning">Course Planning</button>
+            <button class="quick-btn" data-action="college_prep">College Prep Tips</button>
+            <button class="quick-btn" data-action="meet_counselor">Meet Your Counselor</button>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome-message">
+                <p>Hello! I'm your Green Level AI Counselor. How can I help you today?</p>
+                <p class="hint">You can ask me about courses, graduation requirements, college prep, or use the quick buttons above!</p>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input 
+                type="text" 
+                id="messageInput" 
+                placeholder="Ask me anything about academics, courses, or requirements..."
+                autocomplete="off"
+            >
+            <button id="sendButton">Send</button>
+        </div>
+
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

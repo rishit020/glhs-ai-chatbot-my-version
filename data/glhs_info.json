@@ -1,0 +1,231 @@
+{
+  "graduation_requirements": {
+    "total_credits": 22,
+    "english_credits": 4,
+    "math_credits": 4,
+    "science_credits": 3,
+    "social_studies_credits": 3,
+    "foreign_language_credits": 2,
+    "physical_education_credits": 1,
+    "health_credits": 1,
+    "elective_credits": 4,
+    "minimum_gpa": 2.0,
+    "community_service_hours": 40,
+    "description": "Students must complete 22 total credits with specific requirements in each subject area, maintain a minimum 2.0 GPA, and complete 40 hours of community service."
+  },
+  "courses": [
+    {
+      "code": "ENG101",
+      "name": "English 9",
+      "credits": 1,
+      "description": "Freshman English focusing on literature, composition, and critical thinking.",
+      "prerequisites": [],
+      "category": "English"
+    },
+    {
+      "code": "ENG102",
+      "name": "English 10",
+      "credits": 1,
+      "description": "Sophomore English with emphasis on literary analysis and writing.",
+      "prerequisites": ["ENG101"],
+      "category": "English"
+    },
+    {
+      "code": "ENG103",
+      "name": "English 11",
+      "credits": 1,
+      "description": "Junior English covering American literature and research writing.",
+      "prerequisites": ["ENG102"],
+      "category": "English"
+    },
+    {
+      "code": "ENG104",
+      "name": "English 12",
+      "credits": 1,
+      "description": "Senior English focusing on British literature and college-level writing.",
+      "prerequisites": ["ENG103"],
+      "category": "English"
+    },
+    {
+      "code": "MATH101",
+      "name": "Algebra I",
+      "credits": 1,
+      "description": "Introduction to algebraic concepts and problem-solving.",
+      "prerequisites": [],
+      "category": "Math"
+    },
+    {
+      "code": "MATH102",
+      "name": "Geometry",
+      "credits": 1,
+      "description": "Study of geometric shapes, proofs, and spatial reasoning.",
+      "prerequisites": ["MATH101"],
+      "category": "Math"
+    },
+    {
+      "code": "MATH103",
+      "name": "Algebra II",
+      "credits": 1,
+      "description": "Advanced algebraic concepts including functions and equations.",
+      "prerequisites": ["MATH102"],
+      "category": "Math"
+    },
+    {
+      "code": "MATH201",
+      "name": "AP Calculus AB",
+      "credits": 1,
+      "description": "Advanced Placement Calculus covering limits, derivatives, and integrals.",
+      "prerequisites": ["MATH103"],
+      "category": "Math"
+    },
+    {
+      "code": "SCI101",
+      "name": "Biology",
+      "credits": 1,
+      "description": "Study of living organisms, cells, and biological systems.",
+      "prerequisites": [],
+      "category": "Science"
+    },
+    {
+      "code": "SCI102",
+      "name": "Chemistry",
+      "credits": 1,
+      "description": "Introduction to chemical principles and laboratory techniques.",
+      "prerequisites": ["MATH101"],
+      "category": "Science"
+    },
+    {
+      "code": "SCI103",
+      "name": "Physics",
+      "credits": 1,
+      "description": "Study of motion, forces, energy, and waves.",
+      "prerequisites": ["MATH102"],
+      "category": "Science"
+    },
+    {
+      "code": "SS101",
+      "name": "World History",
+      "credits": 1,
+      "description": "Survey of world civilizations and historical events.",
+      "prerequisites": [],
+      "category": "Social Studies"
+    },
+    {
+      "code": "SS102",
+      "name": "US History",
+      "credits": 1,
+      "description": "Comprehensive study of American history.",
+      "prerequisites": ["SS101"],
+      "category": "Social Studies"
+    },
+    {
+      "code": "SS103",
+      "name": "Government",
+      "credits": 1,
+      "description": "Study of American government and political systems.",
+      "prerequisites": ["SS102"],
+      "category": "Social Studies"
+    }
+  ],
+  "counselors": [
+    {
+      "name": "Ms. Sarah Johnson",
+      "email": "sarah.johnson@glhs.edu",
+      "phone": "(555) 123-4567",
+      "specialization": "Freshman and Sophomore students",
+      "office": "Room 201"
+    },
+    {
+      "name": "Mr. Michael Chen",
+      "email": "michael.chen@glhs.edu",
+      "phone": "(555) 123-4568",
+      "specialization": "Junior and Senior students, College Planning",
+      "office": "Room 202"
+    },
+    {
+      "name": "Ms. Emily Rodriguez",
+      "email": "emily.rodriguez@glhs.edu",
+      "phone": "(555) 123-4569",
+      "specialization": "Special Programs and Support Services",
+      "office": "Room 203"
+    }
+  ],
+  "policies": {
+    "attendance": {
+      "tardies": "Students with more than 10 unexcused tardies per semester may face disciplinary action.",
+      "absences": "More than 10 excused absences per semester requires a doctor's note or parent meeting.",
+      "makeup_work": "Students have 3 days to make up work after an excused absence."
+    },
+    "academic": {
+      "gpa_requirements": "Minimum 2.0 GPA required for graduation. Below 2.0 triggers academic intervention.",
+      "course_drops": "Students may drop a course within the first 2 weeks of the semester with counselor approval.",
+      "grade_appeals": "Grade appeals must be submitted within 5 days of grade posting."
+    },
+    "conduct": {
+      "plagiarism": "Plagiarism results in a zero on the assignment and parent notification.",
+      "cheating": "Cheating on exams results in a zero and possible suspension.",
+      "cell_phones": "Cell phones must be silenced and put away during class hours."
+    }
+  },
+  "electives": {
+    "arts": [
+      "Visual Arts I-IV",
+      "Band",
+      "Choir",
+      "Theater Arts",
+      "Digital Media",
+      "Photography"
+    ],
+    "technology": [
+      "Computer Science I",
+      "Web Design",
+      "Robotics",
+      "Game Design",
+      "Cybersecurity"
+    ],
+    "languages": [
+      "Spanish I-IV",
+      "French I-IV",
+      "German I-III",
+      "American Sign Language I-III"
+    ],
+    "career_technical": [
+      "Business Management",
+      "Marketing",
+      "Culinary Arts",
+      "Automotive Technology",
+      "Construction Trades"
+    ],
+    "advanced": [
+      "AP Computer Science",
+      "AP Studio Art",
+      "AP Music Theory",
+      "AP Spanish Literature"
+    ]
+  },
+  "college_prep": {
+    "ap_vs_honors": {
+      "ap_courses": "AP (Advanced Placement) courses are college-level classes that can earn students college credit if they pass the AP exam (score 3+). They are standardized nationwide and look excellent on college applications.",
+      "honors_courses": "Honors courses are accelerated high school courses that go deeper into material but don't offer college credit. They prepare students well for college-level work and also strengthen applications.",
+      "when_to_take": "Students should take AP courses in subjects they're strong in and interested in. Start with 1-2 APs in junior year, then add more in senior year if comfortable.",
+      "college_credit": "AP exam scores of 3, 4, or 5 can earn college credit at most universities, potentially saving time and money."
+    },
+    "tips": [
+      "Maintain a strong GPA throughout high school - colleges look at all four years.",
+      "Take challenging courses (AP/Honors) but don't overload yourself.",
+      "Get involved in extracurricular activities and leadership roles.",
+      "Start building relationships with teachers for recommendation letters.",
+      "Begin exploring colleges and majors early (sophomore/junior year).",
+      "Take the SAT/ACT seriously and prepare well.",
+      "Focus on finding your interests and passions, not just what looks good.",
+      "Visit colleges if possible to see if they're a good fit."
+    ],
+    "testing": {
+      "sat": "SAT is typically taken in junior or senior year. Most colleges accept SAT scores.",
+      "act": "ACT is an alternative to SAT. Some students perform better on one than the other.",
+      "prep": "Free prep resources available: Khan Academy (SAT), ACT Academy, and school tutoring programs.",
+      "when": "Most students take SAT/ACT in spring of junior year and can retake in fall of senior year."
+    }
+  }
+}
+
