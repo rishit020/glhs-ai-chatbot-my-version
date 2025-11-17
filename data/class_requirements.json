@@ -1,0 +1,45 @@
+[
+    {
+      "Question": "How many core classes must I take?",
+      "Answer": "Every student must take one class in each of the four core subjects: Math, Science, Social Studies, and English."
+    },
+    {
+      "Question": "How many electives can I take?",
+      "Answer": "Students may take four elective courses in addition to their four core classes."
+    },
+    {
+      "Question": "How many total courses will I have?",
+      "Answer": "Each student will have a total of eight courses — four core classes and four electives."
+    },
+    {
+      "Question": "What are primary and secondary electives?",
+      "Answer": "Students will select four primary electives and four secondary electives. Primary electives are your top choices, while secondary electives serve as backups in case primary options are unavailable."
+    },
+    {
+      "Question": "Does the order of electives within each list matter?",
+      "Answer": "No, the order within your primary or secondary elective lists does not matter. All courses within a list are treated equally."
+    },
+    {
+      "Question": "How many electives will I actually get?",
+      "Answer": "Students will be scheduled for a total of four electives, which may come from either the primary or secondary elective list depending on course availability and scheduling."
+    },
+    {
+      "Question": "Am I guaranteed to get my top elective choices?",
+      "Answer": "No, there is no guarantee you will get your top choices. It is fair game for any course listed in your requests — including your last alternate — to appear in your final schedule, depending on availability and scheduling."
+    },
+    {
+      "Question": "Can I take two classes in the same subject area (double up)?",
+      "Answer": "Yes, students may choose to double up in a subject area. If doubling up in a core subject, the lower-level course will go in the core class selection and the higher-level course will go in the electives selection. While your core class is guaranteed, the higher-level course is treated as an elective and is not guaranteed."
+    },
+    {
+      "Question": "Can I double up in electives?",
+      "Answer": "Yes, students may also double up in elective courses. In this case, both courses would be listed in the electives selection area and will be considered as part of your four available elective spots."
+    },
+    {
+      "Question": "What should my final schedule include?",
+      "Answer": "A balanced schedule will include: 1 Math course, 1 Science course, 1 Social Studies course, 1 English course, and 4 Elective courses (chosen from your primary and secondary lists)."
+    }
+  ]
+  
+  
+  

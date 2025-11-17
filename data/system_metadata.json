@@ -1,0 +1,114 @@
+{
+    "file_manifest": {
+      "system_metadata.json": "This file. The master 'legend' and 'map' that defines all other data files and terms.",
+      
+      "glhs_course_catalog.json": "The MASTER 'source of truth' for all courses. Use this to find official prerequisites, grade levels, and categories.",
+      
+      "ap_difficulty_profile.json": "The 'qualitative counselor' file for AP classes. Use this to find subjective advice, difficulty tiers, skill profiles, and workload.",
+      
+      "honors_difficulty_profile.json": "The 'qualitative counselor' file for Honors classes. Use this for subjective advice, difficulty tiers, skill profiles, and workload.",
+      
+      "academic_difficulty_profile.json": "The 'qualitative counselor' file for Academic classes. Use this for subjective advice, difficulty tiers, skill profiles, and workload.",
+      
+      "majors.json": "The 'Major Exploration' file. Connects *general* career interests (e.g., 'Pre-Med') to a prioritized list of GLHS classes, clubs, and out-of-school ECs.",
+  
+      "glhs_college_pathways.json": "The 'Specific College Planning' file. Connects *specific colleges* (e.g., 'NC State', 'UNC') to their admission stats, AP policies, and recommended GLHS courses/clubs for *their* top programs.",
+  
+      "glhs_college_filters.json": "The 'College Search' file. Provides high-level, filterable data about colleges (e.g., size, cost, core strengths, tags).",
+      
+      "scheduling_faq.json": "A list of simple Question/Answer pairs for common *scheduling* questions (e.g., 'what is an alternate?')."
+    },
+    
+    "global_rules": {
+      "school_name": "Green Level High School (GLHS)",
+      "school_system": "Wake County Public School System (WCPSS)",
+      "course_duration": "All courses listed in the catalog are single-semester courses.",
+      "gpa_weights": {
+        "AP": 5.0,
+        "Honors": 4.5,
+        "Academic": 4.0
+      }
+    },
+  
+    "difficulty_scale": {
+      "1": "Easiest / Introductory Academic",
+      "2": "Standard / Foundational Academic or Honors",
+      "3": "Challenging / Standard Honors-Level",
+      "4": "Very Difficult / Standard AP or Top-Tier Honors",
+      "5": "Most Difficult / Top-Tier AP",
+      "Varies": "Difficulty is not standardized and depends entirely on the student's prior skill (e.g., Art, Language)."
+    },
+  
+    "skill_scale": {
+      "None": "Not required for this course.",
+      "Low": "A minor part of the course. Basic understanding is needed.",
+      "Medium": "A consistent part of the class and workload.",
+      "High": "A primary skill required for success. A main focus of the class.",
+      "Very High": "The single biggest challenge of the class. Mastery is essential."
+    },
+  
+    "field_definitions": {
+      "glhs_course_catalog": {
+        "course_name": "The unique primary key. Must match *exactly* across all files.",
+        "level": "The course level (Academic, Honors, AP). Used for GPA calculation.",
+        "category": "The department or subject area (e.g., 'Science', 'Arts Elective').",
+        "grade_level": "The grade(s) this course is typically offered to.",
+        "prerequisite_text": "The official, human-readable prerequisite rule from the catalog."
+      },
+      
+      "difficulty_profiles": {
+        "course_name": "The primary key, linking this file to 'glhs_course_catalog.json'.",
+        "category": "The department (e.g., 'Arts', 'Humanities').",
+        "overall_difficulty_tier": "A subjective 1-5 rating. See 'difficulty_scale' for legend.",
+        "skill_profile": "An object rating the cognitive load of the class.",
+        "counselor_profile": "An object containing subjective, human-like advice.",
+        "workload_profile": "A qualitative description of the *type* of homework (e.g., 'lab reports', 'nightly reading').",
+        "exam_format": "A description of the main assessment types (e.g., 'MCQ, 3 Free-Response').",
+        "pairs_well_with": "Subjective suggestions for courses that are often taken concurrently.",
+        "notes_and_context": "The 'human counselor' advice, explaining *why* a class is hard or providing key context (e.g., 'Easy for native speakers')."
+      },
+      
+      "majors_json": {
+        "pathway_name": "The name of the general career cluster (e.g., 'Computer & Information Sciences').",
+        "description": "A brief overview of the pathway.",
+        "related_majors": "A list of potential college majors within this pathway.",
+        "key_classes": "An object that *prioritizes* recommended GLHS classes into logical groups (e.g., 'foundational_math', 'highly_recommended_ap').",
+        "related_clubs": "A list of *on-campus* GLHS clubs relevant to this pathway.",
+        "recommended_local_opportunities": "A list of *out-of-school* extracurriculars, internships, or projects for this pathway."
+      },
+  
+      "glhs_college_pathways": {
+        "College": "The name of the specific university. This is the primary key.",
+        "Stats_Middle_50": "An object containing the middle 50% academic stats for accepted students.",
+        "GPA_Weighted": "The middle 50% weighted GPA range.",
+        "SAT_Range": "The middle 50% SAT score range.",
+        "ACT_Range": "The middle 50% ACT score range.",
+        "World_Language_Recommendation": "The college's specific advice on world language for competitive admissions.",
+        "AP_Credit_Policy": "The college's general policy on AP scores.",
+        "Major_Specific_Recommendations": "An array of objects detailing advice for specific programs *at that college*.",
+        "Major_Cluster": "The name of the program/college at that university (e.g., 'Engineering (Pratt)').",
+        "is_flagship": "A boolean (true/false) indicating if this is a premier, well-known program at that school.",
+        "Academic_Strength_Emphasis": "A qualitative description of what the college *looks for* in applicants for this program.",
+        "Recommended_GLHS_Courses": "A list of specific 'course_name' strings recommended for this program.",
+        "Recommended_GLHS_Clubs": "A list of GLHS clubs that strengthen an application for this program.",
+        "Recommended_Local_Opportunities": "A list of extracurricular/internship ideas relevant to this program."
+      },
+  
+      "glhs_college_filters": {
+        "College": "The name of the specific university. This is the key to link to 'glhs_college_pathways.json'.",
+        "Academic_Profile": "A tag for filtering by selectivity (e.g., 'P3: Selective').",
+        "Environment": "A tag for filtering by campus setting (e.g., 'Urban', 'Large').",
+        "Size": "A tag for filtering by student body size.",
+        "Core_Strengths": "A list of the college's most famous or strongest programs.",
+        "Tags": "A list of general keywords for filtering (e.g., 'Public', 'STEM-Focused').",
+        "Admissions_URL": "Direct hyperlink to the college's admissions page.",
+        "Net_Price_Calculator_URL": "Direct hyperlink to the college's financial aid calculator.",
+        "Scholarship_Page_URL": "Direct hyperlink to the college's scholarship page.",
+        "Cost_Tag": "A general tag for filtering by cost (e.g., 'Public In-State ($$)').",
+        "Testing_Policy": "The college's high-level standardized testing policy (e.g., 'Test Optional').",
+        "Flagship_Scholarships": "A list of the college's most prominent, competitive scholarships."
+      }
+    }
+  }
+  
+  

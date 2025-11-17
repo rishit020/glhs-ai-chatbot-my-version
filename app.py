@@ -6,7 +6,7 @@ import logging
 from atexit import register
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
-from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.schedulers.background import BackgroundScheduler  # pyright: ignore[reportMissingImports]
 from chatbot import get_chatbot
 from utils import get_or_create_session, append_message, clear_stale_sessions
 

@@ -1,0 +1,43 @@
+{
+    "total_credits_required": 26,
+    "source": "WCPSS Graduation Requirements",
+    "subject_requirements": [
+      {
+        "subject": "English",
+        "credits": 4,
+        "notes": "Must be English I, II, III, and IV."
+      },
+      {
+        "subject": "Math",
+        "credits": 4,
+        "notes": "Must include NC Math 1, NC Math 2, NC Math 3, and a 4th math course aligned with post-secondary plans."
+      },
+      {
+        "subject": "Science",
+        "credits": 3,
+        "notes": "Must include Biology, Earth/Environmental Science, and a Physical Science (e.g., Physical Science, Chemistry, or Physics)."
+      },
+      {
+        "subject": "Social Studies",
+        "credits": 4,
+        "notes": "Must include World History, Civic Literacy, American History, and Economics & Personal Finance."
+      },
+      {
+        "subject": "Healthful Living",
+        "credits": 1,
+        "notes": "Must be Healthful Living I."
+      },
+      {
+        "subject": "Electives",
+        "credits": 10,
+        "notes": "A 'concentration' of 2 elective credits in a single area (CTE, Arts, or World Language) is highly recommended."
+      }
+    ],
+    "endorsements_available": [
+      "Global Languages Endorsement",
+      "NC Academic Scholar",
+      "STEM Endorsement"
+    ]
+  }
+  
+  
