@@ -50,3 +50,45 @@ def load_json_data(file_path: str) -> dict:
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
+##############################################################################
+# Greeting Detection
+##############################################################################
+
+def detect_greeting(message: str) -> bool:
+    """
+    Detect if a message is a greeting.
+    
+    Args:
+        message: The user's message string
+        
+    Returns:
+        True if the message contains a greeting keyword, False otherwise
+    """
+    if not message:
+        return False
+    
+    # Convert to lowercase for case-insensitive matching
+    message_lower = message.lower().strip()
+    
+    # List of greeting keywords
+    greeting_keywords = [
+        "yo",
+        "hello",
+        "hey",
+        "hi",
+        "whats up",
+        "what's up",
+        "sup",
+        "greetings",
+        "what's going on",
+        "whats going on"
+    ]
+    
+    # Check if message contains any greeting keyword
+    for keyword in greeting_keywords:
+        if keyword in message_lower:
+            return True
+    
+    return False
+

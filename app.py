@@ -8,7 +8,7 @@ from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 from apscheduler.schedulers.background import BackgroundScheduler  # pyright: ignore[reportMissingImports]
 from chatbot import get_chatbot
-from utils import get_or_create_session, append_message, clear_stale_sessions
+from utils import get_or_create_session, append_message, clear_stale_sessions, detect_greeting
 
 # Load environment variables
 load_dotenv()
@@ -84,6 +84,23 @@ def chat():
                 "error": "Message cannot be empty.",
                 "session_id": session_id
             }), 400
+        
+        # Check for greeting before any API calls
+        if detect_greeting(message):
+            # Get conversation history
+            conversation = get_or_create_session(session_id)
+            
+            # Add user message to history
+            append_message(session_id, "user", message)
+            
+            # Return greeting response immediately (no API call)
+            greeting_response = "Hello! How can I help you today?"
+            append_message(session_id, "assistant", greeting_response)
+            
+            return jsonify({
+                "response": greeting_response,
+                "session_id": session_id
+            })
         
         # Get conversation history
         conversation = get_or_create_session(session_id)
