@@ -1,453 +1,434 @@
 [
-    {
-      "course_name": "AP Precalculus",
-      "category": "Math",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily problem sets, heavy conceptual homework, fast pace.",
-        "exam_format": "MCQ, Free-Response (FRQ), Calculator/No-Calculator sections"
-      },
-      "notes_and_context": "A very rigorous course. Moves much faster than NC Math 3 Honors and is designed to be a direct prep course for AP Calculus."
+  {
+    "course_name": "AP Studio Art 2D Design",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Assessment is based on the immense time commitment (20+ pieces) and creative effort required for the portfolio.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "AP Calculus AB",
-      "category": "Math",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "Very High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Very High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Intense daily problem sets, conceptual work, high pace.",
-        "exam_format": "MCQ, FRQ, Calculator/No-Calculator sections"
-      },
-      "notes_and_context": "Covers one semester of college-level calculus. Requires a very strong foundation from AP Precalculus."
+    "counselor_profile": {
+      "workload_profile": "Portfolio-based, independent time commitment, studio work, artist statements."
     },
-    {
-      "course_name": "AP Calculus BC",
-      "category": "Math",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "Very High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Very High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Extremely fast-paced daily problem sets, covers all of AB plus more.",
-        "exam_format": "MCQ, FRQ, Calculator/No-Calculator sections"
-      },
-      "notes_and_context": "Covers two semesters of college-level calculus. Extremely fast and difficult. The 'BC' score includes an 'AB' subscore."
+    "notes_and_context": "Assessment is based on the immense time commitment (20+ pieces) and creative effort required for the portfolio."
+  },
+  {
+    "course_name": "AP Studio Art 3D Design",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Assessment is based on the immense time commitment (20+ pieces) and creative effort required for the portfolio.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "AP Environmental Science",
-      "category": "Science",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Case studies, lab reports, concept memorization, some projects.",
-        "exam_format": "MCQ, Data-Set FRQ, Solution-Based FRQ"
-      },
-      "notes_and_context": "Often considered one of the 'easier' AP sciences. Success is based more on memorization and unit mastery than on complex math skills."
+    "counselor_profile": {
+      "workload_profile": "Portfolio-based, independent time commitment, studio work, artist statements."
     },
-    {
-      "course_name": "AP World History: Modern",
-      "category": "Humanities",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Very High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Nightly college-level reading, document analysis, timed essay writing (DBQ, LEQ).",
-        "exam_format": "MCQ, Short Answer (SAQ), Document-Based Question (DBQ), Long Essay (LEQ)"
-      },
-      "notes_and_context": "A 'firehose' of information. Extremely fast-paced. Success depends on your ability to read, write, and memorize huge amounts of content."
+    "notes_and_context": "Assessment is based on the immense time commitment (20+ pieces) and creative effort required for the portfolio."
+  },
+  {
+    "course_name": "AP Studio Art Drawing",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Assessment is based on the immense time commitment (20+ pieces) and creative effort required for the portfolio.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "AP Statistics",
-      "category": "Math",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Problem sets, reading and interpreting data, heavy calculator use.",
-        "exam_format": "MCQ, 6 FRQs (including an 'Investigative Task')"
-      },
-      "notes_and_context": "A reading-and-writing-based math class. Different from calculus. You must be able to justify your answers in clear sentences."
+    "counselor_profile": {
+      "workload_profile": "College-level coursework with rigorous assignments and assessments."
     },
-    {
-      "course_name": "AP US Government & Politics",
-      "category": "Humanities",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Memorizing foundational documents and court cases, reading, timed-writing.",
-        "exam_format": "MCQ, FRQ (Concept, Quantitative, SCOTUS, Argument)"
-      },
-      "notes_and_context": "A content-heavy class focused on memorizing the structure of US government. Less reading than APUSH, but more abstract concepts."
+    "notes_and_context": "Assessment is based on the immense time commitment (20+ pieces) and creative effort required for the portfolio."
+  },
+  {
+    "course_name": "AP Computer Science A",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "A college-level 'Intro to Java' programming course. Very logic-intensive. Requires think like a programmer A college-level 'Intro to Java' programming course. Requires thinking like a programmer.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Very High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "AP Studio Art 2D Design",
-      "category": "Arts",
-      "overall_difficulty_tier": "Varies",
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Portfolio-based, heavy independent time commitment, studio work, artist statements.",
-        "exam_format": "Portfolio Submission (Sustained Investigation, Selected Works). No final exam."
-      },
-      "notes_and_context": "Difficulty is 100% based on the immense time commitment (20+ pieces) and creative effort required for the portfolio."
+    "counselor_profile": {
+      "workload_profile": "Daily coding projects in Java. Focus on logic and debugging."
     },
-    {
-      "course_name": "AP Studio Art 3D Design",
-      "category": "Arts",
-      "overall_difficulty_tier": "Varies",
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Portfolio-based, heavy independent time commitment, studio work, artist statements.",
-        "exam_format": "Portfolio Submission (Sustained Investigation, Selected Works). No final exam."
-      },
-      "notes_and_context": "Difficulty is 100% based on the immense time commitment (20+ pieces) and creative effort required for the portfolio."
+    "notes_and_context": "A college-level 'Intro to Java' programming course. Very logic-intensive. Requires think like a programmer A college-level 'Intro to Java' programming course. Requires thinking like a programmer."
+  },
+  {
+    "course_name": "AP Computer Science Principles",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "A broad, conceptual introduction to computer science. Focuses on the 'big ideas' of the internet, data, and programming.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "AP Studio Art: Drawing",
-      "category": "Arts",
-      "overall_difficulty_tier": "Varies",
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Portfolio-based, heavy independent time commitment, studio work, artist statements.",
-        "exam_format": "Portfolio Submission (Sustained Investigation, Selected Works). No final exam."
-      },
-      "notes_and_context": "Difficulty is 100% based on the immense time commitment (20+ pieces) and creative effort required for the portfolio."
+    "counselor_profile": {
+      "workload_profile": "Project-based work, some block-based coding, writing about code."
     },
-    {
-      "course_name": "AP French Language & Culture",
-      "category": "World Language",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Full immersion. Daily speaking, listening to media, reading texts, writing essays in French.",
-        "exam_format": "MCQ (Reading/Listening), FRQ (Writing/Speaking)"
-      },
-      "notes_and_context": "A college-level immersion course. Success depends on your willingness to speak, read, and write exclusively in French."
+    "notes_and_context": "A broad, conceptual introduction to computer science. Focuses on the 'big ideas' of the internet, data, and programming."
+  },
+  {
+    "course_name": "AP Comparative Government & Politics",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "A 'case-study' class. You must memorize and compare the political systems of 6 specific countries A content-heavy class focused on memorizing the structure of US government. Less reading than AP US History, but more abstract concepts.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "High"
     },
-    {
-      "course_name": "AP Latin",
-      "category": "World Language",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Intense translation of classical texts (Virgil, Caesar), literary analysis, grammar review.",
-        "exam_format": "MCQ (Translation/Analysis), FRQ (Translation, Short Answer, Essay)"
-      },
-      "notes_and_context": "A very difficult literature and translation class. Requires mastery of all grammar from Latin I-IV."
+    "counselor_profile": {
+      "workload_profile": "Case-study analysis of 6 countries (UK, Russia, China, Iran, Nigeria, Mexico)."
     },
-    {
-      "course_name": "AP Spanish Language & Culture",
-      "category": "World Language",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Full immersion. Daily speaking, listening to media, reading texts, writing essays in Spanish.",
-        "exam_format": "MCQ (Reading/Listening), FRQ (Writing/Speaking)"
-      },
-      "notes_and_context": "A college-level immersion course. Much easier for native/heritage speakers. Success depends on willingness to speak, read, and write exclusively in Spanish."
+    "notes_and_context": "A 'case-study' class. You must memorize and compare the political systems of 6 specific countries A content-heavy class focused on memorizing the structure of US government. Less reading than AP US History, but more abstract concepts."
+  },
+  {
+    "course_name": "AP English Language and Composition",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "A college-level writing class. Focuses on how an argument is built. Requires analytical writing skill, not memorization.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "AP Spanish Literature",
-      "category": "World Language",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Reading and analyzing a mandatory list of Spanish literary works, writing analytical essays.",
-        "exam_format": "MCQ, FRQ (Text Analysis, Text Comparison, Art Comparison)"
-      },
-      "notes_and_context": "A college-level *literature* class, not a language class. Taught entirely in Spanish. Requires fluency and strong analytical writing skills."
+    "counselor_profile": {
+      "workload_profile": "College-level coursework with rigorous assignments and assessments."
     },
-    {
-      "course_name": "AP Computer Science Principles",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Project-based work, some block-based coding, writing about code.",
-        "exam_format": "MCQ Exam + 'Create' Performance Task (Project)"
-      },
-      "notes_and_context": "A broad, conceptual introduction to computer science. Focuses on the 'big ideas' of the internet, data, and programming."
+    "notes_and_context": "A college-level writing class. Focuses on how an argument is built. Requires analytical writing skill, not memorization."
+  },
+  {
+    "course_name": "AP English Literature and Composition",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "A college-level literature class. Focuses on *why* a story is told. Requires analyze abstract themes and literary devices.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "AP Computer Science A",
-      "category": "CTE",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Very High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily, intensive coding projects in Java. Heavy focus on logic and debugging.",
-        "exam_format": "MCQ + FRQ (Hand-writing Java code)"
-      },
-      "notes_and_context": "A college-level 'Intro to Java' programming course. Very logic-intensive. Success depends on your ability to think like a programmer."
+    "counselor_profile": {
+      "workload_profile": "Reading of fiction, poetry, and drama. Thematic analysis. Timed writing."
     },
-    {
-      "course_name": "AP Chemistry",
-      "category": "Science",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Very High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy problem sets, demanding lab reports, fast-paced content coverage.",
-        "exam_format": "MCQ + FRQ"
-      },
-      "notes_and_context": "One of the most difficult APs. Requires strong conceptual understanding AND strong math skills. The jump from Honors Chem is significant."
+    "notes_and_context": "A college-level literature class. Focuses on *why* a story is told. Requires analyze abstract themes and literary devices."
+  },
+  {
+    "course_name": "AP Psychology",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "This course. The concepts are easy, but the sheer *volume* of vocabulary is immense. Emphasizes memorization The concepts are easy, but the sheer volume of vocabulary is immense. Emphasizes memorization.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Very High"
     },
-    {
-      "course_name": "AP Physics I: Algebra-Based",
-      "category": "Science",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Very High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Problem sets, lab reports, conceptual questions.",
-        "exam_format": "MCQ + FRQ"
-      },
-      "notes_and_context": "Deceptively difficult. The math is algebra, but the concepts are deeply challenging. The AP exam has a notoriously low 5 rate."
+    "counselor_profile": {
+      "workload_profile": "vocabulary and concept memorization. Daily reading."
     },
-    {
-      "course_name": "AP Comparative Government & Politics",
-      "category": "Humanities",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Case-study analysis of 6 countries (UK, Russia, China, Iran, Nigeria, Mexico).",
-        "exam_format": "MCQ + FRQ"
-      },
-      "notes_and_context": "A 'case-study' class. You must memorize and compare the political systems of 6 specific countries."
+    "notes_and_context": "This course. The concepts are easy, but the sheer *volume* of vocabulary is immense. Emphasizes memorization The concepts are easy, but the sheer volume of vocabulary is immense. Emphasizes memorization."
+  },
+  {
+    "course_name": "AP US Government & Politics",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "A content-heavy class focused on memorizing the structure of US government. Less reading than APUSH, but more abstract concepts.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "High"
     },
-    {
-      "course_name": "AP Psychology",
-      "category": "Humanities",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Very High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Intense vocabulary and concept memorization. Daily reading.",
-        "exam_format": "MCQ + 2 FRQs"
-      },
-      "notes_and_context": "A 'memorization-hard' class. The concepts are easy, but the sheer *volume* of vocabulary is immense. Success is 90% memorization."
+    "counselor_profile": {
+      "workload_profile": "Memorizing foundational documents and court cases, reading, timed-writing."
     },
-    {
-      "course_name": "AP English Language & Composition",
-      "category": "Humanities",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Constant reading of non-fiction, rhetorical analysis essays, timed writing.",
-        "exam_format": "MCQ (Reading) + 3 Essays (Synthesis, Rhetorical Analysis, Argument)"
-      },
-      "notes_and_context": "A college-level writing class. Focuses on *how* an argument is built. Success depends on your analytical writing skill, not memorization."
+    "notes_and_context": "A content-heavy class focused on memorizing the structure of US government. Less reading than APUSH, but more abstract concepts."
+  },
+  {
+    "course_name": "AP US History",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "A massive volume of reading, memorization, and writing. Builds on Honors.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Very High"
     },
-    {
-      "course_name": "AP Macroeconomics",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Graphing, concept review, problem sets.",
-        "exam_format": "MCQ + 3 FRQs"
-      },
-      "notes_and_context": "Focuses on 'big picture' economics (countries, GDP, inflation). Conceptual and graph-based."
+    "counselor_profile": {
+      "workload_profile": "Nightly college-level reading, document analysis, timed essay writing (DBQ, LEQ)."
     },
-    {
-      "course_name": "AP Microeconomics",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy graphing, problem sets, concept review.",
-        "exam_format": "MCQ + 3 FRQs"
-      },
-      "notes_and_context": "Focuses on 'small picture' economics (individuals, firms, supply/demand). Very graph-heavy."
+    "notes_and_context": "A massive volume of reading, memorization, and writing. Builds on Honors."
+  },
+  {
+    "course_name": "AP World History",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "Covers extensive content. -paced. Requires read, write, and memorize huge amounts of content Covers extensive content. Fast-paced. Requires reading, writing, and memorizing huge amounts of content.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Very High"
     },
-    {
-      "course_name": "AP Physics II: Algebra-Based",
-      "category": "Science",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Very High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Problem sets, lab reports, conceptual questions (E&M, fluids).",
-        "exam_format": "MCQ + FRQ"
-      },
-      "notes_and_context": "A continuation of AP Physics 1. Covers electricity, magnetism, and fluids. Also has a very low 5 rate."
+    "counselor_profile": {
+      "workload_profile": "Nightly college-level reading, document analysis, timed essay writing (DBQ, LEQ)."
     },
-    {
-      "course_name": "AP Physics C: Mechanics",
-      "category": "Science",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "Very High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Very High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Intense calculus-based problem sets, labs.",
-        "exam_format": "MCQ + 3 FRQs"
-      },
-      "notes_and_context": "This is AP Physics 1 *with calculus*. It is a must-take for engineering. Requires concurrent enrollment in AP Calculus."
+    "notes_and_context": "Covers extensive content. -paced. Requires read, write, and memorize huge amounts of content Covers extensive content. Fast-paced. Requires reading, writing, and memorizing huge amounts of content."
+  },
+  {
+    "course_name": "AP World History: Modern",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "Covers extensive content. -paced. Requires read, write, and memorize huge amounts of content Covers extensive content. Fast-paced. Requires reading, writing, and memorizing huge amounts of content.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Very High"
     },
-    {
-      "course_name": "AP Biology",
-      "category": "Science",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Very High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Intense memorization, college-level textbook reading, complex lab reports.",
-        "exam_format": "MCQ + 6 FRQs"
-      },
-      "notes_and_context": "A 'double-hard' class. Requires both massive memorization (like AP Psych) and complex conceptual understanding (like AP Chem)."
+    "counselor_profile": {
+      "workload_profile": "Nightly college-level reading, document analysis, timed essay writing (DBQ, LEQ)."
     },
-    {
-      "course_name": "AP Literature and Composition",
-      "category": "Humanities",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy reading of fiction, poetry, and drama. Deep thematic analysis. Timed writing.",
-        "exam_format": "MCQ (Reading) + 3 Essays (Poetry, Prose, Literary Argument)"
-      },
-      "notes_and_context": "A college-level literature class. Focuses on *why* a story is told. Success depends on your ability to analyze abstract themes and literary devices."
+    "notes_and_context": "Covers extensive content. -paced. Requires read, write, and memorize huge amounts of content Covers extensive content. Fast-paced. Requires reading, writing, and memorizing huge amounts of content."
+  },
+  {
+    "course_name": "AP Calculus AB",
+    "category": "Math",
+    "prerequisites": "Prerequisite required",
+    "description": "Covers one semester of college-level calculus. Requires a strong foundation from AP Precalculus.",
+    "skill_profile": {
+      "math_strength_required": "Very High",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Very High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "AP US History",
-      "category": "Humanities",
-      "overall_difficulty_tier": 5,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Very High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Very High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Nightly college-level reading, document analysis, timed essay writing (DBQ, LEQ).",
-        "exam_format": "MCQ, Short Answer (SAQ), Document-Based Question (DBQ), Long Essay (LEQ)"
-      },
-      "notes_and_context": "Notoriously one of the most content-heavy APs. A massive volume of reading, memorization, and writing. A huge step up from Honors."
-    }
-  ]
-  
-  
-  
+    "counselor_profile": {
+      "workload_profile": "daily problem sets, conceptual work, high pace."
+    },
+    "notes_and_context": "Covers one semester of college-level calculus. Requires a strong foundation from AP Precalculus."
+  },
+  {
+    "course_name": "AP Calculus BC",
+    "category": "Math",
+    "prerequisites": "Prerequisite required",
+    "description": "Covers two semesters of college-level calculus. The 'BC' score includes an 'AB' subscore.",
+    "skill_profile": {
+      "math_strength_required": "Very High",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Very High",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "fast-paced daily problem sets, covers all of AB plus more."
+    },
+    "notes_and_context": "Covers two semesters of college-level calculus. The 'BC' score includes an 'AB' subscore."
+  },
+  {
+    "course_name": "AP Pre-Calculus",
+    "category": "Math",
+    "prerequisites": "Prerequisite required",
+    "description": "This course moves faster than NC Math 3 Honors and is designed to be a direct prep course for AP Calculus.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "College-level coursework with rigorous assignments and assessments."
+    },
+    "notes_and_context": "This course moves faster than NC Math 3 Honors and is designed to be a direct prep course for AP Calculus."
+  },
+  {
+    "course_name": "AP Statistics",
+    "category": "Math",
+    "prerequisites": "Prerequisite required",
+    "description": "A reading-and-writing-based math class. Different from calculus. You must be able to justify your answers in clear sentences.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Problem sets, reading and interpreting data, calculator use."
+    },
+    "notes_and_context": "A reading-and-writing-based math class. Different from calculus. You must be able to justify your answers in clear sentences."
+  },
+  {
+    "course_name": "AP Biology",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "This course. Requires extensive memorization (like AP Psych) and complex conceptual understanding (like AP Chem).",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Very High"
+    },
+    "counselor_profile": {
+      "workload_profile": "memorization, college-level textbook reading, complex lab reports."
+    },
+    "notes_and_context": "This course. Requires extensive memorization (like AP Psych) and complex conceptual understanding (like AP Chem)."
+  },
+  {
+    "course_name": "AP Chemistry",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "Requires conceptual understanding AND strong math skills. The jump from Honors Chem is significant.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Very High",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Problem sets, demanding lab reports, fast-paced content coverage."
+    },
+    "notes_and_context": "Requires conceptual understanding AND strong math skills. The jump from Honors Chem is significant."
+  },
+  {
+    "course_name": "AP Environmental Science",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "Emphasizes memorization and unit mastery more than complex math skills.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Case studies, lab reports, concept memorization, some projects."
+    },
+    "notes_and_context": "Emphasizes memorization and unit mastery more than complex math skills."
+  },
+  {
+    "course_name": "AP Physics C",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "This is AP Physics 1 *with calculus*. It is a must-take for engineering. Requires concurrent enrollment in AP Calculus.",
+    "skill_profile": {
+      "math_strength_required": "Very High",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Very High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "calculus-based problem sets, labs."
+    },
+    "notes_and_context": "This is AP Physics 1 *with calculus*. It is a must-take for engineering. Requires concurrent enrollment in AP Calculus."
+  },
+  {
+    "course_name": "AP Physics I: Algebra-Based",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "The math is algebra-based. The AP exam has a low 5 rate.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Very High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Problem sets, lab reports, conceptual questions."
+    },
+    "notes_and_context": "The math is algebra-based. The AP exam has a low 5 rate."
+  },
+  {
+    "course_name": "AP Physics II",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "A continuation of AP Physics 1. Covers electricity, magnetism, and fluids. Also has a low 5 rate The math is algebra-based. The AP exam has a low 5 rate.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Very High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Problem sets, lab reports, conceptual questions (E&M, fluids)."
+    },
+    "notes_and_context": "A continuation of AP Physics 1. Covers electricity, magnetism, and fluids. Also has a low 5 rate The math is algebra-based. The AP exam has a low 5 rate."
+  },
+  {
+    "course_name": "AP French Language & Culture",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "A college-level immersion course. Requires willingness to speak, read, and write exclusively in French.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Full immersion. Daily speaking, listening to media, reading texts, writing essays in French."
+    },
+    "notes_and_context": "A college-level immersion course. Requires willingness to speak, read, and write exclusively in French."
+  },
+  {
+    "course_name": "AP Latin",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "A literature and translation class. Requires mastery of all grammar from Latin I-IV.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "High",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "translation of classical texts (Virgil, Caesar), literary analysis, grammar review."
+    },
+    "notes_and_context": "A literature and translation class. Requires mastery of all grammar from Latin I-IV."
+  },
+  {
+    "course_name": "AP Spanish Language & Culture",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "A college-level immersion course. Native/heritage speakers may find this course more accessible. Requires speak, read, and write exclusively in Spanish.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Full immersion. Daily speaking, listening to media, reading texts, writing essays in Spanish."
+    },
+    "notes_and_context": "A college-level immersion course. Native/heritage speakers may find this course more accessible. Requires speak, read, and write exclusively in Spanish."
+  },
+  {
+    "course_name": "AP Spanish Literature",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "A college-level *literature* class, not a language class. Taught entirely in Spanish. Requires fluency and strong analytical writing skills A college-level literature class, not a language class. Requires fluency and strong analytical writing skills.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Very High",
+      "conceptual_thinking": "High",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Reading and analyzing a mandatory list of Spanish literary works, writing analytical essays."
+    },
+    "notes_and_context": "A college-level *literature* class, not a language class. Taught entirely in Spanish. Requires fluency and strong analytical writing skills A college-level literature class, not a language class. Requires fluency and strong analytical writing skills."
+  }
+]

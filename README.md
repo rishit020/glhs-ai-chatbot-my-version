@@ -6,7 +6,7 @@ A RAG-powered AI chatbot for Green Level High School that helps students with ac
 
 - 🤖 AI-powered responses using GPT-4o-mini
 - 📚 RAG (Retrieval-Augmented Generation) with ChromaDB vector search
-- 🔄 **Hybrid Approach**: Supports both JSON structured data AND PDF documents
+- 📄 JSON-based data loading for structured school information
 - 💬 Interactive chat interface with Green Level branding
 - ⚡ Quick action buttons for common questions
 - 🧠 Session-based conversation memory
@@ -65,21 +65,18 @@ glhs-chatbot/
 │   └── script.js          # Frontend chat logic
 │
 ├── data/
-│   ├── glhs_info.json     # Structured school data (courses, requirements, etc.)
-│   └── pdf_docs/          # PDF documents (handbooks, catalogs, etc.)
+│   └── *.json             # Structured school data files (courses, requirements, etc.)
 │
 └── chroma_db/             # ChromaDB vector database (auto-generated)
 ```
 
 ## How It Works
 
-1. **Hybrid Data Loading**: The system loads data from two sources:
-   - **JSON File** (`data/glhs_info.json`): Structured data (courses, credits, counselors, policies)
-   - **PDF Documents** (`data/pdf_docs/`): Rich documents (handbooks, catalogs, detailed policies)
-   
-   Both sources are combined into a single vector store for comprehensive retrieval.
+1. **Data Loading**: The system loads data from JSON files in the `data/` directory:
+   - Structured data (courses, credits, counselors, policies, college pathways, etc.)
+   - All JSON files are automatically loaded and indexed
 
-2. **Vector Store**: Data from both sources is converted to documents, chunked, and embedded using OpenAI embeddings, then stored in ChromaDB for fast retrieval.
+2. **Vector Store**: JSON data is converted to documents, chunked, and embedded using OpenAI embeddings, then stored in ChromaDB for fast retrieval.
 
 3. **Query Processing**: When a user asks a question:
    - Relevant chunks are retrieved from the vector store
@@ -99,24 +96,21 @@ The chatbot includes safeguards for mental health concerns:
 
 ### Adding/Updating Data
 
-**Option 1: JSON File (Structured Data)**
-Edit `data/glhs_info.json` to update:
-- Course information
-- Counselor contact details
-- Graduation requirements
-- School policies
+Edit JSON files in the `data/` directory to update:
+- Course information (`glhs_course_catalog.json`)
+- Counselor contact details (`glhs_info.json`)
+- Graduation requirements (`glhs_graduation_requirments.json`)
+- School policies and other structured data
 
-**Option 2: PDF Documents (Rich Context)**
-Place PDF files in `data/pdf_docs/` folder:
-- Student handbook PDFs
-- Course catalog PDFs
-- Policy documents
-- Any school documents
+After updating JSON files, you have two options:
 
-**Option 3: Hybrid (Recommended)**
-Use both! JSON for quick structured queries, PDFs for detailed explanations.
+**Option 1: Automatic (Recommended)**
+- Delete the `chroma_db/` directory and restart the app
+- The chatbot will automatically rebuild the vector store on startup
 
-After updating JSON or adding/removing PDFs, delete the `chroma_db/` directory and restart the app to rebuild the vector store.
+**Option 2: Manual**
+- Run `python build_vector_db.py` to manually build/rebuild the database
+- This gives you more control and shows detailed progress
 
 ### Styling
 
@@ -131,7 +125,7 @@ Customize colors and styling in `static/style.css`. Green Level brand colors:
 - Make sure you've created a `.env` file with your OpenAI API key
 
 ### "Data file not found"
-- Ensure `data/glhs_info.json` exists in the `data/` directory
+- Ensure JSON files exist in the `data/` directory
 
 ### Vector store issues
 - Delete the `chroma_db/` directory and restart to rebuild

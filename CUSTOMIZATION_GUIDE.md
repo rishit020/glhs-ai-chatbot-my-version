@@ -135,37 +135,12 @@ Add your school's electives:
 
 ---
 
-## 📄 Adding PDFs (Hybrid Approach)
-
-After we implement PDF support, you can also:
-
-1. **Drop PDFs in `data/pdf_docs/` folder:**
-   - Student handbook PDFs
-   - Course catalog PDFs
-   - Policy documents
-   - Any other school documents
-
-2. **The system will automatically:**
-   - Parse the PDFs
-   - Extract all text
-   - Add to the vector database
-   - Make it searchable by the AI
-
-**No code changes needed** - just add PDF files!
-
----
-
 ## 🔄 Updating Data After First Run
 
-### If you change the JSON file:
+### If you change the JSON files:
 
 1. Delete the `chroma_db/` folder
 2. Restart the app - it will rebuild the vector store with new data
-
-### If you add/remove PDFs:
-
-1. Delete the `chroma_db/` folder  
-2. Restart the app - it will rebuild with all PDFs in the folder
 
 ---
 
@@ -198,7 +173,7 @@ Add a new section:
 }
 ```
 
-The AI will still be able to answer questions about these if they're in the JSON (or in PDFs).
+The AI will still be able to answer questions about these if they're in the JSON files.
 
 ### Example 3: State-Specific Requirements
 
@@ -221,7 +196,7 @@ The code will:
 - ✅ Work even if sections are missing
 - ✅ Handle missing fields gracefully (shows "N/A")
 - ✅ Process whatever structure you provide
-- ✅ Combine JSON + PDFs seamlessly (after hybrid implementation)
+- ✅ Process JSON data efficiently
 
 ---
 

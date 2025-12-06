@@ -1,1028 +1,1058 @@
 [
-    {
-      "course_name": "English I (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavier nightly reading, more frequent analytical essays, vocabulary.",
-        "exam_format": "MCQ, Analytical Essays, Projects"
-      },
-      "notes_and_context": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic."
+  {
+    "course_name": "Choral Music 3 Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 chorus. Honors requires additional assignments and a higher level of performance.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Healthful Living I (Honors)",
-      "category": "PE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Low",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Standard PE activity, plus written assignments, health projects, and tests.",
-        "exam_format": "Projects, Written Tests, Physical Activity"
-      },
-      "notes_and_context": "The Honors distinction comes from the written project work, not from increased physical difficulty."
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
     },
-    {
-      "course_name": "NC Math 1 (Honors)",
-      "category": "Math",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily problem sets, faster pace, more abstract problems.",
-        "exam_format": "MCQ, Problem Sets, Quizzes"
-      },
-      "notes_and_context": "The foundational honors math course. Success here is a strong indicator for the upper-level math track."
+    "notes_and_context": "Level 3 chorus. Honors requires additional assignments and a higher level of performance."
+  },
+  {
+    "course_name": "Choral Music 4 Advanced Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 4 (highest). This is the top ensemble, requiring a significant time commitment.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "NC Math 2 (Honors)",
-      "category": "Math",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily problem sets, faster pace, covers geometry and advanced algebra.",
-        "exam_format": "MCQ, Problem Sets, Proofs"
-      },
-      "notes_and_context": "Faster-paced math sequence. Covers concepts in more depth to prepare for Math 3."
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
     },
-    {
-      "course_name": "NC Math 3 (Honors)",
-      "category": "Math",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily problem sets, fast pace, complex function analysis.",
-        "exam_format": "MCQ, Problem Sets"
-      },
-      "notes_and_context": "A challenging course that bridges algebra and pre-calculus. A key 'gateway' to AP Calculus."
+    "notes_and_context": "Level 4 (highest). This is the top ensemble, requiring a significant time commitment."
+  },
+  {
+    "course_name": "Dance: Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 dance. Honors requires choreography and written analysis.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "NC Math 4 (Honors)",
-      "category": "Math",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily problem sets, advanced function analysis, intro to calculus concepts.",
-        "exam_format": "MCQ, Problem Sets"
-      },
-      "notes_and_context": "A follow-up to Math 3 for students who want a rigorous math class but may not be ready for AP Calculus."
+    "counselor_profile": {
+      "workload_profile": "Daily practice, after-school rehearsals, choreography projects."
     },
-    {
-      "course_name": "Earth/Environmental Science (Honors)",
-      "category": "Science",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Lab reports, projects, reading assignments.",
-        "exam_format": "MCQ, Projects, Lab Reports"
-      },
-      "notes_and_context": "A good introductory honors science. Faster paced than Academic with more project-based work."
+    "notes_and_context": "Level 3 dance. Honors requires choreography and written analysis."
+  },
+  {
+    "course_name": "Dance: Advanced Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 4 (highest) dance. This is the top ensemble, requiring a significant time commitment.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Biology (Honors)",
-      "category": "Science",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Regular homework, lab write-ups, unit tests, some memorization.",
-        "exam_format": "MCQ, Lab Reports, Short Answer"
-      },
-      "notes_and_context": "A challenging but standard honors science. This is the direct prerequisite for AP Biology."
+    "counselor_profile": {
+      "workload_profile": "Daily practice, after-school rehearsals, leadership, advanced choreography."
     },
-    {
-      "course_name": "Chemistry (Honors)",
-      "category": "Science",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "High",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy problem sets, frequent labs, memorization of formulas.",
-        "exam_format": "MCQ, Problem Sets, Lab Reports"
-      },
-      "notes_and_context": "A very rigorous, math-based science. This is the direct 'gateway' course for AP Chemistry."
+    "notes_and_context": "Level 4 (highest) dance. This is the top ensemble, requiring a significant time commitment."
+  },
+  {
+    "course_name": "Instrumental Music: Band - Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 band. Honors requires additional assignments and a higher level of performance.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Forensic Science (Honors)",
-      "category": "Science",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Case studies, project-based labs, analytical writing.",
-        "exam_format": "Projects, Lab Practicals, Essays"
-      },
-      "notes_and_context": "A high-interest elective. Honors requires more in-depth analysis and writing."
+    "counselor_profile": {
+      "workload_profile": "Daily practice, after-school rehearsals, performances, theory assignments."
     },
-    {
-      "course_name": "Anatomy & Physiology (Honors)",
-      "category": "Science",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Very High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Intense memorization of terms, diagrams, and systems; lab work.",
-        "exam_format": "MCQ, Lab Practicals (Diagrams)"
-      },
-      "notes_and_context": "A 'detail-hard' class. Success is almost purely based on your ability to memorize a huge volume of terms."
+    "notes_and_context": "Level 3 band. Honors requires additional assignments and a higher level of performance."
+  },
+  {
+    "course_name": "Instrumental Music: Band - Advanced Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 4 (highest) band. This is the top ensemble, requiring a significant time commitment.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Astronomy (Honors)",
-      "category": "Science",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Problem sets (physics-based), projects, night sky observations.",
-        "exam_format": "MCQ, Problem Sets, Projects"
-      },
-      "notes_and_context": "A physics-light course. More conceptual and math-based than many expect."
+    "counselor_profile": {
+      "workload_profile": "Daily practice, after-school rehearsals, leadership, advanced theory."
     },
-    {
-      "course_name": "World History (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy reading, thematic analysis, document analysis (DBQs).",
-        "exam_format": "MCQ, Essays, DBQs"
-      },
-      "notes_and_context": "The direct 'gateway' course for AP World History. Focuses on document analysis."
+    "notes_and_context": "Level 4 (highest) band. This is the top ensemble, requiring a significant time commitment."
+  },
+  {
+    "course_name": "Painting Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 visual arts. The 'gateway' to AP Art. Focuses on developing a body of work.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "American History (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Nightly reading, document analysis, timed-writes.",
-        "exam_format": "MCQ, Essays, DBQs"
-      },
-      "notes_and_context": "This is the direct 'gateway' course for AP US History. The 'jump' from this to APUSH is very large."
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
     },
-    {
-      "course_name": "Civic Literacy (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Current events analysis, reading of legal documents, projects.",
-        "exam_format": "MCQ, Essays, Projects"
-      },
-      "notes_and_context": "This is the 'gateway' course for AP US Government. Focuses on the structure of US government."
+    "notes_and_context": "Level 3 visual arts. The 'gateway' to AP Art. Focuses on developing a body of work."
+  },
+  {
+    "course_name": "Sculpture/Ceramics: Visual Art Specialization Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 visual arts. The 'gateway' to AP Art. Focuses on developing a body of work.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Sociology (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Reading-heavy, discussion-based, analytical essays.",
-        "exam_format": "Essays, Projects, MCQ"
-      },
-      "notes_and_context": "A high-interest elective. Focuses on social structures and group behavior. Less memorization than Psychology."
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
     },
-    {
-      "course_name": "Contemporary Law and Justice (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Reading case law, debates, analytical essays.",
-        "exam_format": "Essays, Socratic Seminars, Projects"
-      },
-      "notes_and_context": "A great course for aspiring Pre-Law students. Very reading and debate-heavy."
+    "notes_and_context": "Level 3 visual arts. The 'gateway' to AP Art. Focuses on developing a body of work."
+  },
+  {
+    "course_name": "Tech. Theatre: Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 tech theatre. Honors requires design-level projects (e. g. , lighting, sound design).",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Lessons of Vietnam War/Recent International Relations (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy reading, primary source analysis, research papers.",
-        "exam_format": "Essays, Research Papers, Presentations"
-      },
-      "notes_and_context": "A deep-dive history elective. Expect a heavy reading and writing load."
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
     },
-    {
-      "course_name": "Adobe Visual Design I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Project-based, requires creative thinking, time-intensive projects.",
-        "exam_format": "Portfolio, Projects, Adobe Certification"
-      },
-      "notes_and_context": "Learn Adobe suite (Illustrator, Photoshop). Difficulty is based on project complexity, not tests."
+    "notes_and_context": "Level 3 tech theatre. Honors requires design-level projects (e. g. , lighting, sound design)."
+  },
+  {
+    "course_name": "Tech. Theatre: Advanced Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 4 (highest). This is the top ensemble, requiring a significant time commitment.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Adobe Video Design I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Project-based, requires creative thinking, time-intensive video projects.",
-        "exam_format": "Portfolio, Video Projects, Adobe Certification"
-      },
-      "notes_and_context": "Learn Adobe Premiere Pro and After Effects. Difficulty is based on project quality and time management."
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
     },
-    {
-      "course_name": "Animal Science I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Hands-on labs, memorization of breeds/anatomy, project work.",
-        "exam_format": "MCQ, Lab Practicals, Projects"
-      },
-      "notes_and_context": "A great hands-on elective for students interested in Vet Med or Agriculture."
+    "notes_and_context": "Level 4 (highest). This is the top ensemble, requiring a significant time commitment."
+  },
+  {
+    "course_name": "Theatre Arts: Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 theatre. Honors requires script analysis and directing projects.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Animal Science II (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "More advanced labs, heavy memorization, management projects.",
-        "exam_format": "MCQ, Lab Practicals, Projects"
-      },
-      "notes_and_context": "Builds on Animal Science I with more depth in biology and business."
+    "counselor_profile": {
+      "workload_profile": "Monologue/scene work, after-school rehearsals, script analysis."
     },
-    {
-      "course_name": "Horticulture I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Hands-on labs (greenhouse), plant identification, projects.",
-        "exam_format": "MCQ, Plant Identification Practicals"
-      },
-      "notes_and_context": "A hands-on class. Honors involves more in-depth projects and research."
+    "notes_and_context": "Level 3 theatre. Honors requires script analysis and directing projects."
+  },
+  {
+    "course_name": "Theatre Arts: Advanced Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 4 (highest) theatre. This is the top ensemble, requiring a significant time commitment.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Horticulture II (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Business management projects, advanced greenhouse work.",
-        "exam_format": "MCQ, Projects, Business Plans"
-      },
-      "notes_and_context": "Builds on Horticulture I with a focus on business and advanced plant science."
+    "counselor_profile": {
+      "workload_profile": "Advanced scene work, directing, after-school rehearsals, leadership."
     },
-    {
-      "course_name": "Microsoft Excel (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Problem sets, data analysis projects, learning functions.",
-        "exam_format": "Practical Exams, Certification Test"
-      },
-      "notes_and_context": "Extremely practical skill. Difficulty is logic-based, not memorization. Leads to official certification."
+    "notes_and_context": "Level 4 (highest) theatre. This is the top ensemble, requiring a significant time commitment."
+  },
+  {
+    "course_name": "Visual Arts: Accomplished Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 3 visual arts. The 'gateway' to AP Art. Focuses on developing a body of work.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Microsoft Word & PowerPoint (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Low",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Project-based, design-focused.",
-        "exam_format": "Practical Exams, Certification Test"
-      },
-      "notes_and_context": "Goes well beyond basic use. Leads to official certification."
+    "counselor_profile": {
+      "workload_profile": "Time-intensive projects, portfolio development."
     },
-    {
-      "course_name": "Python Programming I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Coding projects, logic puzzles, debugging.",
-        "exam_format": "Practical Coding Exams, Projects"
-      },
-      "notes_and_context": "A great introduction to text-based coding. This is the 'gateway' to AP Computer Science."
+    "notes_and_context": "Level 3 visual arts. The 'gateway' to AP Art. Focuses on developing a body of work."
+  },
+  {
+    "course_name": "Visual Arts: Advanced Honors (Honors)",
+    "category": "Arts",
+    "prerequisites": "Prerequisite required",
+    "description": "Level 4 (highest) visual arts. For students building a college admissions portfolio Level 4 (highest). This is the top ensemble, requiring a significant time commitment.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Python Programming II (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "More complex coding projects, algorithms, data structures.",
-        "exam_format": "Practical Coding Exams, Projects"
-      },
-      "notes_and_context": "Builds directly on Python I. A must-take for aspiring CompSci majors."
+    "counselor_profile": {
+      "workload_profile": "Time-intensive projects, portfolio development, artist statements."
     },
-    {
-      "course_name": "Entrepreneurship I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Project-based, business plan creation, group work.",
-        "exam_format": "Business Plan Project, Presentations"
-      },
-      "notes_and_context": "A 'big-idea' class. Success is based on your project work and creativity, not tests."
+    "notes_and_context": "Level 4 (highest) visual arts. For students building a college admissions portfolio Level 4 (highest). This is the top ensemble, requiring a significant time commitment."
+  },
+  {
+    "course_name": "Adobe Video Design I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "Learn Adobe Premiere Pro and After Effects. Assessment is based on project quality and time management.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Entrepreneurship II (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Running a real or simulated business, advanced projects.",
-        "exam_format": "Business Portfolio, Presentations"
-      },
-      "notes_and_context": "Puts the Entrepreneurship I plan into action. Very project-based."
+    "counselor_profile": {
+      "workload_profile": "Project-based, requires creative thinking, time-intensive video projects."
     },
-    {
-      "course_name": "Food and Nutrition II (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Cooking labs, nutritional analysis projects, research.",
-        "exam_format": "Projects, Lab Practicals"
-      },
-      "notes_and_context": "Builds on Food & Nutrition I. Honors involves more science and research."
+    "notes_and_context": "Learn Adobe Premiere Pro and After Effects. Assessment is based on project quality and time management."
+  },
+  {
+    "course_name": "Adobe Visual Design I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "Learn Adobe suite (Illustrator, Photoshop). Assessment is based on project complexity, not tests.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Health Science I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy memorization of medical terms, basic anatomy, projects.",
-        "exam_format": "MCQ, Terminology Tests"
-      },
-      "notes_and_context": "The first step in the Health Science pathway. Lots of vocabulary."
+    "counselor_profile": {
+      "workload_profile": "Project-based, requires creative thinking, time-intensive projects."
     },
-    {
-      "course_name": "Health Science II (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "More advanced medical terms, patient care skills, case studies.",
-        "exam_format": "MCQ, Terminology Tests, Practical Skills"
-      },
-      "notes_and_context": "The 'gateway' to the Nursing and Biomedical programs."
+    "notes_and_context": "Learn Adobe suite (Illustrator, Photoshop). Assessment is based on project complexity, not tests."
+  },
+  {
+    "course_name": "Animal Science I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "A great hands-on elective for students interested in Vet Med or Agriculture.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Biomedical Technology I (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Lab-based, data analysis, research projects.",
-        "exam_format": "Lab Reports, Projects, Presentations"
-      },
-      "notes_and_context": "A rigorous, lab-focused course for students interested in medical research."
+    "counselor_profile": {
+      "workload_profile": "Hands-on labs, memorization of breeds/anatomy, project work."
     },
-    {
-      "course_name": "Technological Design (Honors)",
-      "category": "CTE",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Project-based (CAD, 3D printing), problem-solving challenges.",
-        "exam_format": "Projects, Design Portfolio"
-      },
-      "notes_and_context": "A great hands-on class for aspiring engineers. More rigorous than the Academic version."
+    "notes_and_context": "A great hands-on elective for students interested in Vet Med or Agriculture."
+  },
+  {
+    "course_name": "Animal Science II Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "A great hands-on elective for students interested in Vet Med or Agriculture Builds on Animal Science I with more depth in biology and business.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Instrumental Music: Band - Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily practice, after-school rehearsals, performances, theory assignments.",
-        "exam_format": "Playing Exams, Performance"
-      },
-      "notes_and_context": "Level 3 band. Honors requires additional assignments and a higher level of performance."
+    "counselor_profile": {
+      "workload_profile": "Hands-on labs, memorization of breeds/anatomy, project work."
     },
-    {
-      "course_name": "Instrumental Music: Band - Advanced (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily practice, after-school rehearsals, leadership, advanced theory.",
-        "exam_format": "Playing Exams, Performance, Auditions"
-      },
-      "notes_and_context": "Level 4 (highest) band. This is the top ensemble, requiring a significant time commitment."
+    "notes_and_context": "A great hands-on elective for students interested in Vet Med or Agriculture Builds on Animal Science I with more depth in biology and business."
+  },
+  {
+    "course_name": "Biomedical Technology I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "An advanced, lab-focused course for students interested in medical research.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Choral Music 3: Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily practice, after-school rehearsals, sight-reading, theory assignments.",
-        "exam_format": "Singing Exams, Performance"
-      },
-      "notes_and_context": "Level 3 chorus. Honors requires additional assignments and a higher level of performance."
+    "counselor_profile": {
+      "workload_profile": "Lab-based, data analysis, research projects."
     },
-    {
-      "course_name": "Choral Music 4: Advanced (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily practice, after-school rehearsals, leadership, advanced theory.",
-        "exam_format": "Singing Exams, Performance, Auditions"
-      },
-      "notes_and_context": "Level 4 (highest) chorus. This is the top ensemble, requiring a significant time commitment."
+    "notes_and_context": "An advanced, lab-focused course for students interested in medical research."
+  },
+  {
+    "course_name": "Entrepreneurship I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "A 'big-idea' class. Success is based on your project work and creativity, not tests.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Dance: Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily practice, after-school rehearsals, choreography projects.",
-        "exam_format": "Performance, Choreography Projects"
-      },
-      "notes_and_context": "Level 3 dance. Honors requires choreography and written analysis."
+    "counselor_profile": {
+      "workload_profile": "Project-based, business plan creation, group work."
     },
-    {
-      "course_name": "Dance: Advanced (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Daily practice, after-school rehearsals, leadership, advanced choreography.",
-        "exam_format": "Performance, Auditions, Choreography Portfolio"
-      },
-      "notes_and_context": "Level 4 (highest) dance. This is the top ensemble, requiring a significant time commitment."
+    "notes_and_context": "A 'big-idea' class. Success is based on your project work and creativity, not tests."
+  },
+  {
+    "course_name": "Entrepreneurship II Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "A 'big-idea' class. Success is based on your project work and creativity, not tests Puts the Entrepreneurship I plan into action. Very project-based.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Theatre Arts: Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Monologue/scene work, after-school rehearsals, script analysis.",
-        "exam_format": "Performance, Written Analysis"
-      },
-      "notes_and_context": "Level 3 theatre. Honors requires script analysis and directing projects."
+    "counselor_profile": {
+      "workload_profile": "Project-based, business plan creation, group work."
     },
-    {
-      "course_name": "Theatre Arts: Advanced (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Advanced scene work, directing, after-school rehearsals, leadership.",
-        "exam_format": "Performance, Directing Portfolio"
-      },
-      "notes_and_context": "Level 4 (highest) theatre. This is the top ensemble, requiring a significant time commitment."
+    "notes_and_context": "A 'big-idea' class. Success is based on your project work and creativity, not tests Puts the Entrepreneurship I plan into action. Very project-based."
+  },
+  {
+    "course_name": "Food and Nutrition II Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "Builds on Food & Nutrition I. Honors involves more science and research.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Tech Theatre: Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Hands-on projects, after-school build sessions, design projects.",
-        "exam_format": "Portfolio, Practical Projects"
-      },
-      "notes_and_context": "Level 3 tech theatre. Honors requires design-level projects (e.g., lighting, sound design)."
+    "counselor_profile": {
+      "workload_profile": "Cooking labs, nutritional analysis projects, research."
     },
-    {
-      "course_name": "Tech Theatre: Advanced (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Hands-on projects, after-school leadership, stage management.",
-        "exam_format": "Portfolio, Practical Projects"
-      },
-      "notes_and_context": "Level 4 (highest) tech theatre. Involves leadership roles in school productions."
+    "notes_and_context": "Builds on Food & Nutrition I. Honors involves more science and research."
+  },
+  {
+    "course_name": "Health Science I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "The first step in the Health Science pathway. Lots of vocabulary.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
     },
-    {
-      "course_name": "Visual Arts: Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Time-intensive projects, portfolio development.",
-        "exam_format": "Portfolio, Critiques"
-      },
-      "notes_and_context": "Level 3 visual arts. The 'gateway' to AP Art. Focuses on developing a body of work."
+    "counselor_profile": {
+      "workload_profile": "Memorization of medical terms, basic anatomy, projects."
     },
-    {
-      "course_name": "Visual Arts: Advanced (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Time-intensive projects, portfolio development, artist statements.",
-        "exam_format": "Portfolio, Critiques"
-      },
-      "notes_and_context": "Level 4 (highest) visual arts. For students building a college admissions portfolio."
+    "notes_and_context": "The first step in the Health Science pathway. Lots of vocabulary."
+  },
+  {
+    "course_name": "Health Science II Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "The first step in the Health Science pathway. Lots of vocabulary The 'gateway' to the Nursing and Biomedical programs.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
     },
-    {
-      "course_name": "Painting: Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Time-intensive painting projects, portfolio development.",
-        "exam_format": "Portfolio, Critiques"
-      },
-      "notes_and_context": "A specialization of Level 3 art. Focuses on painting."
+    "counselor_profile": {
+      "workload_profile": "Memorization of medical terms, basic anatomy, projects."
     },
-    {
-      "course_name": "Sculpture/Ceramics: Visual Art Specialization - Accomplished (Honors)",
-      "category": "Arts",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Low",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Time-intensive 3D projects, portfolio development.",
-        "exam_format": "Portfolio, Critiques"
-      },
-      "notes_and_context": "A specialization of Level 3 art. Focuses on 3D work."
+    "notes_and_context": "The first step in the Health Science pathway. Lots of vocabulary The 'gateway' to the Nursing and Biomedical programs."
+  },
+  {
+    "course_name": "Horticulture I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "A hands-on class. Honors involves more in-depth projects and research.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Creative Writing I (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Frequent writing assignments, reading, workshop critiques.",
-        "exam_format": "Writing Portfolio"
-      },
-      "notes_and_context": "A workshop-based class. Great for students who enjoy writing fiction and poetry."
+    "counselor_profile": {
+      "workload_profile": "Hands-on labs (greenhouse), plant identification, projects."
     },
-    {
-      "course_name": "Leadership in Media I & II (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Running school media (e.g., announcements), video production, strict deadlines.",
-        "exam_format": "Project Portfolio, Daily Production"
-      },
-      "notes_and_context": "A high-responsibility, project-based class with real-world deadlines."
+    "notes_and_context": "A hands-on class. Honors involves more in-depth projects and research."
+  },
+  {
+    "course_name": "Horticulture II Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "A hands-on class. Honors involves more in-depth projects and research Builds on Horticulture I with a focus on business and advanced plant science.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Yearbook I and II (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Design, writing, photography, sales, strict deadlines.",
-        "exam_format": "Project Portfolio (Yearbook Spreads)"
-      },
-      "notes_and_context": "A high-responsibility, project-based class with real-world deadlines."
+    "counselor_profile": {
+      "workload_profile": "Hands-on labs (greenhouse), plant identification, projects."
     },
-    {
-      "course_name": "Yearbook II Honors & Yearbook III (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Leadership roles (Editor), design, writing, photography, strict deadlines.",
-        "exam_format": "Project Portfolio (Yearbook Spreads)"
-      },
-      "notes_and_context": "This is for the leadership/editor roles in Yearbook. Very high responsibility."
+    "notes_and_context": "A hands-on class. Honors involves more in-depth projects and research Builds on Horticulture I with a focus on business and advanced plant science."
+  },
+  {
+    "course_name": "Microsoft Excel Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "Practical skill. Assessment is logic-based, not memorization. Leads to official certification.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Speech (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 2,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Writing speeches, public speaking, research.",
-        "exam_format": "Speech Presentations"
-      },
-      "notes_and_context": "Difficulty is based on your comfort with public speaking, not a heavy workload."
+    "counselor_profile": {
+      "workload_profile": "Problem sets, data analysis projects, learning functions."
     },
-    {
-      "course_name": "Latin III (Honors)",
-      "category": "World Language",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy translation, grammar drills, reading classical texts.",
-        "exam_format": "Translation Exams, Essays"
-      },
-      "notes_and_context": "This is the 'gateway' to AP Latin. Focus shifts from grammar to reading real Latin literature."
+    "notes_and_context": "Practical skill. Assessment is logic-based, not memorization. Leads to official certification."
+  },
+  {
+    "course_name": "Microsoft Word & PowerPoint Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "Goes well beyond basic use. Leads to official certification.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Low",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Latin IV (Honors)",
-      "category": "World Language",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "Low",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy translation of advanced texts (e.g., Virgil), literary analysis.",
-        "exam_format": "Translation Exams, Essays"
-      },
-      "notes_and_context": "A very rigorous course for students on the AP Latin track."
+    "counselor_profile": {
+      "workload_profile": "Project-based, design-focused."
     },
-    {
-      "course_name": "French III (Honors)",
-      "category": "World Language",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Speaking, listening, and writing in French; complex grammar.",
-        "exam_format": "Speaking Exams, Essays, MCQ"
-      },
-      "notes_and_context": "This is the 'gateway' to AP French. Class is conducted mostly in French."
+    "notes_and_context": "Goes well beyond basic use. Leads to official certification."
+  },
+  {
+    "course_name": "Microsoft Word and PowerPoint Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "Goes well beyond basic use. Leads to official certification.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "French IV (Honors)",
-      "category": "World Language",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Advanced conversation, reading literature, analytical essays.",
-        "exam_format": "Speaking Exams, Essays, Presentations"
-      },
-      "notes_and_context": "A very rigorous course for students on the AP French track."
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
     },
-    {
-      "course_name": "Spanish III (Honors)",
-      "category": "World Language",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Speaking, listening, and writing in Spanish; complex grammar.",
-        "exam_format": "Speaking Exams, Essays, MCQ"
-      },
-      "notes_and_context": "This is the 'gateway' to AP Spanish. Class is conducted mostly in Spanish."
+    "notes_and_context": "Goes well beyond basic use. Leads to official certification."
+  },
+  {
+    "course_name": "Python Programming I Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "None",
+    "description": "A great introduction to text-based coding. This is the 'gateway' to AP Computer Science.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "Spanish IV (Honors)",
-      "category": "World Language",
-      "overall_difficulty_tier": 4,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "High"
-      },
-      "counselor_profile": {
-        "workload_profile": "Advanced conversation, reading literature, analytical essays.",
-        "exam_format": "Speaking Exams, Essays, Presentations"
-      },
-      "notes_and_context": "A very rigorous course for students on the AP Spanish track."
+    "counselor_profile": {
+      "workload_profile": "Coding projects, logic puzzles, debugging."
     },
-    {
-      "course_name": "English II (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavier nightly reading, more frequent analytical essays, vocabulary.",
-        "exam_format": "MCQ, Analytical Essays, Projects"
-      },
-      "notes_and_context": "The 'gateway' course for AP English Language. Focuses on world literature and analytical writing."
+    "notes_and_context": "A great introduction to text-based coding. This is the 'gateway' to AP Computer Science."
+  },
+  {
+    "course_name": "Python Programming II Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "A great introduction to text-based coding. This is the 'gateway' to AP Computer Science Builds directly on Python I. A must-take for aspiring CompSci majors.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
     },
-    {
-      "course_name": "English III (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy reading (American Lit), analytical essays, research papers.",
-        "exam_format": "MCQ, Essays, Research Paper"
-      },
-      "notes_and_context": "The non-AP version of AP English Language. Focuses on American Literature."
+    "counselor_profile": {
+      "workload_profile": "Coding projects, logic puzzles, debugging."
     },
-    {
-      "course_name": "English IV (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "None",
-        "reading_writing_strength_required": "High",
-        "conceptual_thinking": "High",
-        "memorization_load": "Low"
-      },
-      "counselor_profile": {
-        "workload_profile": "Heavy reading (British/World Lit), analytical essays, research papers.",
-        "exam_format": "MCQ, Essays, Research Paper"
-      },
-      "notes_and_context": "The non-AP version of AP English Literature. Focuses on British and World Literature."
+    "notes_and_context": "A great introduction to text-based coding. This is the 'gateway' to AP Computer Science Builds directly on Python I. A must-take for aspiring CompSci majors."
+  },
+  {
+    "course_name": "Technological Design Honors (Honors)",
+    "category": "CTE",
+    "prerequisites": "Prerequisite required",
+    "description": "A great hands-on class for aspiring engineers. More advanced than the Academic version.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
     },
-    {
-      "course_name": "Economics and Personal Finance (Honors)",
-      "category": "Humanities",
-      "overall_difficulty_tier": 3,
-      "skill_profile": {
-        "math_strength_required": "Medium",
-        "reading_writing_strength_required": "Medium",
-        "conceptual_thinking": "Medium",
-        "memorization_load": "Medium"
-      },
-      "counselor_profile": {
-        "workload_profile": "Projects, budgeting assignments, stock market analysis.",
-        "exam_format": "MCQ, Projects, Presentations"
-      },
-      "notes_and_context": "A practical, required course. Honors involves more in-depth projects and analysis."
-    }
-  ]
-  
-  
+    "counselor_profile": {
+      "workload_profile": "Project-based (CAD, 3D printing), problem-solving challenges."
+    },
+    "notes_and_context": "A great hands-on class for aspiring engineers. More advanced than the Academic version."
+  },
+  {
+    "course_name": "American History Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "This is the direct 'gateway' course for AP US History. The 'jump' from this to APUSH is.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Nightly reading, document analysis, timed-writes."
+    },
+    "notes_and_context": "This is the direct 'gateway' course for AP US History. The 'jump' from this to APUSH is."
+  },
+  {
+    "course_name": "Contemporary Law and Justice Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "A great course for aspiring Pre-Law students. Very reading and debate-heavy.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Reading case law, debates, analytical essays."
+    },
+    "notes_and_context": "A great course for aspiring Pre-Law students. Very reading and debate-heavy."
+  },
+  {
+    "course_name": "Creative Writing I Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "A workshop-based class. Great for students who enjoy writing fiction and poetry.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Frequent writing assignments, reading, workshop critiques."
+    },
+    "notes_and_context": "A workshop-based class. Great for students who enjoy writing fiction and poetry."
+  },
+  {
+    "course_name": "Economics and Personal Finance Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "A practical, required course. Honors involves more in-depth projects and analysis.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Projects, budgeting assignments, stock market analysis."
+    },
+    "notes_and_context": "A practical, required course. Honors involves more in-depth projects and analysis."
+  },
+  {
+    "course_name": "English I Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Nightly reading, more frequent analytical essays, vocabulary."
+    },
+    "notes_and_context": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic."
+  },
+  {
+    "course_name": "English II Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Nightly reading, more frequent analytical essays, vocabulary."
+    },
+    "notes_and_context": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic."
+  },
+  {
+    "course_name": "English III Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Nightly reading, more frequent analytical essays, vocabulary."
+    },
+    "notes_and_context": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic."
+  },
+  {
+    "course_name": "English IV Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required",
+    "description": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Nightly reading, more frequent analytical essays, vocabulary."
+    },
+    "notes_and_context": "Prepares students for AP English. Expect a faster pace and more in-depth analysis than Academic."
+  },
+  {
+    "course_name": "Founding Principles of the US/NC: Civic Literacy Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "This is the 'gateway' course for AP US Government. Focuses on the structure of US government.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Current events analysis, reading of legal documents, projects."
+    },
+    "notes_and_context": "This is the 'gateway' course for AP US Government. Focuses on the structure of US government."
+  },
+  {
+    "course_name": "Leadership in Media I Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "This is a yearlong course that must be taken with Leadership in Media II Honors. A high-responsibility, project-based class with real-world deadlines.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
+    },
+    "notes_and_context": "This is a yearlong course that must be taken with Leadership in Media II Honors. A high-responsibility, project-based class with real-world deadlines."
+  },
+  {
+    "course_name": "Leadership in Media II Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required (paired with Leadership in Media I Honors)",
+    "description": "This is a yearlong course that must be taken with Leadership in Media I Honors. A high-responsibility, project-based class with real-world deadlines.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
+    },
+    "notes_and_context": "This is a yearlong course that must be taken with Leadership in Media I Honors. A high-responsibility, project-based class with real-world deadlines."
+  },
+  {
+    "course_name": "Lessons of Vietnam War/Recent International Relations Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "A deep-dive history elective. Expect a heavy reading and writing load.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Reading, primary source analysis, research papers."
+    },
+    "notes_and_context": "A deep-dive history elective. Expect a heavy reading and writing load."
+  },
+  {
+    "course_name": "Sociology Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "A high-interest elective. Focuses on social structures and group behavior. Less memorization than Psychology.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Reading, discussion-based, analytical essays."
+    },
+    "notes_and_context": "A high-interest elective. Focuses on social structures and group behavior. Less memorization than Psychology."
+  },
+  {
+    "course_name": "Speech I Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "Assessment is based on your comfort with public speaking, not a heavy workload.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Writing speeches, public speaking, research."
+    },
+    "notes_and_context": "Assessment is based on your comfort with public speaking, not a heavy workload."
+  },
+  {
+    "course_name": "World History Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "The direct 'gateway' course for AP World History. Focuses on document analysis.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Reading, thematic analysis, document analysis (DBQs)."
+    },
+    "notes_and_context": "The direct 'gateway' course for AP World History. Focuses on document analysis."
+  },
+  {
+    "course_name": "Yearbook I and II Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "None",
+    "description": "A high-responsibility, project-based class with real-world deadlines This is a yearlong course that must be taken with Yearbook II Honors and Yearbook III Honors.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Design, writing, photography, sales, strict deadlines."
+    },
+    "notes_and_context": "A high-responsibility, project-based class with real-world deadlines This is a yearlong course that must be taken with Yearbook II Honors and Yearbook III Honors."
+  },
+  {
+    "course_name": "Yearbook II Honors and Yearbook III Honors (Honors)",
+    "category": "Humanities",
+    "prerequisites": "Prerequisite required (paired with Yearbook I and II Honors)",
+    "description": "This is a yearlong course that must be taken with Yearbook I and II Honors.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Rigorous coursework with increased depth and pace compared to Academic level."
+    },
+    "notes_and_context": "This is a yearlong course that must be taken with Yearbook I and II Honors."
+  },
+  {
+    "course_name": "NC Math 1 Honors (Honors)",
+    "category": "Math",
+    "prerequisites": "None",
+    "description": "The foundational honors math course. Success here is a strong indicator for the upper-level math track.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Low"
+    },
+    "counselor_profile": {
+      "workload_profile": "Daily problem sets, faster pace, more abstract problems."
+    },
+    "notes_and_context": "The foundational honors math course. Success here is a strong indicator for the upper-level math track."
+  },
+  {
+    "course_name": "NC Math 2 Honors (Honors)",
+    "category": "Math",
+    "prerequisites": "Prerequisite required",
+    "description": "Faster-paced math sequence. Covers concepts in more depth to prepare for Math 3.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Daily problem sets, faster pace, covers geometry and advanced algebra."
+    },
+    "notes_and_context": "Faster-paced math sequence. Covers concepts in more depth to prepare for Math 3."
+  },
+  {
+    "course_name": "NC Math 3 Honors (Honors)",
+    "category": "Math",
+    "prerequisites": "Prerequisite required",
+    "description": "This course that bridges algebra and pre-calculus. A key 'gateway' to AP Calculus.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Daily problem sets, fast pace, complex function analysis."
+    },
+    "notes_and_context": "This course that bridges algebra and pre-calculus. A key 'gateway' to AP Calculus."
+  },
+  {
+    "course_name": "NC Math 4 Honors (Honors)",
+    "category": "Math",
+    "prerequisites": "Prerequisite required",
+    "description": "A follow-up to Math 3 for students who want an advanced math class but may not be ready for AP Calculus.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Daily problem sets, advanced function analysis, intro to calculus concepts."
+    },
+    "notes_and_context": "A follow-up to Math 3 for students who want an advanced math class but may not be ready for AP Calculus."
+  },
+  {
+    "course_name": "Healthful Living I Honors (Honors)",
+    "category": "PE",
+    "prerequisites": "None",
+    "description": "The Honors distinction comes from the written project work, not from increased physical activity.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Low",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Standard PE activity, plus written assignments, health projects, and tests."
+    },
+    "notes_and_context": "The Honors distinction comes from the written project work, not from increased physical activity."
+  },
+  {
+    "course_name": "Anatomy & Physiology Honors (Honors)",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "This course. Focuses on your ability to memorize a huge volume of terms.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Very High"
+    },
+    "counselor_profile": {
+      "workload_profile": "memorization of terms, diagrams, and systems; lab work."
+    },
+    "notes_and_context": "This course. Focuses on your ability to memorize a huge volume of terms."
+  },
+  {
+    "course_name": "Astronomy Honors (Honors)",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "A physics-light course. More conceptual and math-based than many expect.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Low",
+      "conceptual_thinking": "High",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Problem sets (physics-based), projects, night sky observations."
+    },
+    "notes_and_context": "A physics-light course. More conceptual and math-based than many expect."
+  },
+  {
+    "course_name": "Biology Honors (Honors)",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "A but standard honors science. This is the direct prerequisite for AP Biology.",
+    "skill_profile": {
+      "math_strength_required": "Medium",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Homework, lab write-ups, unit tests, some memorization."
+    },
+    "notes_and_context": "A but standard honors science. This is the direct prerequisite for AP Biology."
+  },
+  {
+    "course_name": "Chemistry Honors (Honors)",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "A math-based science. This is the direct 'gateway' course for AP Chemistry.",
+    "skill_profile": {
+      "math_strength_required": "High",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "High",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Problem sets, frequent labs, memorization of formulas."
+    },
+    "notes_and_context": "A math-based science. This is the direct 'gateway' course for AP Chemistry."
+  },
+  {
+    "course_name": "Earth/Environmental Science Honors (Honors)",
+    "category": "Science",
+    "prerequisites": "None",
+    "description": "A good introductory honors science. Faster paced than Academic with more project-based work.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Lab reports, projects, reading assignments."
+    },
+    "notes_and_context": "A good introductory honors science. Faster paced than Academic with more project-based work."
+  },
+  {
+    "course_name": "Forensic Science Honors (Honors)",
+    "category": "Science",
+    "prerequisites": "Prerequisite required",
+    "description": "A high-interest elective. Honors requires more in-depth analysis and writing.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "Medium",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "Medium"
+    },
+    "counselor_profile": {
+      "workload_profile": "Case studies, project-based labs, analytical writing."
+    },
+    "notes_and_context": "A high-interest elective. Honors requires more in-depth analysis and writing."
+  },
+  {
+    "course_name": "French III Honors (Honors)",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "This is the 'gateway' to AP French. Class is conducted mostly in French.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Speaking, listening, and writing in French; complex grammar."
+    },
+    "notes_and_context": "This is the 'gateway' to AP French. Class is conducted mostly in French."
+  },
+  {
+    "course_name": "French IV Honors (Honors)",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "This course for students on the AP French track This course is for students on the AP French track. This course is for students on the AP French track.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Advanced conversation, reading literature, analytical essays."
+    },
+    "notes_and_context": "This course for students on the AP French track This course is for students on the AP French track. This course is for students on the AP French track."
+  },
+  {
+    "course_name": "Latin III Honors (Honors)",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "This is the 'gateway' to AP Latin. Focus shifts from grammar to reading real Latin literature.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Translation, grammar drills, reading classical texts."
+    },
+    "notes_and_context": "This is the 'gateway' to AP Latin. Focus shifts from grammar to reading real Latin literature."
+  },
+  {
+    "course_name": "Latin IV Honors (Honors)",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "This course for students on the AP Latin track This course is for students on the AP Latin track. This course is for students on the AP Latin track.",
+    "skill_profile": {
+      "math_strength_required": "Low",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "High",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Translation of advanced texts (e.g., Virgil), literary analysis."
+    },
+    "notes_and_context": "This course for students on the AP Latin track This course is for students on the AP Latin track. This course is for students on the AP Latin track."
+  },
+  {
+    "course_name": "Spanish III Honors (Honors)",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "This is the 'gateway' to AP Spanish. Class is conducted mostly in Spanish.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Speaking, listening, and writing in Spanish; complex grammar."
+    },
+    "notes_and_context": "This is the 'gateway' to AP Spanish. Class is conducted mostly in Spanish."
+  },
+  {
+    "course_name": "Spanish IV Honors (Honors)",
+    "category": "World Language",
+    "prerequisites": "Prerequisite required",
+    "description": "This course for students on the AP Spanish track This course is for students on the AP Spanish track. This course is for students on the AP Spanish track.",
+    "skill_profile": {
+      "math_strength_required": "None",
+      "reading_writing_strength_required": "High",
+      "conceptual_thinking": "Medium",
+      "memorization_load": "High"
+    },
+    "counselor_profile": {
+      "workload_profile": "Advanced conversation, reading literature, analytical essays."
+    },
+    "notes_and_context": "This course for students on the AP Spanish track This course is for students on the AP Spanish track. This course is for students on the AP Spanish track."
+  }
+]

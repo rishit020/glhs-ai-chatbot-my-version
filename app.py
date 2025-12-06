@@ -85,19 +85,17 @@ def chat():
                 "session_id": session_id
             }), 400
         
-        # Get conversation history
+        # Get conversation history (before adding current message)
         conversation = get_or_create_session(session_id)
         
-        # Add user message to history
-        append_message(session_id, "user", message)
-        
-        # Query chatbot with RAG
+        # Query chatbot with RAG (pass history without current message)
         response = chatbot.query_with_rag(
             question=message,
             conversation_history=conversation
         )
         
-        # Add assistant response to history
+        # Add both user message and assistant response to history after getting response
+        append_message(session_id, "user", message)
         append_message(session_id, "assistant", response)
         
         return jsonify({
@@ -142,19 +140,17 @@ def quick_action():
                 "session_id": session_id
             }), 400
         
-        # Get conversation history
+        # Get conversation history (before adding current message)
         conversation = get_or_create_session(session_id)
         
-        # Add user message to history
-        append_message(session_id, "user", question)
-        
-        # Query chatbot
+        # Query chatbot (pass history without current message)
         response = chatbot.query_with_rag(
             question=question,
             conversation_history=conversation
         )
         
-        # Add assistant response to history
+        # Add both user message and assistant response to history after getting response
+        append_message(session_id, "user", question)
         append_message(session_id, "assistant", response)
         
         return jsonify({
