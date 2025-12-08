@@ -1,5 +1,5 @@
 """
-Script to build the ChromaDB vector database from JSON files.
+Script to build the ChromaDB vector database from JSON files and PDFs.
 Run this script to initialize or rebuild the vector database.
 
 Usage:
@@ -7,12 +7,20 @@ Usage:
 """
 import os
 import json
+import re
 from typing import List
 from dotenv import load_dotenv
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
+
+try:
+    from pypdf import PdfReader
+    PDF_SUPPORT = True
+except ImportError:
+    PDF_SUPPORT = False
+    print("Warning: pypdf not installed. PDF processing disabled.")
 
 # Load environment variables
 load_dotenv()
@@ -40,7 +48,9 @@ def load_json_files(data_dir: str) -> List[Document]:
         "oppurtunities_database.json",
         "class_requirements.json",
         "application_glossary.json",
-        "system_metadata.json"
+        "system_metadata.json",
+        "wcpss_planning_guide_glhs.json",
+        "class_directory.json"
     ]
     
     for json_file in json_files:
@@ -76,6 +86,182 @@ def load_json_files(data_dir: str) -> List[Document]:
     return documents
 
 
+def is_glhs_relevant(text: str) -> bool:
+    """
+    Filter content to only include GLHS-relevant information.
+    Excludes content specific to other schools or general WCPSS info not applicable to GLHS.
+    """
+    text_lower = text.lower()
+    
+    # GLHS-specific keywords (positive indicators)
+    glhs_keywords = [
+        "green level",
+        "glhs",
+        "green level high school",
+        # Include general course information that applies to all schools
+        "course",
+        "graduation",
+        "credit",
+        "prerequisite",
+        "honors",
+        "ap ",
+        "advanced placement",
+        "gpa",
+        "grade point average",
+        "schedule",
+        "registration",
+        "elective",
+        "required",
+        "math",
+        "science",
+        "english",
+        "social studies",
+        "world language",
+        "arts",
+        "cte",
+        "healthful living",
+        "physical education"
+    ]
+    
+    # School-specific keywords to exclude (negative indicators)
+    exclude_keywords = [
+        "apex high school",
+        "cary high school",
+        "garner high school",
+        "holly springs high school",
+        "leesville road high school",
+        "middle creek high school",
+        "panther creek high school",
+        "wakefield high school",
+        "wake forest high school",
+        "enloe high school",
+        "millbrook high school",
+        "sanderson high school",
+        "broughton high school",
+        "athens drive high school",
+        "fuquay-varina high school",
+        "green hope high school",
+        "heritage high school",
+        "hillside high school",
+        "knightdale high school",
+        "rolesville high school",
+        "southeast raleigh",
+        "southeast raleigh high school",
+        "wake early college",
+        "wake stem",
+        "wake young men's",
+        "wake young women's"
+    ]
+    
+    # Check for exclusion keywords first (higher priority)
+    for exclude in exclude_keywords:
+        if exclude in text_lower:
+            return False
+    
+    # Check for GLHS or general keywords
+    for keyword in glhs_keywords:
+        if keyword in text_lower:
+            return True
+    
+    # If no specific keywords found, include general educational content
+    # that could be relevant (course descriptions, requirements, etc.)
+    educational_keywords = [
+        "requirement",
+        "curriculum",
+        "program",
+        "pathway",
+        "endorsement",
+        "diploma"
+    ]
+    
+    for keyword in educational_keywords:
+        if keyword in text_lower:
+            return True
+    
+    # Default: exclude if no clear relevance
+    return False
+
+
+def load_pdf_files(pdf_dir: str) -> List[Document]:
+    """Load PDF files from the pdf_docs directory and filter for GLHS-relevant content."""
+    if not PDF_SUPPORT:
+        return []
+    
+    documents = []
+    
+    if not os.path.exists(pdf_dir):
+        return documents
+    
+    pdf_files = [f for f in os.listdir(pdf_dir) if f.lower().endswith('.pdf')]
+    
+    for pdf_file in pdf_files:
+        file_path = os.path.join(pdf_dir, pdf_file)
+        try:
+            print(f"Processing PDF: {pdf_file}...")
+            reader = PdfReader(file_path)
+            
+            all_text = []
+            total_pages = len(reader.pages)
+            relevant_pages = 0
+            
+            for page_num, page in enumerate(reader.pages, 1):
+                try:
+                    page_text = page.extract_text()
+                    if page_text and page_text.strip():
+                        # Filter for GLHS-relevant content
+                        if is_glhs_relevant(page_text):
+                            all_text.append(page_text)
+                            relevant_pages += 1
+                        else:
+                            # Still include if it's general course/graduation info
+                            # but skip school-specific sections
+                            if any(keyword in page_text.lower() for keyword in 
+                                   ["course", "graduation", "credit", "requirement", 
+                                    "curriculum", "program", "pathway"]):
+                                all_text.append(page_text)
+                                relevant_pages += 1
+                except Exception as e:
+                    print(f"  Warning: Could not extract text from page {page_num}: {e}")
+                    continue
+            
+            if all_text:
+                full_text = "\n\n".join(all_text)
+                
+                # Additional filtering: remove sections that are clearly not GLHS-specific
+                # Split by common section headers and filter
+                sections = re.split(r'\n{2,}', full_text)
+                filtered_sections = []
+                
+                for section in sections:
+                    if section.strip() and is_glhs_relevant(section):
+                        filtered_sections.append(section)
+                
+                if filtered_sections:
+                    final_text = "\n\n".join(filtered_sections)
+                    
+                    doc = Document(
+                        page_content=final_text,
+                        metadata={
+                            "source": pdf_file,
+                            "type": "pdf",
+                            "file": pdf_file,
+                            "total_pages": total_pages,
+                            "relevant_pages": relevant_pages
+                        }
+                    )
+                    documents.append(doc)
+                    print(f"✓ Loaded PDF: {pdf_file} ({relevant_pages}/{total_pages} relevant pages)")
+                else:
+                    print(f"⚠ Skipped PDF: {pdf_file} (no GLHS-relevant content found)")
+            else:
+                print(f"⚠ Skipped PDF: {pdf_file} (no extractable text or no relevant content)")
+                
+        except Exception as e:
+            print(f"✗ Error loading PDF {pdf_file}: {e}")
+    
+    return documents
+
+
 def build_vector_database():
     """Build the ChromaDB vector database from JSON files."""
     # Get paths
@@ -106,6 +292,13 @@ def build_vector_database():
     json_docs = load_json_files(data_dir)
     all_documents.extend(json_docs)
     print(f"Loaded {len(json_docs)} JSON document(s)")
+    
+    # Load PDF files
+    pdf_dir = os.path.join(data_dir, "pdf_docs")
+    pdf_docs = load_pdf_files(pdf_dir)
+    all_documents.extend(pdf_docs)
+    if pdf_docs:
+        print(f"Loaded {len(pdf_docs)} PDF document(s)")
     
     if not all_documents:
         print("\nERROR: No documents found to load!")

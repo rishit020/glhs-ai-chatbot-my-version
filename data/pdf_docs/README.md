@@ -1,10 +1,24 @@
 # PDF Documents Directory
 
-**Note: PDF support has been removed. The chatbot currently uses JSON files only.**
+**PDF support is now enabled!**
 
-This directory is kept for potential future use. If you need to add PDF support in the future, you would need to:
-1. Implement PDF text extraction (or OCR for scanned PDFs)
-2. Update the `build_vector_db.py` and `chatbot.py` files to load PDFs
-3. Add required PDF processing libraries to `requirements.txt`
+Place PDF files in this directory to include them in the RAG model training. The system will:
+1. Extract text from PDFs using `pypdf`
+2. Filter content to only include GLHS-relevant information
+3. Exclude content specific to other WCPSS schools
+4. Include general course, graduation, and program information applicable to GLHS
 
-For now, all data should be in JSON format in the parent `data/` directory.
+## Current PDFs:
+- `WCPSS_2025-2026_High_School_Program_Planning_Guide.pdf` - WCPSS program planning guide (filtered for GLHS-relevant content)
+
+## Filtering Logic:
+The system automatically filters out:
+- Content specific to other high schools (Apex, Cary, Garner, etc.)
+- School-specific programs not available at GLHS
+
+The system includes:
+- GLHS-specific information
+- General course information
+- Graduation requirements
+- Program pathways applicable to all schools
+- CTE, Arts, and elective information

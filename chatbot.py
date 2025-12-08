@@ -5,6 +5,7 @@ Includes greeting detection and scope filtering.
 import os
 import re
 import json
+import pathlib
 from typing import List, Dict, Optional
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OpenAIEmbeddings
@@ -12,6 +13,12 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document, SystemMessage, HumanMessage, AIMessage
 from langchain.chat_models import ChatOpenAI
 from utils import load_json_data
+
+try:
+    from pypdf import PdfReader
+    PDF_SUPPORT = True
+except ImportError:
+    PDF_SUPPORT = False
 
 
 class GLHSChatbot:
@@ -103,8 +110,109 @@ class GLHSChatbot:
         
         return False
     
+    def _is_glhs_relevant(self, text: str) -> bool:
+        """Filter content to only include GLHS-relevant information."""
+        text_lower = text.lower()
+        
+        # GLHS-specific keywords (positive indicators)
+        glhs_keywords = [
+            "green level", "glhs", "green level high school",
+            "course", "graduation", "credit", "prerequisite", "honors", "ap ",
+            "advanced placement", "gpa", "grade point average", "schedule",
+            "registration", "elective", "required", "math", "science", "english",
+            "social studies", "world language", "arts", "cte", "healthful living",
+            "physical education"
+        ]
+        
+        # School-specific keywords to exclude
+        exclude_keywords = [
+            "apex high school", "cary high school", "garner high school",
+            "holly springs high school", "leesville road high school",
+            "middle creek high school", "panther creek high school",
+            "wakefield high school", "wake forest high school", "enloe high school",
+            "millbrook high school", "sanderson high school", "broughton high school",
+            "athens drive high school", "fuquay-varina high school",
+            "green hope high school", "heritage high school", "hillside high school",
+            "knightdale high school", "rolesville high school", "southeast raleigh",
+            "southeast raleigh high school", "wake early college", "wake stem",
+            "wake young men's", "wake young women's"
+        ]
+        
+        # Check for exclusion keywords first
+        for exclude in exclude_keywords:
+            if exclude in text_lower:
+                return False
+        
+        # Check for GLHS or general keywords
+        for keyword in glhs_keywords:
+            if keyword in text_lower:
+                return True
+        
+        # Include general educational content
+        educational_keywords = [
+            "requirement", "curriculum", "program", "pathway", "endorsement", "diploma"
+        ]
+        
+        for keyword in educational_keywords:
+            if keyword in text_lower:
+                return True
+        
+        return False
+    
+    def _load_pdf_files(self, pdf_dir: str) -> List[Document]:
+        """Load PDF files and filter for GLHS-relevant content."""
+        if not PDF_SUPPORT:
+            return []
+        
+        documents = []
+        
+        if not os.path.exists(pdf_dir):
+            return documents
+        
+        pdf_files = [f for f in os.listdir(pdf_dir) if f.lower().endswith('.pdf')]
+        
+        for pdf_file in pdf_files:
+            file_path = os.path.join(pdf_dir, pdf_file)
+            try:
+                reader = PdfReader(file_path)
+                all_text = []
+                total_pages = len(reader.pages)
+                relevant_pages = 0
+                
+                for page_num, page in enumerate(reader.pages, 1):
+                    try:
+                        page_text = page.extract_text()
+                        if page_text and page_text.strip():
+                            if self._is_glhs_relevant(page_text):
+                                all_text.append(page_text)
+                                relevant_pages += 1
+                            elif any(keyword in page_text.lower() for keyword in 
+                                   ["course", "graduation", "credit", "requirement", 
+                                    "curriculum", "program", "pathway"]):
+                                all_text.append(page_text)
+                                relevant_pages += 1
+                    except Exception:
+                        continue
+                
+                if all_text:
+                    full_text = "\n\n".join(all_text)
+                    sections = re.split(r'\n{2,}', full_text)
+                    filtered_sections = [s for s in sections if s.strip() and self._is_glhs_relevant(s)]
+                    
+                    if filtered_sections:
+                        final_text = "\n\n".join(filtered_sections)
+                        doc = Document(
+                            page_content=final_text,
+                            metadata={"source": pdf_file, "type": "pdf", "file": pdf_file}
+                        )
+                        documents.append(doc)
+            except Exception as e:
+                print(f"Warning: Could not load PDF {pdf_file}: {e}")
+        
+        return documents
+    
     def _build_vector_database(self, persist_directory: str):
-        """Build vector database from JSON files."""
+        """Build vector database from JSON files and PDFs."""
         base_dir = os.path.dirname(__file__)
         data_dir = os.path.join(base_dir, "data")
         
@@ -128,7 +236,9 @@ class GLHSChatbot:
             "oppurtunities_database.json",
             "class_requirements.json",
             "application_glossary.json",
-            "system_metadata.json"
+            "system_metadata.json",
+            "wcpss_planning_guide_glhs.json",
+            "class_directory.json"
         ]
         
         for json_file in json_files:
@@ -145,6 +255,11 @@ class GLHSChatbot:
                     all_documents.append(doc)
                 except Exception as e:
                     print(f"Warning: Could not load {json_file}: {e}")
+        
+        # Load PDF files
+        pdf_dir = os.path.join(data_dir, "pdf_docs")
+        pdf_docs = self._load_pdf_files(pdf_dir)
+        all_documents.extend(pdf_docs)
         
         if not all_documents:
             print("Warning: No documents found to build vector database!")
@@ -190,9 +305,8 @@ class GLHSChatbot:
     
     def _is_school_related(self, text: str) -> bool:
         """
-        Check if the input is DIRECTLY related to Green Level High School.
-        Allows: school courses, schedules, requirements, policies, clubs, events, guidance.
-        Blocks: general knowledge, homework problems, test answers.
+        Check if the input is related to school, academics, or education.
+        More permissive: allows any question with academic/school-related keywords.
         """
         text_lower = text.lower()
         
@@ -200,56 +314,40 @@ class GLHSChatbot:
         if self._is_greeting(text):
             return True
         
-        # Explicit school context keywords
-        school_context_keywords = [
+        # Expanded school-related keywords - if ANY of these appear, consider it school-related
+        school_keywords = [
+            # School context
             'green level', 'glhs', 'wcpss', 'wake county',
             'at this school', 'at glhs', 'at green level',
             'school\'s', 'schools', 'our school', 'the school',
-            'counselor', 'counseling', 'counselors'
-        ]
-        
-        has_school_context = any(keyword in text_lower for keyword in school_context_keywords)
-        
-        # School-related keywords that imply school context
-        school_keywords = [
-            'course', 'class', 'schedule', 'graduation', 'requirement',
-            'prerequisite', 'credit', 'gpa', 'transcript', 'diploma',
-            'club', 'extracurricular', 'sport', 'scholarship',
-            'college prep', 'college preparation', 'admission', 'application',
+            'counselor', 'counseling', 'counselors',
+            # Academic terms
+            'course', 'class', 'classes', 'schedule', 'scheduling',
+            'graduation', 'requirement', 'requirements', 'prerequisite', 'prerequisites',
+            'credit', 'credits', 'gpa', 'grade point average', 'transcript', 'diploma',
             'curriculum', 'semester', 'year', 'freshman', 'sophomore', 'junior', 'senior',
-            'honors', 'ap ', 'academic', 'teacher', 'student'
-        ]
-        
-        has_school_keyword = any(keyword in text_lower for keyword in school_keywords)
-        
-        # Casual school-related phrases (these imply school context)
-        casual_school_phrases = [
-            'how\'s school', 'how is school', 'school going', 'classes going',
+            'honors', 'ap ', 'advanced placement', 'academic', 'academics',
+            'teacher', 'teachers', 'student', 'students',
+            # School activities
+            'club', 'clubs', 'extracurricular', 'sport', 'sports', 'scholarship',
+            # College/career
+            'college prep', 'college preparation', 'admission', 'application', 'applications',
+            'college', 'university', 'major', 'majors', 'career', 'pathway', 'pathways',
+            # Academic subjects (when used in school context)
+            'math', 'mathematics', 'science', 'english', 'history', 'social studies',
+            'biology', 'chemistry', 'physics', 'world language', 'foreign language',
+            'arts', 'art', 'music', 'pe', 'physical education', 'health',
+            # Planning/guidance
+            'plan my', 'planning', 'what should i take', 'what classes should',
+            'recommend', 'recommendation', 'advice', 'guidance',
+            # Question patterns that suggest school context
             'what classes', 'which classes', 'what courses', 'which courses',
-            'help with school', 'school help', 'plan my', 'planning',
-            'what should i take', 'what classes should', 'recommend',
-            'college', 'major', 'career', 'pathway', 'what\'s the schedule',
-            'when is', 'where is', 'how do i', 'can i', 'should i take'
+            'how do i', 'can i', 'should i take', 'when is', 'where is',
+            'help with school', 'school help'
         ]
         
-        has_casual_school_phrase = any(phrase in text_lower for phrase in casual_school_phrases)
-        
-        # If it has explicit school context, it's school-related
-        if has_school_context:
-            return True
-        
-        # If it has school keywords AND casual school phrases, it's likely school-related
-        if has_school_keyword and has_casual_school_phrase:
-            return True
-        
-        # If it's asking about courses/classes/schedule without explicit context, 
-        # assume it's about school (common pattern)
-        if any(kw in text_lower for kw in ['course', 'class', 'schedule', 'requirement']) and \
-           any(phrase in text_lower for phrase in ['what', 'which', 'how', 'when', 'where', 'can', 'should']):
-            return True
-        
-        # Allow casual check-ins about school
-        if has_casual_school_phrase:
+        # If it contains ANY school-related keyword, it's school-related
+        if any(keyword in text_lower for keyword in school_keywords):
             return True
         
         return False
@@ -342,72 +440,49 @@ class GLHSChatbot:
     
     def _is_outside_scope(self, text: str) -> bool:
         """
-        Determine if the question is outside the scope of Green Level High School.
-        Blocks: homework/test questions, general knowledge, math problems, science questions, etc.
+        Determine if the question is completely outside the scope of school/academics.
+        Only blocks: clearly unrelated topics (weather, recipes, etc.) and simple math problems without context.
         """
         # If it's a greeting, it's not outside scope
         if self._is_greeting(text):
             return False
         
-        # If it's directly school-related, it's not outside scope
+        # If it's school-related, it's not outside scope
         if self._is_school_related(text):
             return False
         
-        # Check for homework/test questions
-        if self._is_homework_or_test_question(text):
-            return True
+        text_lower = text.lower()
         
-        # Check for clearly unrelated topics
+        # Check for simple math problems without any school context (e.g., "what's 1+1")
+        # This is the main thing we want to block
+        if re.search(r'\bwhat\s+is\s+\d+\s*[+\-*/]\s*\d+', text_lower) or \
+           re.search(r'\b\d+\s*[+\-*/×÷]\s*\d+', text_lower):
+            # Only block if there's NO school/academic context
+            if not any(kw in text_lower for kw in ['class', 'course', 'school', 'academic', 'math class', 'glhs', 'green level']):
+                return True
+        
+        # Check for clearly unrelated topics (non-academic)
         unrelated_keywords = [
             'weather', 'recipe', 'cooking', 'sports score', 'movie', 'tv show',
             'celebrity', 'gossip', 'politics', 'religion', 'dating', 'relationship',
             'shopping', 'restaurant', 'travel', 'vacation', 'game', 'video game',
             'sports team', 'nfl', 'nba', 'mlb', 'nhl', 'soccer', 'football game',
-            'capital of', 'president of', 'who invented', 'when was', 'where is',
-            'trivia', 'fun fact'
+            'capital of', 'president of', 'who invented', 'trivia', 'fun fact'
         ]
         
-        text_lower = text.lower()
         for keyword in unrelated_keywords:
             if keyword in text_lower:
-                # But check if it might still be school-related (e.g., "sports team at school")
+                # Only block if it's clearly not school-related
                 if not any(school_kw in text_lower for school_kw in ['school', 'class', 'course', 'academic', 'glhs', 'green level']):
                     return True
         
-        # Check for general knowledge/science questions without school context
-        science_math_indicators = [
-            'what is photosynthesis', 'what is gravity', 'what is the speed of light',
-            'how does', 'why does', 'explain the', 'define', 'what causes',
-            'formula for', 'equation for', 'theory of', 'law of'
-        ]
+        # Check for homework/test question patterns (solving problems)
+        if self._is_homework_or_test_question(text):
+            return True
         
-        for indicator in science_math_indicators:
-            if indicator in text_lower:
-                # Only block if no school context
-                if not any(kw in text_lower for kw in ['class', 'course', 'glhs', 'green level', 'school', 'at school']):
-                    return True
-        
-        # Very short questions that aren't greetings and don't have school context
-        if len(text.split()) <= 4 and not self._is_greeting(text):
-            if not any(kw in text_lower for kw in ['glhs', 'green level', 'school', 'class', 'course', 'counselor']):
-                # Likely a general knowledge question
-                return True
-        
-        # Check if it's a very vague question that could be school-related
-        # Give benefit of the doubt for questions that might be about school
-        vague_but_possible_school = [
-            'what', 'how', 'when', 'where', 'why', 'can', 'should', 'do'
-        ]
-        
-        # If it's a question word but very short and no clear topic, might be school-related
-        if any(word in text_lower.split()[:3] for word in vague_but_possible_school):
-            if len(text.split()) <= 5:
-                # Very short questions might be school-related, let RAG try
-                return False
-        
-        # Default: if we can't determine it's school-related and it's not clearly a greeting,
-        # block it to be safe (strict mode)
-        return True
+        # Default: give benefit of the doubt - if we're not sure, let RAG try to answer
+        # This is more permissive - only block things we're CERTAIN are unrelated
+        return False
     
     def _format_conversation_history(self, conversation_history: List[Dict[str, str]]) -> List:
         """Convert conversation history to LangChain message format."""
@@ -480,18 +555,19 @@ class GLHSChatbot:
             # Build system message
             system_content = (
                 "You are a helpful AI counselor for Green Level High School (GLHS). "
-                "You ONLY answer questions that are DIRECTLY related to Green Level High School, including: "
-                "courses offered at GLHS, graduation requirements, school policies, schedules, "
-                "clubs, events, counselors, college preparation guidance, and general school-related guidance. "
+                "You answer questions related to school, academics, courses, graduation requirements, "
+                "school policies, schedules, clubs, events, counselors, college preparation, and academic planning. "
                 "\n\n"
                 "CRITICAL RULES:\n"
-                "- DO NOT answer general knowledge questions (e.g., 'what is photosynthesis?', 'what is 1+1?')\n"
-                "- DO NOT solve homework problems, test questions, or provide answers to assignments\n"
-                "- DO NOT answer questions about topics outside of Green Level High School\n"
-                "- ONLY use information from the provided context about GLHS\n"
-                "- If the question is not about GLHS specifically, politely redirect to school-related topics\n"
+                "- Answer ANY question that is related to school, academics, courses, prerequisites, requirements, or education\n"
+                "- DO NOT solve simple math problems without context (e.g., 'what is 1+1?')\n"
+                "- DO NOT solve homework problems or provide test answers\n"
+                "- DO NOT answer questions about completely unrelated topics (weather, recipes, etc.)\n"
+                "- Use information from the provided context about GLHS when available\n"
+                "- If the question is academic/school-related but you don't have specific information, "
+                "provide helpful general guidance or explain what information might be needed\n"
                 "\n"
-                "Be friendly, professional, and accurate. Use only the provided context to answer questions. "
+                "Be friendly, professional, and accurate. Use the provided context to answer questions when available. "
                 "If the context doesn't contain enough information, say so politely and suggest what information might be helpful. "
                 "Always be encouraging and supportive of students' academic goals."
             )
