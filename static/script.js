@@ -26,6 +26,99 @@ function removeWelcomeMessage() {
     }
 }
 
+// Simple markdown to HTML converter
+function markdownToHtml(text) {
+    if (!text) return '';
+    
+    // Split into lines for processing
+    const lines = text.split('\n');
+    const processedLines = [];
+    let inList = false;
+    let listItems = [];
+    
+    function closeList() {
+        if (inList && listItems.length > 0) {
+            processedLines.push('<ul>' + listItems.join('') + '</ul>');
+            listItems = [];
+            inList = false;
+        }
+    }
+    
+    for (let i = 0; i < lines.length; i++) {
+        let line = lines[i];
+        const trimmed = line.trim();
+        
+        // Headers
+        if (trimmed.startsWith('### ')) {
+            closeList();
+            processedLines.push('<h3>' + trimmed.substring(4) + '</h3>');
+            continue;
+        }
+        if (trimmed.startsWith('## ')) {
+            closeList();
+            processedLines.push('<h2>' + trimmed.substring(3) + '</h2>');
+            continue;
+        }
+        if (trimmed.startsWith('# ')) {
+            closeList();
+            processedLines.push('<h2>' + trimmed.substring(2) + '</h2>');
+            continue;
+        }
+        
+        // Lists (unordered: *, -, +)
+        const unorderedMatch = trimmed.match(/^[\*\-\+] (.+)$/);
+        if (unorderedMatch) {
+            if (!inList) {
+                inList = true;
+            }
+            listItems.push('<li>' + unorderedMatch[1] + '</li>');
+            continue;
+        }
+        
+        // Lists (ordered: 1., 2., etc.)
+        const orderedMatch = trimmed.match(/^\d+\. (.+)$/);
+        if (orderedMatch) {
+            if (!inList) {
+                inList = true;
+            }
+            listItems.push('<li>' + orderedMatch[1] + '</li>');
+            continue;
+        }
+        
+        // Empty line - close list if we're in one
+        if (trimmed === '') {
+            closeList();
+            processedLines.push('');
+            continue;
+        }
+        
+        // Regular text - close list if we're in one, then add paragraph
+        closeList();
+        processedLines.push('<p>' + trimmed + '</p>');
+    }
+    
+    // Close any remaining list
+    closeList();
+    
+    let html = processedLines.join('\n');
+    
+    // Process inline formatting (bold and italic)
+    // Bold: **text** (process first to avoid conflicts)
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    
+    // Italic: *text* (only if not already part of bold)
+    // Simple approach: match single asterisks that aren't adjacent to other asterisks
+    html = html.replace(/([^*]|^)\*([^*]+?)\*([^*]|$)/g, '$1<em>$2</em>$3');
+    
+    // Markdown links: [text](url)
+    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    
+    // Clean up empty paragraphs
+    html = html.replace(/<p>\s*<\/p>/g, '');
+    
+    return html;
+}
+
 // Add message to chat
 function addMessage(text, isUser = false) {
     removeWelcomeMessage();
@@ -35,7 +128,13 @@ function addMessage(text, isUser = false) {
     
     const bubble = document.createElement('div');
     bubble.className = 'message-bubble';
-    bubble.textContent = text;
+    
+    // Render markdown for counselor messages, plain text for user messages
+    if (isUser) {
+        bubble.textContent = text;
+    } else {
+        bubble.innerHTML = markdownToHtml(text);
+    }
     
     messageDiv.appendChild(bubble);
     chatContainer.appendChild(messageDiv);

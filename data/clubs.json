@@ -1,0 +1,1292 @@
+{
+    "school": "Green Level High School",
+    "data_type": "Club Directory",
+    "last_updated": "2024-2025 School Year",
+    "clubs": [
+      {
+        "category": "Student Government",
+        "name": "Executive Board",
+        "advisors": ["Hodges"],
+        "student_contacts": ["awu4@students.wcpss.net"],
+        "activities": "Clubs and SG Activity Approval",
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Student Government",
+        "name": "12th Grade Class Council",
+        "advisors": ["Hammontree"],
+        "student_contacts": ["sksenapati@students.wcpss.net"],
+        "activities": "Homecoming Dance Support, Food Bank",
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Student Government",
+        "name": "11th Grade Class Council",
+        "advisors": ["Scott"],
+        "student_contacts": ["bcombopiano@students.wcpss.net"],
+        "activities": "HoCo Tailgate, Prom",
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Student Government",
+        "name": "10th Grade Class Council",
+        "advisors": ["Turski"],
+        "student_contacts": ["syliu@students.wcpss.net"],
+        "activities": "Spirit Weeks, Talent Show",
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Student Government",
+        "name": "9th Grade Class Council",
+        "advisors": ["Connett"],
+        "student_contacts": ["nclee2@students.wcpss.net"],
+        "activities": "Pep Rallys, Candy Grams",
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Honor Societies",
+        "name": "English National Honor Society",
+        "advisors": ["Narula"],
+        "student_contacts": [],
+        "meeting_day": null,
+        "location": "3141"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "International Thespian Society",
+        "advisors": ["Craig"],
+        "student_contacts": ["lssmith4@students.wcpss.net", "mfernandezrevilla@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1216"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "Latin National Honor Society",
+        "advisors": ["Beach"],
+        "student_contacts": ["akhansoty@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3149"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "Mu Alpha Theta Math Honor Society",
+        "advisors": ["Rodgers", "King", "Snyder"],
+        "student_contacts": ["ajindham@students.wcpss.net", "amishra2@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": null
+      },
+      {
+        "category": "Honor Societies",
+        "name": "National Art Honor Society",
+        "advisors": ["Mapp"],
+        "student_contacts": ["clin11@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "111"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "National Honor Society",
+        "advisors": ["TBD"],
+        "student_contacts": [],
+        "meeting_day": null,
+        "location": "3119"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "National Honor Society for Dance Arts",
+        "advisors": ["Dula"],
+        "student_contacts": ["hocole@students.wcpss.net", "aeanderson2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1214"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "Science National Honor Society",
+        "advisors": ["Hill", "Conniff"],
+        "student_contacts": ["ajindham@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1157"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "Spanish National Honor Society",
+        "advisors": ["Delgado", "Quesada"],
+        "student_contacts": ["spasumarthy2@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "3113"
+      },
+      {
+        "category": "Honor Societies",
+        "name": "Tri-M Music Honor Society",
+        "advisors": ["Myers"],
+        "student_contacts": [],
+        "meeting_day": null,
+        "location": "1220"
+      },
+      {
+        "category": "CTSO",
+        "name": "DECA",
+        "advisors": ["Kaushik"],
+        "student_contacts": ["dashah@students.wcpss.net", "ajoseph@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "1133"
+      },
+      {
+        "category": "CTSO",
+        "name": "FBLA",
+        "advisors": ["Olrich"],
+        "student_contacts": ["ashah4@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "0125"
+      },
+      {
+        "category": "CTSO",
+        "name": "FFA",
+        "advisors": ["Landa", "Lewis"],
+        "student_contacts": ["askhare@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "133"
+      },
+      {
+        "category": "CTSO",
+        "name": "HOSA",
+        "advisors": ["Couch", "Sopko, S."],
+        "student_contacts": ["svbudampati@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "0105"
+      },
+      {
+        "category": "CTSO",
+        "name": "TSA",
+        "advisors": ["Proctor", "Kim"],
+        "student_contacts": ["skalidindi@students.wcpss.net", "amishra2@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "0121"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "A book a month",
+        "advisors": ["Achilli"],
+        "student_contacts": ["lmrobinson2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Art Club",
+        "advisors": ["Klenow", "Mapp"],
+        "student_contacts": ["Clin11@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "0109"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Calligraphy Club",
+        "advisors": ["Pritko"],
+        "student_contacts": ["srvalisekkagari@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "0115"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Cinematography club",
+        "advisors": ["Henry"],
+        "student_contacts": ["spande2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3127"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Crafts For A Cause",
+        "advisors": ["Hurd"],
+        "student_contacts": ["ahkim2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3125"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Creative writing club",
+        "advisors": ["Narula"],
+        "student_contacts": ["asrivastava@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Dance Club",
+        "advisors": ["Dulan"],
+        "student_contacts": ["wiguna@students.wcpss.net", "skola@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1214"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "GLHS Anime Club",
+        "advisors": ["Henderson", "Weller"],
+        "student_contacts": ["jgill@students.wcpss.net", "rdahmadi-moosavi@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "Media"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Green Level Lit Mag",
+        "advisors": ["Henderson", "Weller"],
+        "student_contacts": ["ngiridhar@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Improv Club",
+        "advisors": ["Turski", "Craig"],
+        "student_contacts": [],
+        "meeting_day": "Tuesday",
+        "location": null
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "K-Pop",
+        "advisors": ["Beach"],
+        "student_contacts": ["smoon4@students.wcpss.net", "adyang2@students.wcpss.net", "apriveragomez@students.wcpss.net", "asdhupkar@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3149"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "Origami Club",
+        "advisors": ["Weeks"],
+        "student_contacts": ["tnchordiya@students.wcpss.net", "slee10@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2101"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "South Asian Classical dance Club",
+        "advisors": ["Moore"],
+        "student_contacts": ["sbhaskarabatla@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2149"
+      },
+      {
+        "category": "Arts & Expression",
+        "name": "South Asian Music Club",
+        "advisors": ["Paye"],
+        "student_contacts": ["aanand5@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "2153"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Asian American Club",
+        "advisors": ["Darges"],
+        "student_contacts": ["TBA"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "ASL Club",
+        "advisors": ["Connelly"],
+        "student_contacts": ["mmustain@students.wcpss.net", "ithatigotla@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3129"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Black Student Union",
+        "advisors": ["Brown"],
+        "student_contacts": ["ramcleod@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "1101"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Bollywood Dance Club",
+        "advisors": ["Koppernolle"],
+        "student_contacts": ["kmadhanraj@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": "1153"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Chinese Student Association (CSA)",
+        "advisors": ["Hill, M."],
+        "student_contacts": ["lyliu2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1157"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "FCA (Fellowship of Christian Athletes)",
+        "advisors": ["Johnson", "Beavers"],
+        "student_contacts": ["melanuti2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "0143"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "French Club",
+        "advisors": ["Amerson"],
+        "student_contacts": ["ljustus@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "3147"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "German Language and Culture Club",
+        "advisors": ["Beach"],
+        "student_contacts": ["ljustus@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "3149"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "GSA",
+        "advisors": ["Hurd"],
+        "student_contacts": [],
+        "meeting_day": null,
+        "location": "3125"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Hindu Students Council",
+        "advisors": ["Sharma"],
+        "student_contacts": [],
+        "meeting_day": null,
+        "location": "1115"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Hispanic Student Union",
+        "advisors": ["Delgado"],
+        "student_contacts": ["rdmav@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3113"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Jewish Student Union",
+        "advisors": ["Silver"],
+        "student_contacts": ["ampleahy@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1143"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "KCC (Korean Culture Club)",
+        "advisors": ["Sonstroem"],
+        "student_contacts": ["bylee@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "2147"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Latin Club",
+        "advisors": ["Beach"],
+        "student_contacts": ["eafelten@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3149"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "MENA Middle Eastern North African Association",
+        "advisors": ["Williams, J."],
+        "student_contacts": ["ynmusa@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3137"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Pakistani Student Association",
+        "advisors": ["Hatip"],
+        "student_contacts": ["emirza@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Muslim Student Organization",
+        "advisors": ["Hatip", "Nation"],
+        "student_contacts": ["ojalkofahi@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1131"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "South East Asian Student Association (SEASA)",
+        "advisors": ["Darges"],
+        "student_contacts": ["kdwiguna@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "South Asian Student Association",
+        "advisors": ["Kesterson"],
+        "student_contacts": ["dbpatel6@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2201"
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Turkic Culture Club",
+        "advisors": ["Achilli"],
+        "student_contacts": ["aebayraktar@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Cultural Celebration",
+        "name": "Unified Club",
+        "advisors": ["Strickland, K.", "Koschmeder"],
+        "student_contacts": ["egreynolds@students.wcpss.net", "ktsteward@students.wcpss.net", "gejohnson3@students.wcpss.net"],
+        "meeting_day": "TBA",
+        "location": null
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "American Mock World Health Organization (AMWHO)",
+        "advisors": ["Williams, J."],
+        "student_contacts": ["abpatel2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3137"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Conservative Student Union",
+        "advisors": ["Sponaugle", "Nesbitt"],
+        "student_contacts": ["aaghayants2@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "2137"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "GLHS Ethics Bowl",
+        "advisors": ["Garwood"],
+        "student_contacts": ["jsingh5@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1129"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Green Level Democrats of America",
+        "advisors": ["Sponaugle", "Nesbitt"],
+        "student_contacts": ["vravivarma@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "2121"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Investment Club",
+        "advisors": ["Wasdell"],
+        "student_contacts": ["ypnagathan@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2135"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Mock Trial",
+        "advisors": ["Wasdell"],
+        "student_contacts": ["rdmav@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2135"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Model UN",
+        "advisors": ["Nesbitt"],
+        "student_contacts": ["anshah4@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2121"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "National Organization For Women",
+        "advisors": ["Clark, W."],
+        "student_contacts": ["carubiano@students.wcpss.net", "akdhaliwal@students.wcpss.net", "cpdugan@students.wcpss.net", "ypnagathan@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3143"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "No Woman, No Girl",
+        "advisors": ["Burston-Young"],
+        "student_contacts": ["ajlee3@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3131"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Real Estate Club",
+        "advisors": ["Weeks"],
+        "student_contacts": ["drdarcangelo@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2101"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Reproductive Advocacy and Education",
+        "advisors": ["Hurd"],
+        "student_contacts": ["vvaikunth@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "3125"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Round Table",
+        "advisors": ["Hill, S.", "Nation"],
+        "student_contacts": ["sbhaskarabatla@students.wcpss.net", "emirza@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Speech & Debate",
+        "advisors": ["Matthews", "Clark", "Mukherjee", "Wilkins"],
+        "student_contacts": ["bcombopiano@students.wcpss.net", "nboddeti@students.wcpss.net", "alsharma@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1105"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Student Athlete Leadership Team (SALT)",
+        "advisors": ["Schaefer"],
+        "student_contacts": ["lschaefer@wcpss.net"],
+        "meeting_day": "Friday",
+        "location": "1127"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "TED-Ed Student Talks Club",
+        "advisors": ["Hill, S."],
+        "student_contacts": ["hadambrosio@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3121"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Woman In Politics",
+        "advisors": ["Raines"],
+        "student_contacts": ["asrinivasan3@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "1111"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Women in Finance",
+        "advisors": ["Barish"],
+        "student_contacts": ["xzhang4@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1135"
+      },
+      {
+        "category": "Finance, Government, and Leadership",
+        "name": "Young Peoples Alliance",
+        "advisors": ["Williams, J."],
+        "student_contacts": ["itpemmaraju@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "A dollar a day club",
+        "advisors": ["Achilli"],
+        "student_contacts": ["svbudampati@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3141"
+      },
+      {
+        "category": "Service",
+        "name": "Adopt-A-Grandparent Club",
+        "advisors": ["Hill, V.", "Shirley"],
+        "student_contacts": ["adixit@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2133"
+      },
+      {
+        "category": "Service",
+        "name": "Alcohol and Drug Awareness Club (ADA)",
+        "advisors": ["Mccord"],
+        "student_contacts": ["tsanthosh@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "ASL Buddies Club",
+        "advisors": ["Barish"],
+        "student_contacts": ["ssmokashi@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1135"
+      },
+      {
+        "category": "Service",
+        "name": "The Autism Awareness Club",
+        "advisors": ["Fernandes"],
+        "student_contacts": ["kaharmon@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "1147"
+      },
+      {
+        "category": "Service",
+        "name": "Bilingual Tutoring Club",
+        "advisors": ["Mathews"],
+        "student_contacts": [],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "Drug Literacy",
+        "advisors": ["Kesterson"],
+        "student_contacts": ["tsanthosh@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "Cary Sister Cities Youth Organization",
+        "advisors": ["Narula"],
+        "student_contacts": ["hajith@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "Cookies for a Cause",
+        "advisors": ["Narula"],
+        "student_contacts": ["egrevels@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "Fighting For Our Future",
+        "advisors": ["Hurd"],
+        "student_contacts": ["vvaikunth@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "3125"
+      },
+      {
+        "category": "Service",
+        "name": "GLHS SAVE Club",
+        "advisors": ["Hill, V."],
+        "student_contacts": ["asthakur@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "147"
+      },
+      {
+        "category": "Service",
+        "name": "Green Level Cool 2 Be Kind",
+        "advisors": ["Barish"],
+        "student_contacts": ["adrichardson2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1135"
+      },
+      {
+        "category": "Service",
+        "name": "Green Level Food Ark",
+        "advisors": ["Conniff"],
+        "student_contacts": ["mjung3@students.wcpss.net", "mudhayakumar@students.wcpssnet"],
+        "meeting_day": null,
+        "location": "1113"
+      },
+      {
+        "category": "Service",
+        "name": "Green Level Red Cross",
+        "advisors": ["Hill, V."],
+        "student_contacts": ["asthakur@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "Media"
+      },
+      {
+        "category": "Service",
+        "name": "Helping Hands for Homeless",
+        "advisors": ["Baker"],
+        "student_contacts": ["tebudampati@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": "2141"
+      },
+      {
+        "category": "Service",
+        "name": "KAST Club",
+        "advisors": ["Matona"],
+        "student_contacts": ["singh100@students.wcpss.net", "asebastian4@students.wcpss.net", "smpetersen2@students.wcpss.net", "escyran@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "Key Club",
+        "advisors": ["Hill, V.", "Quesada"],
+        "student_contacts": ["dwkourany@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "Media Center"
+      },
+      {
+        "category": "Service",
+        "name": "Letters for Rose",
+        "advisors": ["Schaefer"],
+        "student_contacts": ["trkalikiri@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "1127"
+      },
+      {
+        "category": "Service",
+        "name": "Origami for good (cary chapter)",
+        "advisors": [],
+        "student_contacts": ["txliu@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "Relay for Life",
+        "advisors": ["Graham"],
+        "student_contacts": ["asomepalli2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "Staff Appreciation Club",
+        "advisors": ["Moore"],
+        "student_contacts": ["mafrederick@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2149"
+      },
+      {
+        "category": "Service",
+        "name": "Treble Tutoring",
+        "advisors": ["Myers"],
+        "student_contacts": ["sdesemsetti@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Service",
+        "name": "UNICEF Club",
+        "advisors": ["Delgado"],
+        "student_contacts": ["mrmereddy@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3113"
+      },
+      {
+        "category": "Service",
+        "name": "Volunteering Made Easy (VME) Club",
+        "advisors": ["Williams, J."],
+        "student_contacts": ["aldmello@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3137"
+      },
+      {
+        "category": "Service",
+        "name": "Write-A-Mini",
+        "advisors": ["Weeks"],
+        "student_contacts": ["ajharm@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "2101"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Alzheimer’s Disease Awareness and Research Club",
+        "advisors": ["Kaushik"],
+        "student_contacts": ["jzhu6@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "Battle of the Books",
+        "advisors": ["Achilli"],
+        "student_contacts": ["hlankipalli@students.wcpss.net", "cskranz@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "3141"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Crochet Club",
+        "advisors": ["Wilkins"],
+        "student_contacts": ["aadeel@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "Dungeons and Dragons",
+        "advisors": ["Roehrig"],
+        "student_contacts": [],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "Fashion Club",
+        "advisors": ["Jarnagin"],
+        "student_contacts": ["lnikhil@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2115"
+      },
+      {
+        "category": "Special Interest",
+        "name": "GLHS Fishing Club",
+        "advisors": ["Beavers"],
+        "student_contacts": ["dlponnusamy@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "Green Level History Bowl Club",
+        "advisors": ["Garver"],
+        "student_contacts": ["avkumar@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2129"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Green Level Lego Club",
+        "advisors": ["Burston-Young"],
+        "student_contacts": ["knrajaram@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3131"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Living in America 101",
+        "advisors": ["Delgado"],
+        "student_contacts": ["sjcatalanolazzaro@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "Mindfulness Matters",
+        "advisors": ["Simpson"],
+        "student_contacts": ["sjkessler@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "Motorcycle Club",
+        "advisors": ["Garver"],
+        "student_contacts": ["llipka@students.wcpss.net", "mchopra@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "2129"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Movie Club",
+        "advisors": ["Henry"],
+        "student_contacts": ["xxing@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3127"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Next Gen Career Club",
+        "advisors": ["James"],
+        "student_contacts": ["rkvardhanapu@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "3117"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Nostalgic Gators",
+        "advisors": ["Amerson"],
+        "student_contacts": ["anirvani@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "3147"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Odyssey of the Mind",
+        "advisors": ["Paye"],
+        "student_contacts": ["asathish@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2153"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Pokemon Club",
+        "advisors": ["Hammontree", "Salemo"],
+        "student_contacts": ["aghamilton2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "Psychology Club",
+        "advisors": ["Mukherjee"],
+        "student_contacts": ["apeddireddi@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2101"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Social Sciences Club",
+        "advisors": ["Hill, M."],
+        "student_contacts": ["ssolasa@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1157"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Swifties at the Swamp (Taylor Swift Club)",
+        "advisors": ["Scott"],
+        "student_contacts": ["lpagan@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2125"
+      },
+      {
+        "category": "Special Interest",
+        "name": "Wilderness Explorers",
+        "advisors": ["Collins"],
+        "student_contacts": ["asrinivasan4@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "Special Interest",
+        "name": "World Cinema Club",
+        "advisors": ["Delafuente"],
+        "student_contacts": ["srkethamakka@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "STEM",
+        "name": "AI & Machine Learning Club",
+        "advisors": ["Fox", "Shirley"],
+        "student_contacts": ["tliang2@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "2111"
+      },
+      {
+        "category": "STEM",
+        "name": "American Heart Association Club",
+        "advisors": ["Strickland, T."],
+        "student_contacts": ["abpatel2@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": "1625"
+      },
+      {
+        "category": "STEM",
+        "name": "Architecture Club",
+        "advisors": ["Klenow"],
+        "student_contacts": ["hdschawel@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "0109"
+      },
+      {
+        "category": "STEM",
+        "name": "Astronomy Club",
+        "advisors": ["Hill, M."],
+        "student_contacts": ["ynimmala@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "1157"
+      },
+      {
+        "category": "STEM",
+        "name": "Biology Club",
+        "advisors": ["Sharma"],
+        "student_contacts": ["svaishnavi@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "STEM",
+        "name": "Coding Club",
+        "advisors": ["Laird"],
+        "student_contacts": ["srgurrala@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2131"
+      },
+      {
+        "category": "STEM",
+        "name": "Computational Linguistics Club",
+        "advisors": ["Hill, S."],
+        "student_contacts": ["nqmiraloglu@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3121"
+      },
+      {
+        "category": "STEM",
+        "name": "Dermatology Club",
+        "advisors": ["Sibello"],
+        "student_contacts": ["anasir@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "1159"
+      },
+      {
+        "category": "STEM",
+        "name": "Environmental Club",
+        "advisors": ["Matthews"],
+        "student_contacts": ["asrivastava@students.wcpss.net"],
+        "meeting_day": "Tuesday & Thursday (Alternating)",
+        "location": "2113"
+      },
+      {
+        "category": "STEM",
+        "name": "Future STEAM leaders",
+        "advisors": ["McAuliffe"],
+        "student_contacts": ["avkumar@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1113"
+      },
+      {
+        "category": "STEM",
+        "name": "Genetics & Heredity Association",
+        "advisors": [],
+        "student_contacts": ["schutkay@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2113"
+      },
+      {
+        "category": "STEM",
+        "name": "Girls Who Code",
+        "advisors": ["Williams, L."],
+        "student_contacts": ["sreddi4@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "1153"
+      },
+      {
+        "category": "STEM",
+        "name": "Green Level Aviation Club",
+        "advisors": ["Kesterson"],
+        "student_contacts": ["ksekbote@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "STEM",
+        "name": "GL Quantum Computing Club",
+        "advisors": ["Hatip"],
+        "student_contacts": ["jptelang@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1131"
+      },
+      {
+        "category": "STEM",
+        "name": "GLHS Robotics Club",
+        "advisors": ["Kim"],
+        "student_contacts": ["asrinivasan4@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "0127"
+      },
+      {
+        "category": "STEM",
+        "name": "Green Level ChemClub",
+        "advisors": ["Mukherjee"],
+        "student_contacts": ["eyzhu@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3133"
+      },
+      {
+        "category": "STEM",
+        "name": "Green Level UX Design Club",
+        "advisors": ["Langs"],
+        "student_contacts": ["sdalvi2@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": null
+      },
+      {
+        "category": "STEM",
+        "name": "Hardware/IT Club",
+        "advisors": ["Fox"],
+        "student_contacts": ["parvind@students.wcpss.net", "buppalapati@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "2111"
+      },
+      {
+        "category": "STEM",
+        "name": "IDEATE Engineering Club",
+        "advisors": ["Williams, J."],
+        "student_contacts": ["nsathisha2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "3137"
+      },
+      {
+        "category": "STEM",
+        "name": "Marine Biology Club",
+        "advisors": ["McAuliffe"],
+        "student_contacts": ["ldgodfrey@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "2135"
+      },
+      {
+        "category": "STEM",
+        "name": "Medical Mysteries Club",
+        "advisors": ["Sibello"],
+        "student_contacts": ["abaskar@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "STEM",
+        "name": "Philosophy Club",
+        "advisors": ["Mukherjee"],
+        "student_contacts": ["apeddireddi@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "STEM",
+        "name": "Physics Competition Club",
+        "advisors": ["James", "Collins"],
+        "student_contacts": ["spise2@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "3117"
+      },
+      {
+        "category": "STEM",
+        "name": "Science Bowl",
+        "advisors": ["Hatip"],
+        "student_contacts": ["psaeron2@students.wcpss.net", "tjzhao@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1131"
+      },
+      {
+        "category": "STEM",
+        "name": "Science Olympiad",
+        "advisors": ["Shamra", "Paye", "Mukherjee"],
+        "student_contacts": ["ssnair@students.wcpss.net"],
+        "meeting_day": null,
+        "location": null
+      },
+      {
+        "category": "STEM",
+        "name": "Society of Women Engineers",
+        "advisors": ["Sharma"],
+        "student_contacts": ["sssolkhan@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1115"
+      },
+      {
+        "category": "STEM",
+        "name": "STEM Research Club (STEMRC)",
+        "advisors": ["Baker"],
+        "student_contacts": ["mrmereddy@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2141"
+      },
+      {
+        "category": "STEM",
+        "name": "Women in STEM",
+        "advisors": ["Lochner"],
+        "student_contacts": ["rrpatel7@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": "1155"
+      },
+      {
+        "category": "STEM",
+        "name": "Youth Neuroscience Club",
+        "advisors": ["Poland"],
+        "student_contacts": ["ahkim2@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2119"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Badminton Club @ GLHS",
+        "advisors": ["Shue"],
+        "student_contacts": ["daithal@students.wcpss.net"],
+        "meeting_day": "Thursday",
+        "location": "Aux Gym"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Chess Club",
+        "advisors": ["Salemo"],
+        "student_contacts": ["srvalisekkagari@students.wcpss.net", "axliu3@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2121"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Girls of Green Level Athletics",
+        "advisors": ["Hill, V."],
+        "student_contacts": ["eagreen@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": "147"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Green Level eSports Club (GLEC)",
+        "advisors": ["Bunch"],
+        "student_contacts": ["nachen@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1159"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Green Level Volleyball Club",
+        "advisors": ["Hilton"],
+        "student_contacts": ["dafranklin@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "113"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "MMA (Mixed Martial Arts) Discussion Club",
+        "advisors": ["Jamieson"],
+        "student_contacts": ["tcmarin@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "1117"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Morgan's Message GLHS",
+        "advisors": ["Strickland, T."],
+        "student_contacts": ["fnorth@students.wcpss.net"],
+        "meeting_day": "Wednesday",
+        "location": "Cafeteria"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Pickleball Club",
+        "advisors": ["Deceia"],
+        "student_contacts": ["rrcrossman@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "1634"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Sports Analytics Club",
+        "advisors": ["Wheeler"],
+        "student_contacts": ["nkommineni@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "2203"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Sports Media Club",
+        "advisors": ["Connett"],
+        "student_contacts": ["dashah@students.wcpss.net"],
+        "meeting_day": "Tuesday",
+        "location": "2201"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Women in Weightlifting",
+        "advisors": ["Deceia", "Gentry"],
+        "student_contacts": ["prconway@students.wcpss.net"],
+        "meeting_day": null,
+        "location": "1634"
+      },
+      {
+        "category": "Athletics, Sports, and Games",
+        "name": "Youth Sporting Initiative",
+        "advisors": ["Colosi"],
+        "student_contacts": ["abharadwaj2@students.wcpss.net"],
+        "meeting_day": "Friday",
+        "location": "145"
+      }
+    ]
+  }

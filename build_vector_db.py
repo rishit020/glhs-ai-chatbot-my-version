@@ -39,6 +39,7 @@ def load_json_files(data_dir: str) -> List[Document]:
         "glhs_course_catalog.json",
         "glhs_graduation_requirments.json",
         "glhs_clubs.json",
+        "clubs.json",
         "glhs_college_pathways.json",
         "glhs_college_filters.json",
         "academic_difficulty_profile.json",
@@ -50,7 +51,11 @@ def load_json_files(data_dir: str) -> List[Document]:
         "application_glossary.json",
         "system_metadata.json",
         "wcpss_planning_guide_glhs.json",
-        "class_directory.json"
+        "class_directory.json",
+        "freshman_courses.json",
+        "sophmore_courses.json",
+        "junior_courses.json",
+        "wake_tech.json"
     ]
     
     for json_file in json_files:
@@ -60,26 +65,59 @@ def load_json_files(data_dir: str) -> List[Document]:
                 with open(file_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
                 
-                # Convert JSON to text representation
-                # For structured data, create a readable text format
-                if isinstance(data, dict):
-                    text_content = json.dumps(data, indent=2, ensure_ascii=False)
-                elif isinstance(data, list):
-                    text_content = json.dumps(data, indent=2, ensure_ascii=False)
+                # Special handling for clubs.json to create separate documents per club
+                if json_file == "clubs.json" and isinstance(data, dict) and "clubs" in data:
+                    # Create a separate document for each club to improve retrieval accuracy
+                    for club in data.get("clubs", []):
+                        # Format club information as readable text
+                        club_text = f"Club Name: {club.get('name', 'N/A')}\n"
+                        club_text += f"Category: {club.get('category', 'N/A')}\n"
+                        if club.get('advisors'):
+                            advisors = club['advisors'] if isinstance(club['advisors'], list) else [club['advisors']]
+                            club_text += f"Advisors: {', '.join(advisors)}\n"
+                        if club.get('student_contacts'):
+                            contacts = club['student_contacts'] if isinstance(club['student_contacts'], list) else [club['student_contacts']]
+                            club_text += f"Student Contacts: {', '.join(contacts)}\n"
+                        if club.get('activities'):
+                            club_text += f"Activities: {club.get('activities')}\n"
+                        if club.get('meeting_day'):
+                            club_text += f"Meeting Day: {club.get('meeting_day')}\n"
+                        if club.get('location'):
+                            club_text += f"Location: {club.get('location')}\n"
+                        
+                        doc = Document(
+                            page_content=club_text,
+                            metadata={
+                                "source": json_file,
+                                "type": "json",
+                                "file": json_file,
+                                "club_name": club.get('name', ''),
+                                "category": club.get('category', '')
+                            }
+                        )
+                        documents.append(doc)
+                    print(f"✓ Loaded JSON: {json_file} ({len(data.get('clubs', []))} clubs as separate documents)")
                 else:
-                    text_content = str(data)
-                
-                # Create document with metadata
-                doc = Document(
-                    page_content=text_content,
-                    metadata={
-                        "source": json_file,
-                        "type": "json",
-                        "file": json_file
-                    }
-                )
-                documents.append(doc)
-                print(f"✓ Loaded JSON: {json_file}")
+                    # Convert JSON to text representation for other files
+                    # For structured data, create a readable text format
+                    if isinstance(data, dict):
+                        text_content = json.dumps(data, indent=2, ensure_ascii=False)
+                    elif isinstance(data, list):
+                        text_content = json.dumps(data, indent=2, ensure_ascii=False)
+                    else:
+                        text_content = str(data)
+                    
+                    # Create document with metadata
+                    doc = Document(
+                        page_content=text_content,
+                        metadata={
+                            "source": json_file,
+                            "type": "json",
+                            "file": json_file
+                        }
+                    )
+                    documents.append(doc)
+                    print(f"✓ Loaded JSON: {json_file}")
             except Exception as e:
                 print(f"✗ Error loading {json_file}: {e}")
     

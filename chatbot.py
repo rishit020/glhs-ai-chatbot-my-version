@@ -83,6 +83,15 @@ class GLHSChatbot:
         except Exception as e:
             print(f"Warning: Could not load glhs_info.json: {e}")
         
+        # Load Wake Tech data for link extraction
+        try:
+            school_data["wake_tech"] = load_json_data(
+                os.path.join(data_dir, "wake_tech.json")
+            )
+        except Exception as e:
+            print(f"Warning: Could not load wake_tech.json: {e}")
+            school_data["wake_tech"] = None
+        
         return school_data
     
     def _vector_db_exists(self, persist_directory: str) -> bool:
@@ -227,6 +236,7 @@ class GLHSChatbot:
             "glhs_course_catalog.json",
             "glhs_graduation_requirments.json",
             "glhs_clubs.json",
+            "clubs.json",
             "glhs_college_pathways.json",
             "glhs_college_filters.json",
             "academic_difficulty_profile.json",
@@ -238,7 +248,11 @@ class GLHSChatbot:
             "application_glossary.json",
             "system_metadata.json",
             "wcpss_planning_guide_glhs.json",
-            "class_directory.json"
+            "class_directory.json",
+            "freshman_courses.json",
+            "sophmore_courses.json",
+            "junior_courses.json",
+            "wake_tech.json"
         ]
         
         for json_file in json_files:
@@ -247,12 +261,45 @@ class GLHSChatbot:
                 try:
                     with open(file_path, "r", encoding="utf-8") as f:
                         data = json.load(f)
-                    text_content = json.dumps(data, indent=2, ensure_ascii=False)
-                    doc = Document(
-                        page_content=text_content,
-                        metadata={"source": json_file, "type": "json", "file": json_file}
-                    )
-                    all_documents.append(doc)
+                    
+                    # Special handling for clubs.json to create separate documents per club
+                    if json_file == "clubs.json" and isinstance(data, dict) and "clubs" in data:
+                        # Create a separate document for each club to improve retrieval accuracy
+                        for club in data.get("clubs", []):
+                            # Format club information as readable text
+                            club_text = f"Club Name: {club.get('name', 'N/A')}\n"
+                            club_text += f"Category: {club.get('category', 'N/A')}\n"
+                            if club.get('advisors'):
+                                advisors = club['advisors'] if isinstance(club['advisors'], list) else [club['advisors']]
+                                club_text += f"Advisors: {', '.join(advisors)}\n"
+                            if club.get('student_contacts'):
+                                contacts = club['student_contacts'] if isinstance(club['student_contacts'], list) else [club['student_contacts']]
+                                club_text += f"Student Contacts: {', '.join(contacts)}\n"
+                            if club.get('activities'):
+                                club_text += f"Activities: {club.get('activities')}\n"
+                            if club.get('meeting_day'):
+                                club_text += f"Meeting Day: {club.get('meeting_day')}\n"
+                            if club.get('location'):
+                                club_text += f"Location: {club.get('location')}\n"
+                            
+                            doc = Document(
+                                page_content=club_text,
+                                metadata={
+                                    "source": json_file,
+                                    "type": "json",
+                                    "file": json_file,
+                                    "club_name": club.get('name', ''),
+                                    "category": club.get('category', '')
+                                }
+                            )
+                            all_documents.append(doc)
+                    else:
+                        text_content = json.dumps(data, indent=2, ensure_ascii=False)
+                        doc = Document(
+                            page_content=text_content,
+                            metadata={"source": json_file, "type": "json", "file": json_file}
+                        )
+                        all_documents.append(doc)
                 except Exception as e:
                     print(f"Warning: Could not load {json_file}: {e}")
         
@@ -498,6 +545,160 @@ class GLHSChatbot:
         
         return messages
     
+    def _is_club_question(self, question: str) -> bool:
+        """Check if the question is about clubs or extracurricular activities."""
+        question_lower = question.lower()
+        club_keywords = [
+            'club', 'clubs', 'extracurricular', 'organization', 'organizations',
+            'student organization', 'student club', 'after school activity',
+            'after-school activity', 'activity club', 'school club'
+        ]
+        return any(keyword in question_lower for keyword in club_keywords)
+    
+    def _is_wake_tech_question(self, question: str) -> bool:
+        """Check if the question is about Wake Tech or CCP."""
+        question_lower = question.lower()
+        wake_tech_keywords = [
+            'wake tech', 'waketech', 'ccp', 'career and college promise',
+            'college promise', 'dual credit', 'dual enrollment',
+            'wake tech course', 'wake tech class', 'wake tech program',
+            'wake tech pathway', 'wake tech eligibility', 'wake tech ccp'
+        ]
+        return any(keyword in question_lower for keyword in wake_tech_keywords)
+    
+    def _get_wake_tech_link(self, question: str, context: str = "", retrieved_docs: List[Document] = None) -> Optional[Dict[str, str]]:
+        """Find the most relevant Wake Tech link based on the question and context.
+        
+        Only returns a link if there's a strong, specific match. No default fallback.
+        
+        Returns:
+            Dict with 'url' and 'title' keys, or None if no strong match found.
+        """
+        try:
+            if not self.school_data.get("wake_tech") or not self.school_data["wake_tech"].get("official_pages"):
+                return None
+            
+            # Check if wake_tech.json was actually retrieved in the context
+            # If not, don't show a link (question might not be about Wake Tech)
+            if retrieved_docs:
+                wake_tech_in_context = False
+                for doc in retrieved_docs:
+                    try:
+                        metadata = doc.metadata if hasattr(doc, 'metadata') and doc.metadata else {}
+                        page_content = doc.page_content if hasattr(doc, 'page_content') else ""
+                        
+                        if (metadata.get('file') == 'wake_tech.json' or 
+                            'wake_tech' in str(metadata.get('source', '')).lower() or
+                            (page_content and 'wake tech' in str(page_content).lower()[:500])):
+                            wake_tech_in_context = True
+                            break
+                    except Exception:
+                        continue
+                
+                if not wake_tech_in_context:
+                    return None
+            
+            question_lower = question.lower() if question else ""
+            context_lower = context.lower() if context else ""
+            combined_text = f"{question_lower} {context_lower}"
+            
+            official_pages = self.school_data["wake_tech"].get("official_pages", {})
+            if not official_pages:
+                return None
+            
+            # Score each page based on how well it matches the question
+            page_scores = {}
+            
+            for page_key, page_info in official_pages.items():
+                score = 0
+                
+                # Eligibility page - very specific keywords required
+                if page_key == 'eligibility_page':
+                    # Strong indicators: explicit eligibility questions
+                    strong_indicators = [
+                        'eligibility for', 'eligible for', 'eligibility requirements',
+                        'eligibility criteria', 'eligibility standards', 'eligibility benchmarks',
+                        'am i eligible', 'who is eligible', 'eligibility to', 'qualify for ccp',
+                        'ccp eligibility', 'pathway eligibility', 'eligibility page'
+                    ]
+                    # Medium indicators: related but less specific
+                    medium_indicators = [
+                        'eligibility', 'eligible', 'qualify', 'qualification', 
+                        'gpa requirement', 'test score requirement', 'assessment requirement'
+                    ]
+                    
+                    strong_matches = sum(1 for indicator in strong_indicators if indicator in combined_text)
+                    medium_matches = sum(1 for indicator in medium_indicators if indicator in combined_text)
+                    
+                    if strong_matches > 0:
+                        score = 20 + (strong_matches * 5)  # High score for strong matches
+                    elif medium_matches > 0 and ('ccp' in combined_text or 'wake tech' in combined_text or 'pathway' in combined_text):
+                        score = 10 + medium_matches  # Medium score only if Wake Tech context exists
+                
+                # FAQ page - for questions explicitly asking for FAQs or general info
+                elif page_key == 'faqs_page':
+                    if 'faq' in combined_text or 'frequently asked' in combined_text:
+                        score = 15
+                    elif ('common question' in combined_text or 'general question' in combined_text) and 'wake tech' in combined_text:
+                        score = 10
+                
+                # Dual credit page - very specific about dual credit/dual enrollment
+                elif page_key == 'ncdpi_dual_credit':
+                    dual_credit_indicators = [
+                        'dual credit', 'dual enrollment', 'high school credit',
+                        'credit toward graduation', 'counts toward high school',
+                        'dual credit allowances', 'dual credit chart'
+                    ]
+                    matches = sum(1 for indicator in dual_credit_indicators if indicator in combined_text)
+                    if matches > 0:
+                        score = 15 + (matches * 3)
+                
+                # Operating procedures - very specific about procedures/policies
+                elif page_key == 'ncccs_operating_procedures':
+                    procedure_indicators = [
+                        'operating procedure', 'operating procedures', 'ccp procedure',
+                        'system procedure', 'section 14', 'ncccs procedure'
+                    ]
+                    matches = sum(1 for indicator in procedure_indicators if indicator in combined_text)
+                    if matches > 0:
+                        score = 15 + (matches * 3)
+                
+                # Main CCP page - only for very general Wake Tech/CCP overview questions
+                elif page_key == 'main_ccp_page':
+                    # Only match if it's a general overview question AND no other page matched
+                    general_indicators = [
+                        'what is ccp', 'what is career and college promise',
+                        'overview of ccp', 'about ccp', 'ccp program',
+                        'wake tech ccp', 'career and college promise program'
+                    ]
+                    matches = sum(1 for indicator in general_indicators if indicator in combined_text)
+                    if matches > 0 and not any('eligibility' in combined_text or 'faq' in combined_text or 'dual credit' in combined_text):
+                        score = 10
+                
+                page_scores[page_key] = score
+            
+            # Only return a link if there's a strong match (score >= 10)
+            if page_scores:
+                best_page_key = max(page_scores, key=page_scores.get)
+                best_score = page_scores[best_page_key]
+                
+                # Require minimum score threshold to avoid weak matches
+                if best_score >= 10:
+                    page = official_pages.get(best_page_key)
+                    if page and page.get('url'):
+                        return {
+                            'url': page.get('url'),
+                            'title': page.get('title', 'Wake Tech CCP')
+                        }
+            
+            # No strong match found - return None (no link)
+            return None
+            
+        except Exception as e:
+            # Log the error but don't crash - just return None (no link)
+            print(f"Error in _get_wake_tech_link: {e}")
+            return None
+    
     def query_with_rag(
         self,
         question: str,
@@ -537,7 +738,15 @@ class GLHSChatbot:
             docs = self.retriever.get_relevant_documents(question)
             
             # Build context from retrieved documents
-            context = "\n\n".join([doc.page_content for doc in docs]) if docs else ""
+            context_parts = []
+            if docs:
+                for doc in docs:
+                    try:
+                        if hasattr(doc, 'page_content') and doc.page_content:
+                            context_parts.append(str(doc.page_content))
+                    except Exception:
+                        continue
+            context = "\n\n".join(context_parts)
             
             # If no context retrieved, still proceed but LLM will handle it gracefully
             # Format conversation history
@@ -558,18 +767,30 @@ class GLHSChatbot:
                 "You answer questions related to school, academics, courses, graduation requirements, "
                 "school policies, schedules, clubs, events, counselors, college preparation, and academic planning. "
                 "\n\n"
-                "CRITICAL RULES:\n"
-                "- Answer ANY question that is related to school, academics, courses, prerequisites, requirements, or education\n"
+                "CRITICAL RESPONSE RULES:\n"
+                "- Focus STRICTLY on the exact question asked. Answer only what is directly necessary.\n"
+                "- Do NOT include background explanations, unrelated details, or information not directly needed.\n"
+                "- Do NOT expand the scope of the question or add context unless explicitly requested.\n"
+                "- If the query is ambiguous, ask a short clarifying question instead of guessing.\n"
+                "- Stay precise, focused, and minimal.\n"
+                "- Use information from the provided context about GLHS when available\n"
                 "- DO NOT solve simple math problems without context (e.g., 'what is 1+1?')\n"
                 "- DO NOT solve homework problems or provide test answers\n"
                 "- DO NOT answer questions about completely unrelated topics (weather, recipes, etc.)\n"
-                "- Use information from the provided context about GLHS when available\n"
-                "- If the question is academic/school-related but you don't have specific information, "
-                "provide helpful general guidance or explain what information might be needed\n"
                 "\n"
-                "Be friendly, professional, and accurate. Use the provided context to answer questions when available. "
-                "If the context doesn't contain enough information, say so politely and suggest what information might be helpful. "
-                "Always be encouraging and supportive of students' academic goals."
+                "IMPORTANT: Do NOT add any links to your response. Links will be automatically added by the system based on the question type.\n"
+                "\n"
+                "FORMATTING REQUIREMENTS:\n"
+                "- Format your responses using Markdown for better readability\n"
+                "- Use **bold** for important terms, numbers, and key information (e.g., **22 credits**, **4x4 Block schedule**)\n"
+                "- Use ## for section headers when organizing information (e.g., ## Graduation Requirements)\n"
+                "- Use ### for subsections when needed\n"
+                "- Use bullet points (- or *) for lists of requirements, courses, or steps\n"
+                "- Use numbered lists (1., 2., 3.) for sequential information\n"
+                "- Keep paragraphs concise and well-organized\n"
+                "- Add a clear header at the start of your response summarizing the topic\n"
+                "\n"
+                "Be friendly, professional, and accurate. Provide only what is explicitly relevant and required."
             )
             
             # Build user prompt with context
@@ -585,10 +806,31 @@ class GLHSChatbot:
             # Generate response
             # For langchain 0.3.x, use __call__ method
             response = self.llm(messages)
-            return response.content.strip()
+            response_text = response.content.strip()
+            
+            # Determine if we need to add a link based on question type
+            is_club = self._is_club_question(question)
+            is_wake_tech = self._is_wake_tech_question(question)
+            
+            # Add appropriate link
+            if is_club:
+                # Only add club link for club questions
+                response_text += "\n\nFor more information, check out the [Club Directory](https://docs.google.com/spreadsheets/d/1PRDlRHqqCjqDjnAtC4XkFNGdr1zU1wYkAQV00n65-Ag/edit?gid=0#gid=0)."
+            elif is_wake_tech:
+                # Add relevant Wake Tech link only if there's a strong match
+                wake_tech_link_info = self._get_wake_tech_link(question, context, docs)
+                if wake_tech_link_info:
+                    link_title = wake_tech_link_info.get('title', 'Wake Tech CCP')
+                    link_url = wake_tech_link_info.get('url', '')
+                    response_text += f"\n\nFor more information, check out: [{link_title}]({link_url})"
+            
+            return response_text
             
         except Exception as e:
+            import traceback
+            error_traceback = traceback.format_exc()
             print(f"Error in RAG query: {e}")
+            print(f"Full traceback:\n{error_traceback}")
             return (
                 "I encountered an error while processing your question. "
                 "Please try rephrasing your question or ask about something else. "

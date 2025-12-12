@@ -3,6 +3,7 @@ Flask application for Green Level AI Counselor Chatbot.
 """
 import os
 import logging
+import socket
 from atexit import register
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
@@ -167,6 +168,19 @@ def quick_action():
         }), 500
 
 
+def find_available_port(start_port=5000, max_attempts=10):
+    """Find an available port starting from start_port."""
+    for i in range(max_attempts):
+        port = start_port + i
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.bind(('', port))
+                return port
+            except OSError:
+                continue
+    raise RuntimeError(f"Could not find an available port after {max_attempts} attempts")
+
+
 if __name__ == "__main__":
     # Check for OpenAI API key
     if not os.getenv("OPENAI_API_KEY"):
@@ -174,6 +188,12 @@ if __name__ == "__main__":
         logger.error("Please create a .env file with: OPENAI_API_KEY=your_key_here")
         exit(1)
     
+    # Find available port (start with 5000, try next if in use)
+    port = find_available_port(5000)
+    if port != 5000:
+        logger.info(f"Port 5000 is in use. Using port {port} instead.")
+    
+    logger.info(f"Starting Flask app on http://localhost:{port}")
     # Run the app
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=port, debug=True)
 

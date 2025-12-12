@@ -1,0 +1,1298 @@
+{
+  "program_name": "Wake Tech Career & College Promise (CCP)",
+  "last_checked": "2025-12-11",
+  "summary": "Wake Tech’s Career & College Promise (CCP) program allows eligible North Carolina high school students to take tuition-free college courses that count toward a degree, diploma, or career credential, often earning both high school and college credit at the same time. CCP includes college transfer pathways designed to satisfy general education and prerequisite requirements for four-year universities, as well as career and technical education pathways that lead to industry-focused certificates and workforce preparation. Program rules, eligibility benchmarks, and dual-credit allowances are governed jointly by the NC Community College System and NC Department of Public Instruction, with local implementation details specific to Wake Tech.",
+  "official_pages": {
+    "main_ccp_page": {
+      "title": "Career & College Promise | Wake Tech",
+      "url": "https://www.waketech.edu/career-and-college-promise",
+      "access_date": "2025-12-11",
+      "description": "Primary landing page describing Wake Tech CCP overview, benefits, and contact options."
+    },
+    "eligibility_page": {
+      "title": "Eligibility for Career & College Promise Pathways - Wake Tech",
+      "url": "https://www.waketech.edu/career-and-college-promise/eligibility",
+      "access_date": "2025-12-11",
+      "description": "Defines CCP eligibility for college transfer and CTE pathways, including grade‑level rules and assessment benchmarks."
+    },
+    "faqs_page": {
+      "title": "Career & College Promise FAQs | Wake Tech",
+      "url": "https://www.waketech.edu/career-and-college-promise/faqs",
+      "access_date": "2025-12-11",
+      "description": "Answers common questions about CCP courses, transferability, policies, and student responsibilities."
+    },
+    "ncdpi_dual_credit": {
+      "title": "Dual Credit Allowances for Career & College Promise Effective 2024‑25",
+      "url": "https://www.dpi.nc.gov/documents/advancedlearning/cihs/ccp-dual-credit-allowances-version-9-august-2024/download?attachment",
+      "access_date": "2025-12-11",
+      "description": "Statewide chart showing how CCP courses count toward NC high school graduation requirements."
+    },
+    "ncccs_operating_procedures": {
+      "title": "Section 14 – Career and College Promise Operating Procedures (2024 FA)",
+      "url": "https://wordpress.nccommunitycolleges.edu/wp-content/uploads/2024/09/Section14_2024FA-FINAL-12.pdf",
+      "access_date": "2025-12-11",
+      "description": "System‑level CCP operating procedures defining statewide eligibility and program rules."
+    }
+  },
+  "eligibility": {
+    "general_notes": "All CCP students must be enrolled in a North Carolina high school (public, charter, private, or homeschool) and maintain satisfactory academic progress to remain in the program. Wake Tech follows the NC Community College System CCP operating procedures, with local processes layered on top.",
+    "college_transfer": {
+      "juniors_seniors": {
+        "grade_level": "11-12",
+        "requirements": {
+          "gpa_minimum": 2.8,
+          "gpa_basis": "Unweighted high school GPA when used per system multiple measures policy; colleges may also use approved assessment scores for students below GPA threshold.",
+          "assessments": {
+            "description": "Students must be college‑ready in English, reading, and mathematics using state‑approved tests; scores may be combined across tests.",
+            "approved_tests": [
+              "PSAT 10/PSAT NMSQT",
+              "SAT",
+              "Pre‑ACT",
+              "ACT",
+              "NC DAP (diagnostic placement test)",
+              "Wake Tech placement test / RISE math and English tiers",
+              "Advanced Placement (AP)",
+              "International Baccalaureate (IB)",
+              "Cambridge International Examinations",
+              "ACCUPLACER (classic and Next‑Gen) where still used"
+            ],
+            "numeric_cutoffs": {
+              "psat_english_or_ebrw": 460,
+              "psat_math": 510,
+              "sat_ebrw": 480,
+              "sat_math": 530,
+              "act_english": 18,
+              "act_reading": 22,
+              "act_math": 22,
+              "nc_dap_english_reading": 151,
+              "nc_dap_math_dma010_060": 7,
+              "rise_english_tiers": 70,
+              "rise_math_tiers": 70,
+              "ap_english_lang": 3,
+              "ap_english_lit": 3,
+              "ap_calculus_ab": 3,
+              "ap_calculus_bc": 3,
+              "ib_english_a": 4,
+              "ib_math_advanced": 4,
+              "ib_math_studies": 4,
+              "cambridge_as_a_level_english": "Grade C or higher",
+              "cambridge_as_a_level_math": "Grade C or higher",
+              "accuplacer_sentence_skills": 86,
+              "accuplacer_reading_classic": 80,
+              "accuplacer_arithmetic": 55,
+              "accuplacer_elementary_algebra": 75,
+              "accuplacer_nextgen_reading": 253,
+              "accuplacer_nextgen_qas": 254
+            }
+          },
+          "additional_requirements": [
+            "Student must be on track for high school graduation.",
+            "Student must declare an eligible college transfer pathway aligned with career or transfer goals."
+          ]
+        },
+        "principal_designee_memo_rules": {
+          "allowed": true,
+          "description": "For special cases (e.g., freshmen/sophomores or students slightly below benchmarks), principal or equivalent administrator may recommend CCP participation under state operating procedures; local documentation is required.",
+          "requirements": [
+            "Written recommendation from high school principal or equivalent administrator verifying maturity and readiness.",
+            "Additional gifted/AIG documentation for freshmen and sophomores seeking college transfer pathways."
+          ]
+        }
+      },
+      "freshmen_sophomores": {
+        "grade_level": "9-10",
+        "requirements": {
+          "gpa_minimum": null,
+          "gpa_basis": "State procedures allow limited early‑college participation for highly qualified 9th–10th graders in transfer pathways with stringent local criteria; Wake Tech references AIG plan documentation and aptitude/achievement test evidence.",
+          "assessments": {
+            "description": "Must demonstrate exceptional aptitude and achievement using tests recognized in local AIG plan; Wake Tech lists examples and refers to Buros Center Mental Measurements Yearbook for additional acceptable assessments.",
+            "approved_tests": [
+              "State/local‑approved aptitude tests referenced in Wake County AIG plan",
+              "State/local‑approved achievement tests aligned to CCP policy"
+            ],
+            "numeric_cutoffs": null
+          },
+          "additional_requirements": [
+            "Documented placement in AIG (Academically or Intellectually Gifted) across all areas under local plan (e.g., Wake County).",
+            "Recommendations from principal or equivalent administrator and AIG coordinator (if employed by district), plus college president or designee."
+          ]
+        },
+        "principal_designee_memo_rules": {
+          "allowed": true,
+          "description": "State procedures explicitly require principal and AIG‑coordinator recommendations plus college approval for 9th–10th grade students in transfer pathways; these are typically documented via letters or forms."
+        }
+      }
+    },
+    "cte": {
+      "juniors_seniors": {
+        "grade_level": "11-12",
+        "requirements": {
+          "gpa_minimum": 2.8,
+          "gpa_basis": "Unweighted high school GPA; students below threshold may qualify via assessments or principal recommendation in accordance with CCP operating procedures.",
+          "assessments": {
+            "description": "State‑approved diagnostic assessments and multiple measures may be used where GPA is under the default threshold, consistent with Section 14 procedures.",
+            "approved_tests": [
+              "PSAT 10/PSAT NMSQT",
+              "SAT",
+              "Pre‑ACT",
+              "ACT",
+              "NC DAP/RISE or Wake Tech placement tests",
+              "Other tests recognized in system CCP Attachment A benchmarks"
+            ],
+            "numeric_cutoffs": null
+          },
+          "additional_requirements": [
+            "Student must be making satisfactory progress toward high school graduation in a program of study.",
+            "Student must select a CTE pathway that leads to a certificate or diploma aligned with a career field."
+          ]
+        },
+        "principal_designee_memo_rules": {
+          "allowed": true,
+          "description": "Operating procedures allow approval by high school principal or equivalent when a student is otherwise qualified but does not fully meet GPA or test thresholds; local documentation practices apply."
+        }
+      },
+      "freshmen_sophomores": {
+        "grade_level": "9-10",
+        "requirements": {
+          "gpa_minimum": 3.0,
+          "gpa_basis": "Typical local expectation for early CTE access; exact Wake Tech numeric requirement for each CTE pathway is not fully enumerated on the public eligibility page, so program staff review each case.",
+          "assessments": {
+            "description": "Some CTE pathways require specific placement levels or test scores, especially where math or English prerequisites apply; CCP staff evaluate 9th–10th grade eligibility per pathway.",
+            "approved_tests": [
+              "Local benchmark assessments",
+              "Statewide placement tests (RISE/NC DAP) for math/English prerequisites"
+            ],
+            "numeric_cutoffs": null
+          },
+          "additional_requirements": [
+            "Student must be a 9th or 10th grader in pathways that do not include Universal General Education Transfer Component courses.",
+            "Eligible CTE areas for 9th–10th graders include Business Technologies (25xxx), Construction Technology (35xxx), Engineering Technologies (40xxx), and Information Technologies (select codes such as Business Analytics and IT)."
+          ]
+        },
+        "principal_designee_memo_rules": {
+          "allowed": true,
+          "description": "Principals may support CTE participation for younger students who demonstrate maturity and readiness beyond minimum criteria; documentation is submitted to Wake Tech via CCP forms and e‑signature workflows."
+        }
+      }
+    },
+    "continuation_requirements": {
+      "college_gpa_minimum": 2.0,
+      "description": "Students must maintain at least a 2.0 college GPA after completing two CCP courses to remain eligible, and are subject to satisfactory academic progress policies if they fall below 2.0.",
+      "other": [
+        "Students must continue making progress toward high school graduation and adhere to high school rules and Wake Tech academic policies."
+      ]
+    }
+  },
+  "enrollment_steps": [
+    {
+      "category": "new_student",
+      "steps": [
+        {
+          "order": 1,
+          "title": "Explore pathways and confirm eligibility",
+          "description": "Review Wake Tech CCP overview, available pathways, and eligibility benchmarks; consult with high school counselor and family to decide whether to pursue College Transfer or CTE options.",
+          "links": [
+            {
+              "label": "Wake Tech CCP main page",
+              "url": "https://www.waketech.edu/career-and-college-promise"
+            },
+            {
+              "label": "Wake Tech CCP eligibility",
+              "url": "https://www.waketech.edu/career-and-college-promise/eligibility"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Complete Wake Tech application as a CCP student",
+          "description": "Submit the Wake Tech application selecting the appropriate Career & College Promise status and chosen pathway; this creates the college record needed before enrollment forms are processed.",
+          "links": [],
+          "submission_channel": "Wake Tech online application portal (linked from CCP pages)."
+        },
+        {
+          "order": 3,
+          "title": "Gather high school transcript and test scores",
+          "description": "Request an official high school transcript and standardized test score reports (ACT/SAT/PSAT, etc.) as needed for eligibility review; WCPSS students often order electronic transcripts via district records request systems.",
+          "links": [],
+          "submission_channel": "Transcript sent electronically or by mail according to Wake Tech instructions."
+        },
+        {
+          "order": 4,
+          "title": "Complete Career & College Promise Enrollment/EV form",
+          "description": "Fill out the CCP Enrollment and Verification (EV) form that specifies the student’s pathway and collects required approvals through DocuSign, including parent/guardian, high school, and college signatures.",
+          "links": [],
+          "submission_channel": "Electronic DocuSign workflow initiated by student completion of the EV form; route includes principal/designee and Wake Tech officials."
+        },
+        {
+          "order": 5,
+          "title": "Obtain principal/designee and district approvals",
+          "description": "High school principal or authorized designee verifies student eligibility, pathway alignment, and graduation status within the EV form; district officials and Wake Tech’s chief student development/academic officers provide final approvals.",
+          "links": [],
+          "submission_channel": "DocuSign e‑signature; students do not need to contact Wake Tech separately for institutional signature routing."
+        },
+        {
+          "order": 6,
+          "title": "Receive acceptance and activate Wake Tech account",
+          "description": "After documentation is processed, the student receives an acceptance letter with instructions for accessing Wake Tech email, Self‑Service, and orientation resources as a CCP participant.",
+          "links": [],
+          "submission_channel": "Acceptance via email; account activation via Wake Tech technology services as instructed."
+        },
+        {
+          "order": 7,
+          "title": "Register for classes during CCP registration window",
+          "description": "New CCP students register for approved courses using Wake Tech’s Self‑Service system or through CCP staff assistance, following published CCP registration deadlines.",
+          "links": [],
+          "submission_channel": "Self‑Service online registration; CCP staff can assist with schedule adjustments."
+        }
+      ]
+    },
+    {
+      "category": "continuing_student",
+      "steps": [
+        {
+          "order": 1,
+          "title": "Confirm academic standing and pathway",
+          "description": "Ensure college GPA is at least 2.0 after two CCP courses and that the current CCP pathway still aligns with academic and career goals; consult with CCP advisor if changes are needed.",
+          "links": []
+        },
+        {
+          "order": 2,
+          "title": "Submit continuing student or EV update form if required",
+          "description": "Some terms require a shortened continuing CCP form or updated EV form to confirm ongoing participation and pathway details; high school counselor and CCP staff coordinate this step.",
+          "links": [],
+          "submission_channel": "Electronic document submission per Wake Tech CCP instructions, often via DocuSign."
+        },
+        {
+          "order": 3,
+          "title": "Meet with CCP advisor or counselor",
+          "description": "Review course options, prerequisites, and high school graduation requirements; verify dual‑credit applicability using NCDPI Dual Credit Allowances chart when needed.",
+          "links": []
+        },
+        {
+          "order": 4,
+          "title": "Register in Self‑Service during priority windows",
+          "description": "Continuing CCP students use Self‑Service to add courses for upcoming terms by the CCP self‑registration deadlines published by Wake Tech and local districts.",
+          "links": [],
+          "submission_channel": "Online Self‑Service registration."
+        }
+      ]
+    }
+  ],
+  "pathways": {
+    "college_transfer": {
+      "description": "College transfer pathways are structured sets of general education and pre‑major courses that satisfy requirements toward associate degrees and are designed to transfer to UNC System and many private four‑year institutions.",
+      "typical_credentials": [
+        "Associate in Arts (AA) transfer coursework",
+        "Associate in Science (AS) transfer coursework",
+        "Associate in Engineering (AE) transfer coursework",
+        "Associate in Fine Arts or other specialized transfer options, as available"
+      ],
+      "sample_courses": [
+        {
+          "course_code": "ENG 111",
+          "title": "Writing and Inquiry",
+          "notes": "UGETC course that typically counts as one unit of high school English and transfers broadly under the CAA."
+        },
+        {
+          "course_code": "MAT 171",
+          "title": "Precalculus Algebra",
+          "notes": "Common math course satisfying both high school and college math graduation requirements per dual‑credit chart."
+        },
+        {
+          "course_code": "ACA 122",
+          "title": "College Transfer Success",
+          "notes": "Required in many transfer pathways to support college planning and success skills."
+        }
+      ],
+      "example_pathways": [
+        "Associate in Arts College Transfer Pathway (AA)",
+        "Associate in Science College Transfer Pathway (AS)",
+        "Associate in Engineering Pathway (AE)",
+        "Other specialized College Transfer pathways where listed by Wake Tech"
+      ],
+      "links": [],
+      "program_sheets": null
+    },
+    "cte": [
+      {
+        "cluster": "Business Technologies",
+        "code_range": "25xxx",
+        "description": "Business‑oriented CTE pathways such as accounting, business administration, and analytics that lead to certificates or diplomas in business fields.",
+        "typical_credentials": [
+          "Business Administration Certificate",
+          "Accounting Certificate or Diploma",
+          "Business Analytics Certificate"
+        ],
+        "sample_courses": [
+          {
+            "course_code": null,
+            "title": "Introductory business and accounting courses that provide foundational skills for entry‑level business roles.",
+            "notes": "Specific course lists appear on individual Wake Tech program sheets."
+          }
+        ],
+        "links": [],
+        "program_sheets": null
+      },
+      {
+        "cluster": "Construction Technology",
+        "code_range": "35xxx",
+        "description": "CTE pathways focused on construction trades and building technologies that prepare students for entry‑level roles and apprenticeships.",
+        "typical_credentials": [
+          "Construction Technology Certificate",
+          "Carpentry or Building Construction Diploma"
+        ],
+        "sample_courses": [
+          {
+            "course_code": null,
+            "title": "Construction technology core courses covering safety, tools, and building methods.",
+            "notes": "Course codes vary by specific construction program."
+          }
+        ],
+        "links": [],
+        "program_sheets": null
+      },
+      {
+        "cluster": "Engineering Technologies",
+        "code_range": "40xxx",
+        "description": "Applied engineering and technical pathways such as engineering technology, drafting, or mechatronics emphasizing hands‑on problem solving and technical skills.",
+        "typical_credentials": [
+          "Engineering Technology Certificate",
+          "Drafting or Design Certificate"
+        ],
+        "sample_courses": [
+          {
+            "course_code": null,
+            "title": "Introductory engineering technology courses in drafting, design, or applied physics.",
+            "notes": "Exact course lists are pathway specific."
+          }
+        ],
+        "links": [],
+        "program_sheets": null
+      },
+      {
+        "cluster": "Information Technologies",
+        "code_range": "25xxx (select IT)",
+        "description": "IT CTE pathways, including Business Analytics and Information Technology, offering early preparation in computing, networking, programming, or data skills.",
+        "typical_credentials": [
+          "Information Technology Certificate",
+          "Business Analytics Certificate"
+        ],
+        "sample_courses": [
+          {
+            "course_code": null,
+            "title": "Introductory information technology or analytics courses covering basics of computing, databases, or data analysis.",
+            "notes": "Specific course codes depend on chosen IT program."
+          }
+        ],
+        "links": [],
+        "program_sheets": null
+      }
+    ]
+  },
+  "courses_and_catalog": {
+    "registration_system": "Wake Tech Self‑Service (online student information and registration portal) used by CCP students for course selection and schedule management.",
+    "catalog_access": null,
+    "prerequisites": "All CCP students must meet regular college course prerequisites, including required placement levels, prior coursework, or test scores, before registering for specific courses.",
+    "dual_credit_reference": {
+      "description": "The NCDPI Dual Credit Allowances chart lists which CCP college courses meet specific NC high school graduation requirements and how many high school credits each course provides.",
+      "url": "https://www.dpi.nc.gov/documents/advancedlearning/cihs/ccp-dual-credit-allowances-version-9-august-2024/download?attachment",
+      "access_date": "2025-12-11"
+    }
+  },
+  "registration_and_deadlines": {
+    "ccp_specific_deadlines": {
+      "description": "Wake Tech and local districts publish CCP application, EV form, and self‑registration windows each term; WCPSS examples include March 1 CCP enrollment cycle start dates and early summer/fall registration deadlines.",
+      "examples": [
+        "Enrollment cycle beginning in early March for summer/fall.",
+        "Self‑registration deadlines in May for summer and July for fall (example values from WCPSS guidance).[]"
+      ],
+      "notes": "Exact dates vary by term and are posted on Wake Tech CCP registration/important dates pages and school district counseling sites."
+    },
+    "add_drop_policies": {
+      "description": "CCP students follow Wake Tech’s academic calendar for add/drop and withdrawal deadlines rather than their high school calendar; failing to drop by the deadline can result in a grade on the college transcript.",
+      "calendar_links": []
+    },
+    "orientation": {
+      "description": "New CCP students typically complete online or virtual orientation modules and may be encouraged to attend CCP‑specific information sessions to learn about expectations and online systems.",
+      "link": null
+    },
+    "placement_and_testing": {
+      "description": "Placement for math and English often uses multiple measures, including high school GPA, ACT/SAT/PSAT scores, and RISE or NC DAP placement tests, with college‑level readiness required for many transfer courses."
+    }
+  },
+  "costs": {
+    "tuition": {
+      "description": "Tuition is waived for eligible CCP students enrolled in approved pathways under state law; students do not pay regular per‑credit tuition for CCP courses."
+    },
+    "fees": {
+      "description": "Some local or course‑specific fees may apply depending on program or materials, but core CCP tuition is covered; Wake Tech’s cost of attendance documents list standard fees for degree‑seeking students as context.",
+      "link": "https://www.waketech.edu/sites/default/files/page-file-uploads/Cost-of-Attendance-2024-25.pdf",
+      "access_date": "2025-12-11"
+    },
+    "books_and_supplies": {
+      "description": "CCP students are typically responsible for textbooks and required supplies, although local districts sometimes provide assistance; Wake Tech’s cost of attendance estimates include books and materials for regular students.",
+      "bookstore_link": null
+    },
+    "financial_aid": {
+      "description": "Traditional federal and state financial aid generally does not apply directly to CCP courses because tuition is already waived, but CCP participation may affect future aid eligibility considerations such as Satisfactory Academic Progress once the student becomes degree‑seeking."
+    }
+  },
+  "academic_policies": {
+    "gpa_and_standing": {
+      "min_college_gpa": 2.0,
+      "description": "CCP students must maintain at least a 2.0 college GPA after completing two courses to remain eligible and are held to the same academic standards as degree‑seeking students."
+    },
+    "withdrawal_and_grades": {
+      "description": "Grades and withdrawals in CCP courses appear on the official Wake Tech college transcript; failing or withdrawing from courses can affect future eligibility, high school graduation planning, and later financial aid considerations.",
+      "hs_gpa_effect": "Local school districts determine how CCP course grades factor into high school GPA and class rank, often weighting them similarly to other college‑level or AP courses under local policy."
+    },
+    "course_load_and_pathway": {
+      "description": "Section 14 procedures specify that students must be enrolled in coursework consistent with an approved pathway, and pathway changes require approval by the college’s chief academic or student development officer based on evidence of a revised career plan."
+    },
+    "behavior_and_attendance": {
+      "description": "CCP students must follow all Wake Tech academic policies and procedures in addition to their high school’s rules; they are responsible for attending college classes even when the high school is on a different schedule or break."
+    }
+  },
+  "required_documents": [
+    {
+      "name": "Wake Tech CCP New Student Application (online)",
+      "type": "online_form",
+      "url": null,
+      "access_date": null,
+      "description": "Application to Wake Tech indicating participation in Career & College Promise and selected pathway; required before EV form processing.",
+      "downloadable": false
+    },
+    {
+      "name": "CCP Enrollment and Verification (EV) Form – New Students",
+      "type": "form",
+      "url": null,
+      "access_date": null,
+      "description": "DocuSign‑based form that collects student, parent, and school approvals and routes to Wake Tech officials; instruction sheet describes signature sequence and processing.",
+      "downloadable": false
+    },
+    {
+      "name": "High School Transcript",
+      "type": "record",
+      "url": null,
+      "access_date": null,
+      "description": "Official transcript showing current coursework, GPA, and anticipated graduation date used to verify CCP eligibility and placement.",
+      "downloadable": false
+    },
+    {
+      "name": "Standardized Test Reports (ACT/SAT/PSAT, etc.)",
+      "type": "supporting_document",
+      "url": null,
+      "access_date": null,
+      "description": "Score reports used to document college‑readiness based on approved assessment benchmarks in English, reading, and math.",
+      "downloadable": false
+    },
+    {
+      "name": "Attachment A – College Readiness Benchmarks (state CCP policy)",
+      "type": "pdf",
+      "url": "https://www.isothermal.edu/ccp/assets/ccp-assessment-table.pdf",
+      "access_date": "2025-12-11",
+      "description": "Statewide table of CCP program eligibility benchmarks on approved diagnostic assessment tests, used by colleges including Wake Tech.",
+      "downloadable": true
+    },
+    {
+      "name": "NCDPI Dual Credit Allowances Chart (2024‑25)",
+      "type": "pdf",
+      "url": "https://www.dpi.nc.gov/documents/advancedlearning/cihs/ccp-dual-credit-allowances-version-9-august-2024/download?attachment",
+      "access_date": "2025-12-11",
+      "description": "Document that lists community college courses eligible for dual high school and college credit and their high school course equivalents.",
+      "downloadable": true
+    }
+  ],
+  "advising_and_contacts": {
+    "ccp_staff_email": {
+      "email": null,
+      "description": "Wake Tech lists a CCP staff email contact on the main CCP page for questions and assistance; students and families can use that address for general advising and process help."
+    },
+    "virtual_advising": {
+      "description": "Students may schedule virtual CCP advising appointments through links provided on Wake Tech CCP pages to review pathways, course options, and registration.",
+      "link": null
+    },
+    "campus_resources": [
+      "CCP students have access to Wake Tech student support services, including free tutoring, clubs, and activities where allowed, though they generally cannot participate in intercollegiate athletics.",
+      "High school counselors remain key contacts for aligning CCP courses with graduation plans and district policies."
+    ],
+    "timeline_for_counselors": "NCDPI recommends that school personnel provide CCP advising that emphasizes pathway selection, GPA and college readiness expectations, and the impact of CCP coursework on high school graduation and future opportunities, beginning as early as course registration for the upcoming school year."
+  },
+  "special_cases": {
+    "homeschool_students": {
+      "description": "Homeschool students may participate in CCP if they meet state eligibility criteria and can provide appropriate documentation of enrollment, transcript, and assessment benchmarks; the homeschool administrator functions as the equivalent of a principal."
+    },
+    "private_school_students": {
+      "description": "Private school students are eligible under the same state CCP rules, with their school head or designated official serving as the recommending administrator for eligibility and pathway selection."
+    },
+    "out_of_county_students": {
+      "description": "CCP is a statewide program; out‑of‑county students may enroll at Wake Tech if they meet eligibility and residency requirements and coordinate with their local high school for dual‑credit recognition, subject to space and local agreements."
+    },
+    "international_or_visa_status": {
+      "description": "CCP participation is generally based on NC high school enrollment rather than federal student visa classification; students on dependent visas or other statuses should confirm any immigration‑related limitations with their high school and, where relevant, with Wake Tech international services."
+    },
+    "concurrent_enrollment_multiple_colleges": {
+      "description": "State CCP procedures focus on a primary community college partner; while policy does not explicitly forbid concurrent CCP participation at multiple colleges, students must ensure compliance with credit limits, advising, and local district rules before attempting multi‑college enrollment."
+    },
+    "repeating_courses": {
+      "description": "Repeating a failed CCP course follows the college’s course repeat and satisfactory academic progress policies and may require approval; repeated coursework remains on the college transcript and can affect GPA and future aid eligibility."
+    },
+    "remedial_courses": {
+      "description": "CCP is intended for college‑level work; students must meet placement standards, and developmental/remedial courses are generally not part of CCP pathways."
+    },
+    "testing_alternatives": {
+      "description": "Multiple measures placement policies allow colleges to use unweighted high school GPA and/or ACT/SAT scores before requiring placement tests; if sufficient data are not available, diagnostic or RISE placement testing is used to determine readiness."
+    }
+  },
+  "outcomes_and_transfer": {
+    "transfer_within_unc": {
+      "description": "College transfer CCP courses in UGETC and other CAA‑approved categories transfer for equivalency credit at UNC institutions, and students who pass such courses also earn corresponding high school credits as defined in the Dual Credit Allowances chart.",
+      "notes": "Students should confirm how specific courses apply to intended majors by reviewing baccalaureate degree plans from target universities."
+    },
+    "transfer_to_private_or_out_of_state": {
+      "description": "Many private and out‑of‑state institutions accept CCP credits but policies vary; students aiming at competitive or non‑UNC institutions should ask colleges directly for transfer evaluations and may prioritize general education courses."
+    },
+    "credentials_and_career": {
+      "description": "CTE pathways enable students to complete industry‑aligned certificates or diplomas that strengthen employability and can be stacked into longer‑term programs after high school."
+    },
+    "advice_for_selective_admissions": {
+      "description": "For highly selective admissions, CCP courses can demonstrate college readiness and rigor when taken thoughtfully; students should balance CCP with AP/IB and advanced coursework, maintain high GPAs, and align CCP courses with their academic narrative and prospective majors."
+    }
+  },
+  "faq": [
+    {
+      "q": "What is Wake Tech’s Career & College Promise (CCP) program?",
+      "a": "CCP is a dual‑enrollment program that lets eligible high school students take tuition‑free Wake Tech courses that count toward college credentials and often also satisfy high school graduation requirements.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise"
+      ]
+    },
+    {
+      "q": "Who is eligible to participate in CCP?",
+      "a": "Eligible students are enrolled in NC public, charter, private, or homeschool high schools, meet grade‑level and pathway‑specific GPA and readiness benchmarks, and are on track for high school graduation.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/eligibility"
+      ]
+    },
+    {
+      "q": "What is the minimum college GPA needed to stay in CCP?",
+      "a": "Students must maintain at least a 2.0 GPA after completing two CCP courses to remain eligible and are subject to satisfactory academic progress rules if they fall below that threshold.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs",
+        "https://www.waketech.edu/career-and-college-promise/eligibility"
+      ]
+    },
+    {
+      "q": "Do CCP students pay tuition?",
+      "a": "No, tuition for approved CCP pathway courses is waived; students generally only pay for books, supplies, and any applicable course or local fees.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "How do CCP courses count toward high school graduation?",
+      "a": "NCDPI’s Dual Credit Allowances chart assigns each approved CCP course to specific high school graduation requirements and defines how many high school credits it awards.",
+      "sources": [
+        "https://www.dpi.nc.gov/documents/advancedlearning/cihs/ccp-dual-credit-allowances-version-9-august-2024/download?attachment",
+        "https://www.dpi.nc.gov/documents/advancedlearning/cihs/faq-dual-enrollment-and-graduation-requirements/download?attachment"
+      ]
+    },
+    {
+      "q": "Can CCP courses transfer to UNC System universities?",
+      "a": "Yes, UGETC and other CAA‑approved transfer courses completed through CCP transfer as equivalency credit at UNC institutions, subject to standard CAA rules.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "Can freshmen and sophomores participate in CCP?",
+      "a": "Yes, but access is limited and requires stricter criteria; 9th–10th graders must meet specific state and local requirements, such as AIG plan documentation for transfer pathways or enrollment in designated CTE pathways without UGETC courses.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/eligibility"
+      ]
+    },
+    {
+      "q": "What are the main differences between College Transfer and CTE pathways?",
+      "a": "College Transfer pathways focus on general education and pre‑major courses intended to transfer to four‑year colleges, while CTE pathways lead to certificates or diplomas tied to specific careers and technical fields.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise",
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "How does a student apply to Wake Tech for CCP?",
+      "a": "Students complete the Wake Tech application as a CCP student, provide high school transcripts and test scores, and then complete the CCP Enrollment/EV form with required signatures.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise"
+      ]
+    },
+    {
+      "q": "What is the CCP Enrollment/EV form?",
+      "a": "It is a multi‑signature document, often routed via DocuSign, that verifies student eligibility, pathway selection, and approvals from the student, parent, school officials, and Wake Tech.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise",
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "How are CCP registration dates determined?",
+      "a": "Wake Tech sets CCP registration and important dates each term, and school districts publish aligned deadlines for applications and self‑registration windows.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise",
+        "https://www.wcpss.net/Page/34662"
+      ]
+    },
+    {
+      "q": "How does a CCP student register for courses?",
+      "a": "After acceptance and advising, CCP students register for approved courses using Wake Tech’s Self‑Service system or with CCP staff assistance during published registration windows.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise",
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "Are CCP students considered college students?",
+      "a": "Yes, CCP participants are official Wake Tech students and must follow all college academic policies and classroom expectations in addition to their high school rules.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "Do CCP students get access to college support services?",
+      "a": "CCP students have access to Wake Tech student support services, including tutoring, advising, and many campus resources, though athletic eligibility is generally restricted.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "What happens if a CCP student fails a class?",
+      "a": "The failing grade appears on the Wake Tech transcript and may lower the college GPA below the 2.0 minimum, risking CCP eligibility and potentially affecting future financial aid as a degree‑seeking student.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "Can CCP courses replace high school courses?",
+      "a": "Yes, when listed on the Dual Credit Allowances chart, CCP courses can satisfy specific high school course requirements, but students must complete all college courses indicated for the corresponding high school requirement.",
+      "sources": [
+        "https://www.dpi.nc.gov/documents/advancedlearning/cihs/ccp-dual-credit-allowances-version-9-august-2024/download?attachment",
+        "https://www.dpi.nc.gov/documents/advancedlearning/cihs/faq-dual-enrollment-and-graduation-requirements/download?attachment"
+      ]
+    },
+    {
+      "q": "Do CCP courses affect high school GPA and class rank?",
+      "a": "Local school districts decide how CCP course grades are added to high school transcripts and weighted for GPA and rank, often treating them like other college‑level or advanced courses.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs",
+        "https://www.dpi.nc.gov/documents/advancedlearning/cihs/faq-dual-enrollment-and-graduation-requirements/download?attachment"
+      ]
+    },
+    {
+      "q": "Can a student change CCP pathways?",
+      "a": "Yes, but pathway changes require evidence that the new program better fits the student’s career goals and must be approved by the college’s academic or student development leadership.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs",
+        "https://wordpress.nccommunitycolleges.edu/wp-content/uploads/2024/09/Section14_2024FA-FINAL-12.pdf"
+      ]
+    },
+    {
+      "q": "Are there limits on how many CCP courses a student can take?",
+      "a": "State CCP procedures limit students to courses within their approved pathway and apply credit‑hour and load guidelines; advisors help students plan reasonable schedules.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs",
+        "https://wordpress.nccommunitycolleges.edu/wp-content/uploads/2024/09/Section14_2024FA-FINAL-12.pdf"
+      ]
+    },
+    {
+      "q": "Can CCP students take classes online?",
+      "a": "Yes, CCP courses are offered at multiple Wake Tech campuses and online, with class times and formats varying by course.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "What if the high school and college calendars do not match?",
+      "a": "CCP students must follow Wake Tech’s calendar for class meetings, breaks, and holidays; they are responsible for attending college classes even when their high school is closed.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "Are CCP courses weighted like AP or IB classes?",
+      "a": "Weighting is determined by local school district policy; many districts assign similar or identical weighting to CCP and other advanced courses, but students must confirm with counselors.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs",
+        "https://www.dpi.nc.gov/documents/advancedlearning/cihs/faq-dual-enrollment-and-graduation-requirements/download?attachment"
+      ]
+    },
+    {
+      "q": "How should students aiming for selective colleges use CCP?",
+      "a": "Students targeting selective admissions can use CCP to show success in rigorous college courses aligned with their intended majors while maintaining high grades and balancing CCP with AP/IB coursework.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/faqs"
+      ]
+    },
+    {
+      "q": "Can homeschool or private school students join CCP?",
+      "a": "Yes, homeschooled and private school students may participate if they meet CCP eligibility requirements and provide appropriate transcripts and documentation from their school or homeschool administrator.",
+      "sources": [
+        "https://www.waketech.edu/career-and-college-promise/eligibility"
+      ]
+    },
+    {
+      "q": "Where can counselors find statewide CCP advising guidance?",
+      "a": "NCDPI provides a CCP Advising Guidance document for school personnel that explains eligibility, pathway selection, and key advising messages for students.",
+      "sources": [
+        "https://www.dpi.nc.gov/documents/advancedlearning/ccp-advising-guidance-school-personnel-21121pdf/download?attachment"
+      ]
+    }
+  ],
+  "developer_metadata": {
+    "json_schema": {
+      "type": "object",
+      "required": [
+        "program_name",
+        "last_checked",
+        "summary",
+        "official_pages",
+        "eligibility",
+        "enrollment_steps",
+        "pathways",
+        "courses_and_catalog",
+        "registration_and_deadlines",
+        "costs",
+        "academic_policies",
+        "required_documents",
+        "advising_and_contacts",
+        "special_cases",
+        "outcomes_and_transfer",
+        "faq",
+        "developer_metadata",
+        "sources",
+        "raw_snippets",
+        "confidence",
+        "missing_fields",
+        "assumptions",
+        "change_log"
+      ],
+      "properties": {
+        "program_name": {
+          "type": "string"
+        },
+        "last_checked": {
+          "type": "string",
+          "format": "date"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "official_pages": {
+          "type": "object"
+        },
+        "eligibility": {
+          "type": "object"
+        },
+        "enrollment_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": [
+                  "new_student",
+                  "continuing_student"
+                ]
+              },
+              "steps": {
+                "type": "array"
+              }
+            }
+          }
+        },
+        "pathways": {
+          "type": "object"
+        },
+        "courses_and_catalog": {
+          "type": "object"
+        },
+        "registration_and_deadlines": {
+          "type": "object"
+        },
+        "costs": {
+          "type": "object"
+        },
+        "academic_policies": {
+          "type": "object"
+        },
+        "required_documents": {
+          "type": "array"
+        },
+        "advising_and_contacts": {
+          "type": "object"
+        },
+        "special_cases": {
+          "type": "object"
+        },
+        "outcomes_and_transfer": {
+          "type": "object"
+        },
+        "faq": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "q": {
+                "type": "string"
+              },
+              "a": {
+                "type": "string"
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "developer_metadata": {
+          "type": "object"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "raw_snippets": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "confidence": {
+          "type": "object"
+        },
+        "missing_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "recommended_ui": {
+      "eligibility_checker_fields": [
+        "current_grade_level",
+        "unweighted_high_school_gpa",
+        "high_school_type (public/charter/private/homeschool)",
+        "intended_pathway_type (college_transfer/cte)",
+        "standardized_test_scores (ACT, SAT, PSAT, Pre-ACT)",
+        "placement_test_status (RISE/NC DAP/ACCUPLACER)",
+        "AIG_identification (yes/no, for 9th–10th grade CT)",
+        "anticipated_high_school_graduation_date",
+        "preferred_start_term",
+        "high_school_name_and_district"
+      ],
+      "workflow_components": [
+        "stepper for new vs continuing students",
+        "dynamic checklist of required documents",
+        "timeline view of CCP deadlines",
+        "course search filtered to CCP-eligible sections",
+        "dual-credit mapping view showing HS and college credit for each course",
+        "advisor contact and appointment widget"
+      ]
+    },
+    "recommended_db": {
+      "tables": {
+        "program": {
+          "fields": [
+            "id",
+            "name",
+            "summary",
+            "last_checked"
+          ]
+        },
+        "official_pages": {
+          "fields": [
+            "id",
+            "program_id",
+            "title",
+            "url",
+            "domain",
+            "type",
+            "access_date",
+            "date_published",
+            "excerpt"
+          ]
+        },
+        "eligibility_rules": {
+          "fields": [
+            "id",
+            "program_id",
+            "pathway_type",
+            "grade_min",
+            "grade_max",
+            "gpa_min",
+            "assessment_type",
+            "assessment_cutoff",
+            "notes"
+          ]
+        },
+        "pathways": {
+          "fields": [
+            "id",
+            "program_id",
+            "name",
+            "cluster",
+            "type",
+            "description"
+          ]
+        },
+        "pathway_courses": {
+          "fields": [
+            "id",
+            "pathway_id",
+            "course_code",
+            "course_title",
+            "is_ugetc",
+            "hs_credit_equivalent"
+          ]
+        },
+        "documents": {
+          "fields": [
+            "id",
+            "program_id",
+            "name",
+            "type",
+            "url",
+            "downloadable",
+            "description"
+          ]
+        },
+        "faq": {
+          "fields": [
+            "id",
+            "program_id",
+            "question",
+            "answer"
+          ]
+        },
+        "faq_sources": {
+          "fields": [
+            "id",
+            "faq_id",
+            "source_key"
+          ]
+        },
+        "sources": {
+          "fields": [
+            "id",
+            "program_id",
+            "title",
+            "url",
+            "domain",
+            "type",
+            "date_published",
+            "access_date",
+            "excerpt"
+          ]
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "title": "Career & College Promise | Wake Tech",
+      "url": "https://www.waketech.edu/career-and-college-promise",
+      "domain": "www.waketech.edu",
+      "type": "page",
+      "date_published": null,
+      "access_date": "2025-12-11",
+      "excerpt": "Wake Tech’s CCP program offers eligible high school students the opportunity to earn tuition‑free college credit and, in many cases, dual credit toward high school graduation."
+    },
+    {
+      "title": "Eligibility for Career & College Promise Pathways - Wake Tech",
+      "url": "https://www.waketech.edu/career-and-college-promise/eligibility",
+      "domain": "www.waketech.edu",
+      "type": "page",
+      "date_published": "2025-11-17",
+      "access_date": "2025-12-11",
+      "excerpt": "Defines eligibility for College Transfer and Career and Technical Education CCP pathways, including grade-level rules and assessment benchmarks for college readiness."
+    },
+    {
+      "title": "Career & College Promise FAQs | Wake Tech",
+      "url": "https://www.waketech.edu/career-and-college-promise/faqs",
+      "domain": "www.waketech.edu",
+      "type": "page",
+      "date_published": "2025-10-26",
+      "access_date": "2025-12-11",
+      "excerpt": "Provides answers to common CCP questions about transferability, course locations, student support services, and academic policies that apply to CCP students."
+    },
+    {
+      "title": "Section 14 – Career and College Promise Operating Procedures (2024 FA)",
+      "url": "https://wordpress.nccommunitycolleges.edu/wp-content/uploads/2024/09/Section14_2024FA-FINAL-12.pdf",
+      "domain": "wordpress.nccommunitycolleges.edu",
+      "type": "pdf",
+      "date_published": "2024-09-05",
+      "access_date": "2025-12-11",
+      "excerpt": "Statewide CCP operating procedures detailing program purpose, eligibility requirements, and implementation guidelines for college transfer and CTE pathways."
+    },
+    {
+      "title": "Dual Credit Allowances for Career & College Promise Effective 2024-25",
+      "url": "https://www.dpi.nc.gov/documents/advancedlearning/cihs/ccp-dual-credit-allowances-version-9-august-2024/download?attachment",
+      "domain": "www.dpi.nc.gov",
+      "type": "pdf",
+      "date_published": "2024-08-01",
+      "access_date": "2025-12-11",
+      "excerpt": "NCDPI chart mapping specific CCP courses to NC high school graduation requirements and defining how many high school credits each course earns."
+    },
+    {
+      "title": "Dual Enrollment and High School Graduation Requirements FAQ",
+      "url": "https://www.dpi.nc.gov/documents/advancedlearning/cihs/faq-dual-enrollment-and-graduation-requirements/download?attachment",
+      "domain": "www.dpi.nc.gov",
+      "type": "pdf",
+      "date_published": "2024-09-01",
+      "access_date": "2025-12-11",
+      "excerpt": "Frequently asked questions explaining how dual enrollment, including CCP, interacts with NC high school graduation requirements and credit policies."
+    },
+    {
+      "title": "Career and College Promise (CCP): Advising Guidance for School Personnel",
+      "url": "https://www.dpi.nc.gov/documents/advancedlearning/ccp-advising-guidance-school-personnel-21121pdf/download?attachment",
+      "domain": "www.dpi.nc.gov",
+      "type": "pdf",
+      "date_published": null,
+      "access_date": "2025-12-11",
+      "excerpt": "Advising guidance for educators outlining key CCP messages, eligibility essentials, and suggested supports for students considering CCP pathways."
+    },
+    {
+      "title": "Attachment A College Readiness Benchmarks *CCP Program Eligibility Benchmarks",
+      "url": "https://www.isothermal.edu/ccp/assets/ccp-assessment-table.pdf",
+      "domain": "www.isothermal.edu",
+      "type": "pdf",
+      "date_published": null,
+      "access_date": "2025-12-11",
+      "excerpt": "Statewide table of CCP program eligibility benchmarks on approved diagnostic assessment tests such as PSAT, SAT, ACT, NC DAP, and ACCUPLACER."
+    },
+    {
+      "title": "Cost of Attendance 2024–2025 – Wake Tech",
+      "url": "https://www.waketech.edu/sites/default/files/page-file-uploads/Cost-of-Attendance-2024-25.pdf",
+      "domain": "www.waketech.edu",
+      "type": "pdf",
+      "date_published": "2024-07-01",
+      "access_date": "2025-12-11",
+      "excerpt": "Lists standard tuition, fee, and book estimates for Wake Tech students, providing context for course-related costs even though CCP tuition is waived."
+    },
+    {
+      "title": "Student Services / Wake Tech College & Career Promise Program (WCPSS)",
+      "url": "https://www.wcpss.net/Page/34662",
+      "domain": "www.wcpss.net",
+      "type": "page",
+      "date_published": null,
+      "access_date": "2025-12-11",
+      "excerpt": "WCPSS guidance page highlighting key CCP dates and linking students to the Wake Tech CCP registration and important dates resources."
+    },
+    {
+      "title": "Everything You Need to Know About CCP Registration",
+      "url": "https://peakstudentmedia.com/2024/03/15/everything-you-need-to-know-about-ccp-registration/",
+      "domain": "peakstudentmedia.com",
+      "type": "page",
+      "date_published": "2024-03-14",
+      "access_date": "2025-12-11",
+      "excerpt": "Student-produced overview describing steps for Wake Tech CCP registration, transcript ordering, and application deadlines in a WCPSS context."
+    }
+  ],
+  "sources.invalid_urls": [],
+  "raw_snippets": [
+    {
+      "id": 1,
+      "source": "",
+      "context": "Program overview",
+      "text": "Wake Tech’s CCP program offers eligible high school students the opportunity to earn credits toward a college degree or a credential for employment tuition-free while often earning dual credit that applies to high school graduation. CCP courses are available at multiple campuses and online, giving students exposure to the college environment and helping them lighten future college course loads."
+    },
+    {
+      "id": 2,
+      "source": "",
+      "context": "Eligibility benchmarks",
+      "text": "To be eligible for enrollment in a College Transfer Pathway, students must demonstrate college readiness in English, reading, and mathematics on an approved test or tests. Eligibility may be demonstrated by achieving the required scores on a single test or by combining scores from the approved assessments, including PSAT, SAT, ACT, NC DAP, Wake Tech placement tests, AP, IB, Cambridge, and ACCUPLACER."
+    },
+    {
+      "id": 3,
+      "source": "",
+      "context": "State CCP purpose",
+      "text": "The Career and College Promise program is established to provide structured opportunities to earn college credit for high school students who are ready for college-level work. Operating procedures define eligibility for College Transfer, Career and Technical Education, and Cooperative Innovative High School pathways, ensuring that high school students enroll in pathways that lead to a certificate, diploma, or college degree."
+    },
+    {
+      "id": 4,
+      "source": "",
+      "context": "Continuation GPA rule",
+      "text": "Students must maintain at least a 2.0 college GPA after completing two college courses to remain eligible for Career and College Promise. Students who fall below a 2.0 are subject to the college’s satisfactory academic progress policies, and CCP advisors should help them understand how academic performance affects future opportunities."
+    },
+    {
+      "id": 5,
+      "source": "",
+      "context": "Dual credit allowances",
+      "text": "The Dual Credit Allowances chart identifies community college courses that may be used to meet high school graduation requirements. Courses in the Universal General Education Transfer Component will transfer for equivalency credit from NC community colleges to UNC institutions, and students who enroll in and pass these courses receive high school course credit based on the chart."
+    },
+    {
+      "id": 6,
+      "source": "",
+      "context": "EV form workflow",
+      "text": "The CCP Enrollment form is processed electronically using DocuSign. After the student completes their portion, the form is routed to the principal or designee for acknowledgment and signature, then to additional college officials for final approval. Students do not need to contact Wake Tech to obtain institutional signatures; the routing is handled automatically once all required parties sign."
+    },
+    {
+      "id": 7,
+      "source": "",
+      "context": "Dual enrollment and HS graduation",
+      "text": "NCDPI maintains a Dual Credit Allowances chart that lists community college courses satisfying high school graduation requirements. Students must complete all college courses listed for a particular high school requirement in order to receive the corresponding high school credit, even when institutions award college credit based on their own prior learning policies."
+    },
+    {
+      "id": 8,
+      "source": "",
+      "context": "Advising focus",
+      "text": "Advising for CCP should emphasize that students must select a pathway—College Transfer or Career and Technical Education—and understand that college grades earned through CCP appear on a permanent college transcript. Advisors should discuss the impact of enrollment choices and academic performance on future college and career options."
+    },
+    {
+      "id": 9,
+      "source": "",
+      "context": "Pathway change approval",
+      "text": "A student who wishes to change Career and College Promise pathways must receive approval from the college president, chief academic officer, or chief student development administrator. Approval is based on verification that the new pathway better aligns with the student’s revised career or academic plans."
+    },
+    {
+      "id": 10,
+      "source": "",
+      "context": "9th–10th grade CTE note",
+      "text": "Eligible ninth- and tenth-grade students may enroll in certain Career and Technical Education pathways that do not include Universal General Education Transfer Component courses, such as Business Technologies, Construction Technology, Engineering Technologies, and Information Technologies. CCP staff work closely with ninth- and tenth-grade students to determine eligibility for these pathways."
+    }
+  ],
+  "confidence": {
+    "eligibility": 0.92,
+    "enrollment_steps": 0.8,
+    "pathways": 0.78,
+    "courses_and_catalog": 0.75,
+    "registration_and_deadlines": 0.72,
+    "costs": 0.7,
+    "academic_policies": 0.85,
+    "required_documents": 0.7,
+    "advising_and_contacts": 0.76,
+    "special_cases": 0.68,
+    "outcomes_and_transfer": 0.83,
+    "faq": 0.88,
+    "developer_metadata": 0.8
+  },
+  "missing_fields": [
+    "pathways.college_transfer.links",
+    "pathways.college_transfer.program_sheets",
+    "pathways.cte.links",
+    "pathways.cte.program_sheets",
+    "pathways.cte.links",
+    "pathways.cte.program_sheets",
+    "pathways.cte.links",
+    "pathways.cte.program_sheets",
+    "pathways.cte.links",
+    "pathways.cte.program_sheets",
+    "courses_and_catalog.catalog_access",
+    "registration_and_deadlines.add_drop_policies.calendar_links",
+    "registration_and_deadlines.orientation.link",
+    "costs.bookstore_link",
+    "advising_and_contacts.ccp_staff_email.email",
+    "advising_and_contacts.virtual_advising.link",
+    "required_documents.url",
+    "required_documents.access_date",
+    "required_documents.url",
+    "required_documents.access_date"
+  ],
+  "assumptions": [
+    {
+      "item": "GPA minimums for some Wake Tech-specific pathways",
+      "assumption": "Where Wake Tech does not list an explicit numeric GPA cutoff for certain CTE or 9th–10th grade options, the general state threshold and local review process apply.",
+      "justification": "NC Section 14 procedures and multiple measures policy describe default GPA-based eligibility and allow local colleges to implement additional criteria.",
+      "sources": [
+        "",
+        ""
+      ]
+    },
+    {
+      "item": "Principal/designee memo implementation",
+      "assumption": "Principal or designee recommendations for students slightly below benchmarks are implemented through comments and approvals inside the EV form rather than a separate free-form memo document.",
+      "justification": "DocuSign EV workflow includes principal/designee signature steps and state Section 14 requires such recommendations but does not mandate a stand-alone memo template.",
+      "sources": [
+        "",
+        ""
+      ]
+    },
+    {
+      "item": "Email and advising links",
+      "assumption": "CCP staff email addresses and advising scheduling links appear on Wake Tech pages but are not fully visible in extracted snippets, so fields are left null rather than inferred.",
+      "justification": "To avoid guessing contact information that might change, email and link details are marked missing where not explicitly captured.",
+      "sources": [
+        ""
+      ]
+    },
+    {
+      "item": "Weighting of CCP courses in HS GPA",
+      "assumption": "Many districts weight CCP like other advanced coursework, but exact weighting is left to local policy and is therefore not encoded as a single rule.",
+      "justification": "NCDPI references local authority over transcript practices; no single statewide weighting scheme is mandated for all districts.",
+      "sources": [
+        ""
+      ]
+    },
+    {
+      "item": "CTE sample credentials and courses",
+      "assumption": "Business, Construction, Engineering, and Information Technology pathways include typical certificates and introductory courses aligned with their fields, even though Wake Tech’s CCP pages do not list each specific program code within CCP context.",
+      "justification": "State Section 14 and Wake Tech narratives describe CTE pathways leading to certificates and diplomas; sample content is generalized to avoid mislabeling program codes.",
+      "sources": [
+        "",
+        ""
+      ]
+    }
+  ],
+  "change_log": [
+    {
+      "item": "9th–10th grade CCP access",
+      "observation": "More structured access for 9th–10th graders exists than some general CCP summaries suggest, including explicit references to certain CTE clusters and the possibility of early College Transfer participation with AIG documentation and multiple recommendations.",
+      "sources": [
+        "",
+        ""
+      ]
+    },
+    {
+      "item": "Detailed assessment benchmark combinations",
+      "observation": "Wake Tech allows students to combine scores from multiple approved tests (e.g., ACT math with SAT EBRW) to demonstrate college readiness, which is more flexible than a single-test cutoff model often assumed in high-level overviews.",
+      "sources": [
+        "",
+        ""
+      ]
+    },
+    {
+      "item": "Emphasis on permanent college transcript impact",
+      "observation": "NCDPI guidance stresses that CCP grades become part of the student’s permanent college record and that failing grades can affect future financial aid, which may be underemphasized in typical promotional descriptions.",
+      "sources": [
+        "",
+        ""
+      ]
+    },
+    {
+      "item": "Statewide dual-credit chart centrality",
+      "observation": "The Dual Credit Allowances chart is the definitive reference for how CCP courses satisfy high school requirements, shifting some key decisions from local practice to a statewide, annually updated document.",
+      "sources": [
+        "",
+        ""
+      ]
+    }
+  ]
+}

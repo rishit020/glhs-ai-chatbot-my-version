@@ -1,0 +1,1217 @@
+{
+    "school_name": "Green Level High School",
+    "year": "2025-2026",
+    "grade_level": 11,
+    "label": "Junior Available Courses",
+    "notes": [
+      "Students choose 4 primary core courses and 8 total electives (4 primary and 4 alternates).",
+      "A triangle indicates that a course requires a prerequisite, usually the previous level in the sequence.",
+      "A pentagon indicates that an Academic (non-Honors) version of the course is also available even if only the Honors label is shown."
+    ],
+    "categories": {
+      "required_core": {
+        "english": [
+          {
+            "name": "English III Honors",
+            "subject": "English",
+            "required": true,
+            "type": "core",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "English II or English II Honors",
+            "academic_available": true
+          },
+          {
+            "name": "AP English Language and Composition",
+            "subject": "English",
+            "required": true,
+            "type": "core",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "English II or English II Honors (strong performance recommended)",
+            "academic_available": false
+          }
+        ],
+        "math": [
+          {
+            "name": "Foundations of NC Math 3",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": false,
+            "paired_with": "NC Math 3",
+            "pair_type": "math_support_pair",
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 2 or NC Math 2 Honors",
+            "academic_available": false
+          },
+          {
+            "name": "NC Math 3",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": false,
+            "paired_with": "Foundations of NC Math 3",
+            "pair_type": "math_support_pair",
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 2 or NC Math 2 Honors",
+            "academic_available": true
+          },
+          {
+            "name": "NC Math 3 Honors",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 2 or NC Math 2 Honors",
+            "academic_available": true
+          },
+          {
+            "name": "NC Math 4",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 3 or NC Math 3 Honors",
+            "academic_available": true
+          },
+          {
+            "name": "NC Math 4 Honors",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 3 or NC Math 3 Honors",
+            "academic_available": true
+          },
+          {
+            "name": "AP Pre-Calculus",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 3 or NC Math 3 Honors",
+            "academic_available": false
+          },
+          {
+            "name": "AP Calculus AB",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 4 / NC Math 4 Honors or AP Pre-Calculus",
+            "academic_available": false
+          },
+          {
+            "name": "AP Calculus BC",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "AP Calculus AB or equivalent",
+            "academic_available": false
+          },
+          {
+            "name": "AP Statistics",
+            "subject": "Math",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "NC Math 3 or higher",
+            "academic_available": false
+          }
+        ],
+        "science": [
+          {
+            "name": "AP Environmental Science",
+            "subject": "Science",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "Biology and a prior lab science (Earth/Environmental or Chemistry recommended)",
+            "academic_available": false
+          },
+          {
+            "name": "Chemistry Honors",
+            "subject": "Science",
+            "required": false,
+            "type": "core_option",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Biology and NC Math 2 (completed or concurrent)",
+            "academic_available": true
+          },
+          {
+            "name": "Physical Science",
+            "subject": "Science",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Biology or Earth/Environmental Science",
+            "academic_available": true
+          }
+        ],
+        "social_studies": [
+          {
+            "name": "American History Honors",
+            "subject": "Social Studies",
+            "required": false,
+            "type": "core_option",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "World History or AP World History: Modern",
+            "academic_available": true
+          },
+          {
+            "name": "AP US History",
+            "subject": "Social Studies",
+            "required": false,
+            "type": "core_option",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "World History or AP World History: Modern (strong performance recommended)",
+            "academic_available": false
+          }
+        ]
+      },
+      "electives": {
+        "cte": [
+          {
+            "name": "Animal Science I Honors",
+            "subject": "CTE",
+            "cluster": "Agricultural Education",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Animal Science II Honors",
+            "subject": "CTE",
+            "cluster": "Agricultural Education",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Animal Science I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Horticulture I Honors",
+            "subject": "CTE",
+            "cluster": "Agricultural Education",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Horticulture II Honors",
+            "subject": "CTE",
+            "cluster": "Agricultural Education",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Horticulture I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "AP Macroeconomics",
+            "subject": "CTE / Social Studies",
+            "cluster": "Business Finance Management",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Foundations in economics or strong math background",
+            "academic_available": false
+          },
+          {
+            "name": "AP Microeconomics",
+            "subject": "CTE / Social Studies",
+            "cluster": "Business Finance Management",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "AP Macroeconomics (concurrent or prior) or strong economics background",
+            "academic_available": false
+          },
+          {
+            "name": "Entrepreneurship I Honors",
+            "subject": "CTE",
+            "cluster": "Entrepreneurship",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Entrepreneurship II Honors",
+            "subject": "CTE",
+            "cluster": "Entrepreneurship",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Entrepreneurship I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Microsoft Word and PowerPoint Honors",
+            "subject": "CTE",
+            "cluster": "Computer Applications",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Microsoft Excel Honors",
+            "subject": "CTE",
+            "cluster": "Computer Applications",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Adobe Visual Design I Honors",
+            "subject": "CTE",
+            "cluster": "Adobe",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Adobe Video Design I Honors",
+            "subject": "CTE",
+            "cluster": "Adobe",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Adobe Visual Design I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "AP Computer Science Principles",
+            "subject": "CTE / Computer Science",
+            "cluster": "Computer Science",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "AP Computer Science A",
+            "subject": "CTE / Computer Science",
+            "cluster": "Computer Science",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "AP Computer Science Principles or prior programming",
+            "academic_available": false
+          },
+          {
+            "name": "Python Programming I Honors",
+            "subject": "CTE / Computer Science",
+            "cluster": "Computer Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Python Programming II Honors",
+            "subject": "CTE / Computer Science",
+            "cluster": "Computer Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Python Programming I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Food and Nutrition I",
+            "subject": "CTE",
+            "cluster": "Family Consumer Science",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": true
+          },
+          {
+            "name": "Food and Nutrition II Honors",
+            "subject": "CTE",
+            "cluster": "Family Consumer Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Food and Nutrition I",
+            "academic_available": false
+          },
+          {
+            "name": "Health Science I Honors",
+            "subject": "CTE",
+            "cluster": "Health Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Health Science II Honors",
+            "subject": "CTE",
+            "cluster": "Health Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Health Science I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Biomedical Technology I Honors",
+            "subject": "CTE",
+            "cluster": "Health Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Health Science I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Technology Engineering and Design",
+            "subject": "CTE",
+            "cluster": "Technology Education",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": true
+          },
+          {
+            "name": "Technological Design Honors",
+            "subject": "CTE",
+            "cluster": "Technology Education",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Technology Engineering and Design or similar",
+            "academic_available": false
+          }
+        ],
+        "english": [
+          {
+            "name": "Creative Writing I Honors",
+            "subject": "English",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Introduction to Communications and Mass Media",
+            "subject": "English / Media",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Leadership in Media I Honors",
+            "subject": "English / Media",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "paired_with": "Leadership in Media II Honors",
+            "pair_type": "yearlong_pair",
+            "academic_available": false
+          },
+          {
+            "name": "Leadership in Media II Honors",
+            "subject": "English / Media",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Leadership in Media I Honors",
+            "paired_with": "Leadership in Media I Honors",
+            "pair_type": "yearlong_pair",
+            "academic_available": false
+          },
+          {
+            "name": "Speech I Honors",
+            "subject": "English",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Yearbook I and II Honors",
+            "subject": "English / Journalism",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "paired_with": "Yearbook II Honors and Yearbook III Honors",
+            "pair_type": "yearlong_pair_first_time",
+            "note": "Must request both courses; for first time students",
+            "academic_available": false
+          },
+          {
+            "name": "Yearbook II Honors and Yearbook III Honors",
+            "subject": "English / Journalism",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Yearbook I and II Honors",
+            "paired_with": "Yearbook I and II Honors",
+            "pair_type": "yearlong_pair_returning",
+            "note": "Must request both courses; for returning students",
+            "academic_available": false
+          }
+        ],
+        "healthful_living": [
+          {
+            "name": "PEPI I and PEPI II",
+            "subject": "Healthful Living",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Application/selection; must request both courses",
+            "paired_with": "PEPI II",
+            "pair_type": "yearlong_pair",
+            "academic_available": false
+          },
+          {
+            "name": "Sports Medicine I Honors",
+            "subject": "Healthful Living",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Sports Medicine II Honors",
+            "subject": "Healthful Living",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Sports Medicine I Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Sports Medicine III Honors",
+            "subject": "Healthful Living",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Sports Medicine II Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Sports Medicine IV Honors",
+            "subject": "Healthful Living",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Sports Medicine III Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Team Sports I",
+            "subject": "Healthful Living",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Team Sports II",
+            "subject": "Healthful Living",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Team Sports I",
+            "academic_available": false
+          },
+          {
+            "name": "Weight Training & Conditioning I",
+            "subject": "Healthful Living",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Healthful Living I",
+            "academic_available": false
+          },
+          {
+            "name": "Weight Training & Conditioning II",
+            "subject": "Healthful Living",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Weight Training & Conditioning I",
+            "academic_available": false
+          },
+          {
+            "name": "Weight Training & Conditioning III",
+            "subject": "Healthful Living",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Weight Training & Conditioning II",
+            "academic_available": false
+          }
+        ],
+        "science": [
+          {
+            "name": "Forensic Science Honors",
+            "subject": "Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Biology and Chemistry (recommended)",
+            "academic_available": false
+          },
+          {
+            "name": "Anatomy & Physiology Honors",
+            "subject": "Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Biology",
+            "academic_available": false
+          },
+          {
+            "name": "Astronomy Honors",
+            "subject": "Science",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Earth/Environmental Science or other lab science",
+            "academic_available": false
+          },
+          {
+            "name": "AP Biology",
+            "subject": "Science",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "Biology and Chemistry (recommended)",
+            "academic_available": false
+          },
+          {
+            "name": "AP Chemistry",
+            "subject": "Science",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "Chemistry Honors and strong math background",
+            "academic_available": false
+          },
+          {
+            "name": "AP Physics I: Algebra-Based",
+            "subject": "Science",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "Math through NC Math 3 (concurrent allowed)",
+            "academic_available": false
+          },
+          {
+            "name": "AP Physics II: Algebra-Based",
+            "subject": "Science",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "AP Physics I: Algebra-Based",
+            "academic_available": false
+          },
+          {
+            "name": "AP Physics C: Mechanics",
+            "subject": "Science",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "prerequisite": "Calculus (concurrent) and prior physics strongly recommended",
+            "academic_available": false
+          }
+        ],
+        "social_studies": [
+          {
+            "name": "Contemporary Law and Justice Honors",
+            "subject": "Social Studies",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Lessons of Vietnam War/Recent International Relations Honors",
+            "subject": "Social Studies",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "AP Comparative Government & Politics",
+            "subject": "Social Studies",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "AP Psychology",
+            "subject": "Social Studies",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "AP US Government & Politics",
+            "subject": "Social Studies",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Civic Literacy or equivalent",
+            "academic_available": false
+          },
+          {
+            "name": "AP World History",
+            "subject": "Social Studies",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": false,
+            "academic_available": false
+          }
+        ],
+        "arts": [
+          {
+            "name": "Instrumental Music: Band - Developing",
+            "subject": "Arts",
+            "discipline": "Band",
+            "level": "Developing",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Instrumental Music: Band - Intermediate",
+            "subject": "Arts",
+            "discipline": "Band",
+            "level": "Intermediate",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Band - Developing or equivalent experience",
+            "academic_available": false
+          },
+          {
+            "name": "Instrumental Music: Band - Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Band",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Band - Intermediate or audition",
+            "academic_available": false
+          },
+          {
+            "name": "Instrumental Music: Band - Advanced Honors",
+            "subject": "Arts",
+            "discipline": "Band",
+            "level": "Advanced",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Band - Accomplished Honors or audition",
+            "academic_available": false
+          },
+          {
+            "name": "Chorus: Vocal Ensemble Developing",
+            "subject": "Arts",
+            "discipline": "Chorus",
+            "level": "Developing",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Choral Music 2 Intermediate",
+            "subject": "Arts",
+            "discipline": "Chorus",
+            "level": "Intermediate",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Beginning or Developing chorus experience",
+            "academic_available": false
+          },
+          {
+            "name": "Choral Music 3 Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Chorus",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Choral Music 2 Intermediate or equivalent",
+            "academic_available": false
+          },
+          {
+            "name": "Choral Music 4 Advanced Honors",
+            "subject": "Arts",
+            "discipline": "Chorus",
+            "level": "Advanced",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Choral Music 3 Accomplished Honors or equivalent",
+            "academic_available": false
+          },
+          {
+            "name": "Dance: Beginning",
+            "subject": "Arts",
+            "discipline": "Dance",
+            "level": "Beginning",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Dance: Intermediate",
+            "subject": "Arts",
+            "discipline": "Dance",
+            "level": "Intermediate",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Dance: Beginning or placement",
+            "academic_available": false
+          },
+          {
+            "name": "Dance: Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Dance",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Dance: Intermediate or audition",
+            "academic_available": false
+          },
+          {
+            "name": "Dance: Advanced Honors",
+            "subject": "Arts",
+            "discipline": "Dance",
+            "level": "Advanced",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Dance: Accomplished Honors or audition",
+            "academic_available": false
+          },
+          {
+            "name": "Express Yourself: Arts and Inclusion",
+            "subject": "Arts",
+            "discipline": "Leadership / Interdisciplinary",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Theatre Arts: Beginning",
+            "subject": "Arts",
+            "discipline": "Theatre",
+            "level": "Beginning",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Theatre Arts: Intermediate",
+            "subject": "Arts",
+            "discipline": "Theatre",
+            "level": "Intermediate",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Theatre Arts: Beginning",
+            "academic_available": false
+          },
+          {
+            "name": "Theatre Arts: Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Theatre",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Theatre Arts: Intermediate or audition",
+            "academic_available": false
+          },
+          {
+            "name": "Theatre Arts: Advanced Honors",
+            "subject": "Arts",
+            "discipline": "Theatre",
+            "level": "Advanced",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Theatre Arts: Accomplished Honors or audition",
+            "academic_available": false
+          },
+          {
+            "name": "Tech. Theatre: Beginning",
+            "subject": "Arts",
+            "discipline": "Technical Theatre",
+            "level": "Beginning",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Tech. Theatre: Intermediate",
+            "subject": "Arts",
+            "discipline": "Technical Theatre",
+            "level": "Intermediate",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Tech. Theatre: Beginning",
+            "academic_available": false
+          },
+          {
+            "name": "Tech. Theatre: Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Technical Theatre",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Tech. Theatre: Intermediate",
+            "academic_available": false
+          },
+          {
+            "name": "Tech. Theatre: Advanced Honors",
+            "subject": "Arts",
+            "discipline": "Technical Theatre",
+            "level": "Advanced",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Tech. Theatre: Accomplished Honors",
+            "academic_available": false
+          },
+          {
+            "name": "Visual Arts: Beginning",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "level": "Beginning",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Visual Arts: Intermediate",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "level": "Intermediate",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Visual Arts: Beginning",
+            "academic_available": false
+          },
+          {
+            "name": "Visual Arts: Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Visual Arts: Intermediate",
+            "academic_available": false
+          },
+          {
+            "name": "Visual Arts: Advanced Honors",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "level": "Advanced",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Visual Arts: Accomplished Honors",
+            "academic_available": false
+          },
+          {
+            "name": "AP Studio Art 2D Design",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Advanced-level visual arts and portfolio",
+            "academic_available": false
+          },
+          {
+            "name": "AP Studio Art 3D Design",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Sculpture/Ceramics and portfolio",
+            "academic_available": false
+          },
+          {
+            "name": "AP Studio Art Drawing",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Advanced drawing/visual arts and portfolio",
+            "academic_available": false
+          },
+          {
+            "name": "Painting Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Visual Arts",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Intermediate or Accomplished Visual Arts",
+            "academic_available": false
+          },
+          {
+            "name": "Sculpture/Ceramics: Visual Art Specialization Intermediate",
+            "subject": "Arts",
+            "discipline": "Visual Arts / Ceramics",
+            "level": "Intermediate",
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Visual Arts: Beginning or Intermediate",
+            "academic_available": false
+          },
+          {
+            "name": "Sculpture/Ceramics: Visual Art Specialization Accomplished Honors",
+            "subject": "Arts",
+            "discipline": "Visual Arts / Ceramics",
+            "level": "Accomplished",
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Sculpture/Ceramics Intermediate",
+            "academic_available": false
+          }
+        ],
+        "world_languages": [
+          {
+            "name": "French I",
+            "subject": "World Language",
+            "language": "French",
+            "level": 1,
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "French II",
+            "subject": "World Language",
+            "language": "French",
+            "level": 2,
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "French I",
+            "academic_available": false
+          },
+          {
+            "name": "French III Honors",
+            "subject": "World Language",
+            "language": "French",
+            "level": 3,
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "French II",
+            "academic_available": false
+          },
+          {
+            "name": "French IV Honors",
+            "subject": "World Language",
+            "language": "French",
+            "level": 4,
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "French III Honors",
+            "academic_available": false
+          },
+          {
+            "name": "AP French Language & Culture",
+            "subject": "World Language",
+            "language": "French",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "French IV Honors or equivalent proficiency",
+            "academic_available": false
+          },
+          {
+            "name": "Latin I",
+            "subject": "World Language",
+            "language": "Latin",
+            "level": 1,
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Latin II",
+            "subject": "World Language",
+            "language": "Latin",
+            "level": 2,
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Latin I",
+            "academic_available": false
+          },
+          {
+            "name": "Latin III Honors",
+            "subject": "World Language",
+            "language": "Latin",
+            "level": 3,
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Latin II",
+            "academic_available": false
+          },
+          {
+            "name": "Latin IV Honors",
+            "subject": "World Language",
+            "language": "Latin",
+            "level": 4,
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Latin III Honors",
+            "academic_available": false
+          },
+          {
+            "name": "AP Latin",
+            "subject": "World Language",
+            "language": "Latin",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Latin IV Honors or equivalent proficiency",
+            "academic_available": false
+          },
+          {
+            "name": "Spanish I",
+            "subject": "World Language",
+            "language": "Spanish",
+            "level": 1,
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": false,
+            "academic_available": false
+          },
+          {
+            "name": "Spanish II",
+            "subject": "World Language",
+            "language": "Spanish",
+            "level": 2,
+            "honors": false,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Spanish I",
+            "academic_available": false
+          },
+          {
+            "name": "Spanish III Honors",
+            "subject": "World Language",
+            "language": "Spanish",
+            "level": 3,
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Spanish II",
+            "academic_available": false
+          },
+          {
+            "name": "Spanish IV Honors",
+            "subject": "World Language",
+            "language": "Spanish",
+            "level": 4,
+            "honors": true,
+            "ap": false,
+            "prerequisite_required": true,
+            "prerequisite": "Spanish III Honors",
+            "academic_available": false
+          },
+          {
+            "name": "AP Spanish Language & Culture",
+            "subject": "World Language",
+            "language": "Spanish",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "Spanish IV Honors or equivalent proficiency",
+            "academic_available": false
+          },
+          {
+            "name": "AP Spanish Literature",
+            "subject": "World Language",
+            "language": "Spanish",
+            "honors": false,
+            "ap": true,
+            "prerequisite_required": true,
+            "likely_prerequisite": "AP Spanish Language & Culture or advanced Spanish sequence",
+            "academic_available": false
+          }
+        ]
+      }
+    }
+  }
+  
